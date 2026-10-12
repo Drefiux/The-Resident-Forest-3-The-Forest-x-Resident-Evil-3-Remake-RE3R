@@ -1,0 +1,131 @@
+﻿FOREST RE3 — 0.8.1.2 — ESQUIVA Y LABORATORIO
+Fecha: 10/10/2026
+Estado: F e inmunidad aceptadas en 0.8.1.1; movimiento/cámara pendientes de prueba.
+Base: 0.8.0, cooperativo aceptado por el usuario.
+
+CONTROLES (dentro de la partida, fuera del avión y de los menús)
+F: una pulsación justo ANTES del golpe de un enemigo.
+F6: generar un caníbal de prueba delante del jugador.
+F8: alternar Jill/Carlos y sus voces.
+F9: crear/recolocar una figura local del personaje actual.
+F10: congelar/reanudar la figura, sin congelar el juego.
+F11: seleccionar la siguiente de cuatro volteretas y reiniciarla.
+Shift+F10: congelar y avanzar un frame de referencia (1/60 s).
+Shift+F9: retirar la figura.
+
+PARCHE DE MOVIMIENTO Y CÁMARA 0.8.1.2
+En 0.8.1.1 F y la inmunidad ya funcionaron en la prueba del usuario.
+El motor nativo frenaba el movimiento y el barrido podía considerar suelo como
+obstáculo. Ahora se sustituye la aceleración de caminar durante la acción y se
+suspende la fricción de reposo, conservando gravedad y colisiones físicas.
+La velocidad por paso sigue la distancia acumulada de raíz del clip completo,
+escalada para Jill/Carlos. La cápsula avanza alejándose de la fuente del golpe;
+el cuerpo no duplica esa traslación. El suelo de apoyo no bloquea el barrido.
+
+La vista sigue los ojos y orientación de la cabeza animada, incluido el giro de
+la voltereta. Entra/sale suavemente durante la misma acción; un barrido de cámara
+limita el paso a través de paredes y suelo. Se restaura tras cada render para
+evitar que la alineación normal del cuerpo persiga una cámara ya desplazada.
+Al finalizar o cancelar, se restablecen vista, fricción y movimiento normales.
+Los ejes de mirada y caminar quedan reservados a la voltereta mientras dura.
+
+Se conservan la lectura de F en Update, resolución del contacto al final del
+frame y apoyo físico alternativo de 0.8.1.1, junto con todos los tiempos.
+
+INDICADOR (arriba a la izquierda)
+«F lista»: puedes intentar esquivar un ataque.
+«F detectada: ventana armada»: la tecla fue recibida; .12 s para el impacto.
+«F detectada: sin impacto dentro de .12 s»: pulsaste demasiado pronto.
+«Golpe recibido: F fuera de ventana»: no hubo una pulsación válida a tiempo.
+«F bloqueada: ...»: muestra la condición que impide la acción.
+«ESQUIVA | inmunidad 1 s»: la mecánica sí se activó.
+Si sigue fallando, este indicador y el registro DODGE_INPUT muestran en qué paso.
+
+ESQUIVA REAL
+Pulsa F cuando el caníbal ya esté terminando su ataque, justo antes de que
+te alcance. La pulsación abre una ventana de 0.12 s (aprox. 7 frames a 60 FPS).
+Si no llega un contacto dañino durante esa ventana, no hay voltereta ni inmunidad.
+Mantener F pulsada no la repite. Espacio conserva el salto normal.
+
+Al acertar: se cancela ese daño antes de salud/armadura/reacción y comienza una
+voltereta completa de 0.90 s. La cápsula se desplaza alejándose del atacante;
+las variantes hacia delante/atrás orientan el cuerpo para acompañar esa dirección.
+El recorrido sigue la raíz original del clip, con la escala del personaje,
+limitado por paredes y obstáculos; no es una distancia fija por frame. La inmunidad dura 1.00 s; recuperación total 1.15 s desde el inicio.
+Son valores del mashup, no cifras oficiales medidas de RE3R.
+
+La cámara sigue los ojos durante el giro y vuelve a la vista normal al terminar.
+Se oculta temporalmente la herramienta para que no quede flotando.
+Se recuperan el movimiento, la herramienta y las animaciones normales al terminar.
+F8 se bloquea durante esa recuperación para no sustituir el rig a media acción.
+
+La activación requiere suelo firme y contacto de ataque cuerpo a cuerpo nativo
+con atacante identificado. No es una evasión libre ni se activa por hambre, frío,
+veneno, fuego, caídas o un paquete de daño sin origen conocido. Otras fuentes de
+ataque, VR y servidores dedicados quedan pendientes de ampliar/comprobar.
+Durante el segundo de inmunidad se filtran los accesos nativos de daño del actor.
+
+ANIMACIONES Y VOZ
+Se revisaron cuatro volteretas de Jill y los seis candidatos de evasión de Carlos.
+Los de Carlos son pasos, carrera lateral y puñetazo; se usan las cuatro volteretas
+de Jill para ambos rigs, alternadas globalmente. Se retargetean desde la pose base
+de cada personaje, incluidos sus correctivos; no se copia la longitud de Jill a Carlos.
+Se reproduce el clip completo: entrada, giro y recuperación. La traslación horizontal
+de raíz no se aplica por segunda vez al modelo.
+
+Jill tiene 2 quejidos cortos de movimiento y Carlos 4, extraídos del evento
+original mov_s. Tienen ganancia específica, más suave que los gritos de golpe.
+Usan el mismo canal de voz: si está ocupado se descarta el nuevo sonido, sin
+interrumpir, solapar ni guardar una cola. El salto normal sigue sin voz.
+
+FIGURA PARA REVISIÓN
+F9 la coloca en el suelo frente a ti. Reproduce las cuatro variantes en ciclo;
+F11 permite escoger una. F10 permite revisar hombros, manos y apoyo al suelo.
+F8 cambia también el personaje de la figura. La figura es atravesable, no tiene
+IA ni físicas y solo existe en tu PC. No consume inmunidad ni esquiva por ti.
+La prueba de daño real se hace con F y el caníbal, no con la figura.
+
+CANÍBAL
+Usa el spawner nativo instantMutantSpawner, sin activar la consola ni cheats.
+Se genera un macho normal por pulsación, hasta cuatro de prueba por partida,
+con cinco segundos entre solicitudes. Puede tardar hasta cuatro segundos en aparecer.
+Para la primera prueba, úsalo en exterior y en suelo firme. El modo pacífico/
+enemigos desactivados puede impedir que el spawner nativo genere enemigos.
+En coop, el cliente solicita al host; únicamente el host crea al enemigo y el
+juego replica su IA y su entidad. El límite total es compartido por la sesión.
+
+COOPERATIVO
+AMBAS PCs deben usar este mismo paquete 0.8.1.2 (protocolo 2); no mezclar con 0.8.0.
+Espera al indicador de sincronización antes de probar F. La esquiva se habilita
+cuando el host ya ha reconocido tu personaje y su revisión actual.
+Se conservan posición, física, IA y daño nativos. El dueño resuelve la ventana
+reactiva de daño, igual que el daño del jugador nativo. El host valida entidad,
+identidad/revisión, secuencia, catálogo, dirección, antigüedad y recuperación del
+evento de voltereta. No se afirma validación de cada impacto por el host: el juego
+resuelve parte de esos impactos en el dueño del jugador.
+Se envía un evento pequeño de inicio/variante/tiempo/dirección; no modelos,
+texturas, pistas completas ni transformaciones de cada hueso. Los remotos usan
+sus archivos locales. El evento de voz envía solo categoría/ID del clip.
+Entrada tardía incluye una voltereta aún activa, con el tiempo restante; los
+eventos viejos no reinician la animación ni conceden inmunidad al observador.
+
+REVISIÓN MANUAL SUGERIDA (no ejecutada automáticamente)
+1. F9, F10 y F11: revisar las cuatro variantes con Jill y después Carlos (F8).
+2. Pulsar F sin enemigo: no debe pasar nada; saltar sigue funcionando.
+3. F6 en exterior. Probar F demasiado pronto, a tiempo y después del impacto.
+4. Acertar frente a un enemigo a cada lado: debe alejarse de él, no de la cámara.
+   La vista debe bajar, girar con la cabeza y recuperarse al acabar la voltereta.
+   Confirmar también que después de varias esquivas se puede mirar/caminar normal.
+5. Repetir cerca de una pared: el recorrido debe acortarse al chocar.
+6. Revisar salud/armadura, inmunidad de 1 s y daño normal tras la recuperación.
+7. Comprobar sonido del personaje, sin grito de golpe ni acumulación de voces.
+8. Repetir como host y como cliente; el compañero debe ver la misma voltereta,
+   posición y personaje. Probar cambio F8, entrada tardía y reconexión.
+
+Conservar 0.8.0 como base aceptada. Esta nueva habilidad necesita tu prueba
+en partida y la del compañero antes de marcar 0.8.1.2 como aceptada.
+
+DIAGNÓSTICO DE ESTA ENTREGA
+DODGE_START registra la distancia objetivo según clip y escala.
+DODGE_MOTOR_END registra pasos de física, pasos bloqueados y desplazamiento real.
+DODGE_CAMERA confirma el seguimiento de ojos y giro durante la acción.

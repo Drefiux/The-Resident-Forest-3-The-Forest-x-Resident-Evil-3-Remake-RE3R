@@ -1,0 +1,58 @@
+﻿THE RESIDENT FOREST 3 — 0.8.9.1
+Fecha: 12/10/2026
+Preparación del iniciador y correcciones del inventario.
+
+INICIO
+Extraer The Resident Forest 3.zip y abrir The Resident Forest 3.exe.
+JUGAR prepara la instalación con respaldo y abre The Forest.
+OPCIONES contiene la ruta del juego, Examinar, Abrir carpeta, selección del
+respaldo original de ModAPI y restauración de la instalación anterior.
+Cerrar The Forest antes de instalar, actualizar o restaurar.
+
+INVENTARIO RE3R
+TAB abre el inventario. E abre el baúl cercano.
+Arrastrar y soltar mueve objetos, intercambia posiciones y apila objetos
+compatibles. También funciona entre inventario y baúl, en el espacio elegido.
+Las armas de dos espacios necesitan dos celdas contiguas de una misma fila.
+Clic equipa un arma si no hay baúl abierto; con baúl abierto, clic transfiere.
+5, 6, 7, 8 equipan los primeros cuatro espacios. El orden se guarda.
+Cada jugador conserva su propio contenido en los cinco baúles de cuatro slots.
+El host valida los movimientos. Muertes nuevas: recuperar la mochila nativa
+recupera el inventario RE3R. Los objetos perdidos en versiones previas no se
+reconstruyen. Depósitos de los viejos baúles compartidos: conservados con host.
+
+HERRAMIENTAS DE PRUEBA
+Desactivadas por defecto. OPCIONES permite activarlas antes de iniciar.
+Sólo funcionan en solitario o para el anfitrión de cooperativo. Los clientes
+no pueden activarlas en la partida, incluso con su casilla local marcada.
+Incluyen F5 (baúles, teletransporte y objetos de prueba), F6 (caníbal),
+F8 (Jill/Carlos), F9 (figura), F10 (congelar) y F11 (variante).
+Las solicitudes de invocación/objetos de clientes son rechazadas por el host.
+La esquiva con F, el inventario, los baúles y las armas no requieren herramientas.
+Pausa: el host conserva la opción de activar/desactivar fuego amigo RE3R.
+
+ARMAS
+G19: baúl del yate. M3: baúl de la katana.
+Lanzamisiles infinito: computadora/noroeste en normal y difícil; katana en
+supervivencia difícil. Su icono se ha regenerado transparente y panorámico.
+Derecho apunta. Izquierdo dispara. R recarga G19/M3; reserva infinita.
+G19/M3 no talan árboles. La explosión del misil sigue derribándolos.
+
+COOPERATIVO
+Ambos equipos necesitan 0.8.9.1 / paquete 0.8.9.1.0 / protocolo 9 / 0x08090001.
+Guardado RE3R schema 5 compatible con 0.8.8.
+Compilada e instalada con respaldo; confirmación dentro del juego/coop pendiente.
+No se ejecutaron pruebas automáticas ni se abrió The Forest.
+
+PRESENTACIÓN
+Logo TR3 proporcionado por el usuario. Fondo negro y texto amarillo.
+Tipografía Montserrat Regular/Bold de los recursos del menú de The Forest;
+licencia OFL incluida. Opciones avanzadas separadas de la pantalla principal.
+Esta entrega prepara la publicación. No publica archivos en servicios externos
+ni declara completada la validación de las correcciones en cooperativo.
+
+0.8.9.1: reparados los saltos del ensamblado durante el empaquetado ModAPI.
+Se conserva la preferencia de herramientas; sólo host/solo jugador.
+Confirmación dentro del juego pendiente.
+
+Parche 0.8.9.1 instalado con respaldo. Confirmación en juego/coop pendiente.

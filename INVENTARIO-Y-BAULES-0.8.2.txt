@@ -1,0 +1,76 @@
+﻿THE FOREST × RE3R — INVENTARIO Y BAÚLES 0.8.2
+Fecha: 10/10/2026
+Estado: preparada para tu primera prueba en partida. Coop nuevo sin probar.
+
+CONTROLES
+TAB: abrir/cerrar inventario exclusivo de RE3R (20 espacios, cuadrícula 4×5).
+E: mirando un baúl cercano, abrir los dos inventarios.
+   Izquierda: tu inventario. Derecha: los 4 espacios de ese baúl.
+F5: abrir/cerrar laboratorio de baúles, teletransportes y objetos de prueba.
+ESC: cerrar este menú. F8: cambiar Jill/Carlos con el menú cerrado.
+Se conservan F, F6 y F9–F11 de la esquiva y su laboratorio anterior.
+
+CINCO BAÚLES
+1. Cueva de la katana, junto a la zona del hallazgo.
+2. Fondo del agujero central (sinkhole).
+3. Costa frente al yate.
+4. Sala de la computadora donde se elige el final.
+5. Costa del extremo noroeste; se busca suelo seco en el terreno nativo.
+
+Todos usan el modelo original sm41_011_ItemLocker01A de RE3R, con sus
+materiales convertidos para The Forest. Tienen colisión estática y 4 espacios
+reales cada uno. Los cinco comienzan VACÍOS y guardan contenido independiente.
+Una misma caja del mapa tiene el mismo contenido para todos los jugadores.
+Las cinco cajas NO comparten un almacén global como en el RE3 original.
+
+TRANSFERIR
+Selecciona un objeto del inventario izquierdo: «Guardar 1» o «Guardar pila».
+Selecciona un objeto del baúl derecho: «Retirar 1» o «Retirar pila».
+Las pilas respetan sus límites. Escopeta, rifle, MGL y MAG ocupan dos
+espacios contiguos. Si no cabe la transferencia completa, no se mueve nada.
+Cambiar entre Jill y Carlos conserva el inventario de ese jugador.
+Los objetos de The Forest siguen usando su inventario nativo.
+
+LABORATORIO F5
+Cada zona tiene «Teletransportarme» y «Colocar copia delante de mí».
+La copia comparte los 4 espacios de ESE baúl, no crea un almacén adicional.
+El baúl original permanece en su ubicación. Máximo una copia de prueba por
+baúl; pulsar otra vez recoloca esa copia. Las copias desaparecen al salir.
+Se requiere suelo cercano. La teleportación carga la zona y comprueba suelo;
+si no encuentra un punto de llegada, vuelve al lugar de salida.
+El teletransporte al final permite visitar la zona sin completar la historia;
+es una herramienta de prueba. No pulsa ni elige ninguna opción de la computadora.
+
+Como aún no hay una distribución de objetos RE3R jugables por el mapa,
+F5 permite elegir un objeto del catálogo y añadir 1 o una pila al inventario
+para probar los espacios y transferencias. Son entradas de almacenamiento:
+esta versión no añade disparos, equipamiento, curación ni recetas de RE3R.
+No se transforman objetos nativos en objetos de RE3R ni se usan sus IDs.
+
+GUARDADO
+Guardar la partida de The Forest guarda también el inventario y los baúles.
+Archivo adicional: ForestRE3-Inventarios-v1.dat dentro de la carpeta nativa
+de ese slot (usuario/SinglePlayer o Multiplayer/SlotN).
+En coop el host guarda los cinco baúles y los inventarios de sus jugadores,
+asociados a la identidad de Steam. Guarda con el host antes de cerrar.
+Partida nueva: inventarios vacíos; cargar partida: recuperar ese guardado.
+No se guarda globalmente entre mundos. No se autoguarda al cerrar sin guardar.
+El archivo usa escritura temporal, reemplazo con .bak y comprobación SHA-256.
+Si el archivo existente está corrupto, se conserva y se bloquea sobrescribirlo.
+Las copias y teletransportes de prueba no se guardan en el archivo RE3R.
+
+COOPERATIVO
+El host autoriza las transferencias: identidad del jugador, cercanía al baúl,
+capacidad, cantidades y revisiones. Una solicitud repetida o antigua se descarta.
+Se envían IDs/cantidades y posiciones de copias de prueba; no modelos/texturas.
+Si dos jugadores modifican la misma caja, una vista antigua se actualiza y
+pide volver a seleccionar el objeto antes de transferir.
+Ambas PCs deberán usar 0.8.2, protocolo 3. No mezclar con 0.8.1.2/protocolo 2.
+El coop 0.8.0 conserva su aprobación histórica. La esquiva 0.8.1.2 fue
+aprobada en solo jugador; esta nueva entrega todavía requiere tu prueba.
+
+PRIMER RECORRIDO SUGERIDO
+Abrir TAB → abrir F5 → añadir una hierba o munición → colocar una copia
+→ mirar la caja y pulsar E → guardar/retirar → visitar las cinco zonas.
+Guardar y volver a cargar cuando quieras comprobar la persistencia.
+No se inició el juego ni se realizaron pruebas automáticas de gameplay.

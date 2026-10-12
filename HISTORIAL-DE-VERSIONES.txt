@@ -1,0 +1,2905 @@
+﻿THE FOREST × RESIDENT EVIL 3 REMAKE
+HISTORIAL DE VERSIONES
+Última actualización: 12/10/2026 (The Resident Forest 3, reparación 0.8.9.1)
+
+Este es el historial acumulativo del proyecto. Se actualizará en este mismo
+archivo al preparar cada versión y al recibir los resultados de su prueba.
+
+Estado actual:
+  - 0.8.9: el usuario reporta que no aparecen Jill, Carlos ni herramientas
+    activadas; sólo sobreviven las opciones RE3R. Regresión de empaquetado.
+  - 0.8.9.1: reparación compilada e instalada con respaldo; confirmación en juego pendiente.
+  - 0.7.6.2: Jill completamente jugable y aceptada por el usuario (08/10/2026),
+    incluido el arreglo de anular/meñique. Hito histórico de Jill jugable.
+  - 0.7.7.0: primer intento de Carlos; en partida falla el cierre del cuello
+    y se restaura Jill. Intento fallido conservado en este historial.
+  - 0.7.7.1: probada y aceptada por el usuario; Jill y Carlos jugables.
+    La fase 0.7.x queda FINALIZADA el 08/10/2026 en esta versión.
+  - Pendiente: al golpear hacia el suelo con Carlos aparece el cañón de un rifle.
+    Corrección documentada y todavía pendiente.
+  - Al golpear y mirar a la derecha se atraviesa algo el cuerpo. El usuario
+    considera ese comportamiento normal en The Forest y no prioritario.
+  - Avión y despertar siempre Jill. Partida: elección Jill/Carlos 50/50.
+    F8 cambia personaje y voces. Figura externa retirada en 0.7.7/0.8.0; vuelve en 0.8.1.
+  - 0.8.0: base funcional ACEPTADA el 09/10/2026. El usuario confirma que
+    el cooperativo funciona al 100% actualmente. Paquete ModAPI 0.8.0.0.
+    GRAN HITO, al mismo nivel que Jill jugable y la centralización de archivos.
+  - A petición del usuario, eliminadas las entregas y paquetes archivados
+    anteriores a 0.8: 127 archivos, 9.16 GB liberados (8.53 GiB).
+    Se conserva la entrega actual, el código de trabajo, recursos necesarios
+    y todas las entradas históricas. Aquella limpieza no modificó el mod.
+  - 0.8.1: nueva entrega de esquiva reactiva con F, cuatro volteretas globales,
+    quejidos propios y controles de diagnóstico. Paquete ModAPI 0.8.1.0.
+    Animaciones aceptadas por el usuario; F NO activa la esquiva en su prueba.
+    No modifica la aceptación histórica del cooperativo base 0.8.0.
+  - 0.8.1.1: parche de lectura de F/contacto físico; conserva las animaciones
+    aceptadas y los tiempos. Indicador y registro del motivo de bloqueo.
+    Probada: F e inmunidad funcionan; no desplaza al jugador ni gira la cámara.
+  - 0.8.1.2: corrige motor/fricción, recorrido de raíz y cámara en ojos animados
+    durante la voltereta. APROBADA por el usuario en SOLO JUGADOR.
+    Cooperativo de esta entrega TODAVÍA SIN PROBAR. Cierre de la sesión del
+    09/10/2026, por petición del usuario; aprobación registrada el 10/10/2026.
+  - 0.8.2: inventario RE3R separado de 20 espacios con TAB y cinco baúles
+    originales de RE3R, de 4 espacios independientes cada uno. F5 abre el
+    laboratorio de teletransportes, copias de baúles y objetos de prueba.
+    Guardado por partida y transferencias autorizadas por el host.
+    Probada por el usuario: funciona en general; baúl noroeste bajo montaña.
+    Se solicita limpiar interfaz y añadir la G19. Cooperativo nuevo sin probar.
+  - 0.8.3: probada por el usuario; dispara/consume balas pero el modelo no
+    aparece en el agarre y los brazos quedan mal colocados. Inventario grande
+    y contador poco visible. Cargador 15 / reserva infinita; protocolo 4.
+  - 0.8.3.1: PROBADA por el usuario. Apuntado visible, pero auricular Carlos
+    invade cámara y manos desaparecen al disparar sin apuntar.
+  - 0.8.3.2: corrige retroceso aditivo, oculta auricular sólo en primera
+    persona, bloquea AltFire nativo y usa fuentes/atlas originales RE3R.
+    Audio G19 original con niveles Wwise. PROBADA: el usuario considera la
+    pistola correcta en general. Reporta que falta daño a animales, maletas y
+    estructuras, cabeza ×5 y cámara siguiendo los ojos al apuntar.
+  - 0.8.4: amplía daño nativo, corrige cabeza G19 y añade mira original RE3R
+    y cámara siguiendo ojos animados. M3 con 10 perdigones, dispersión dinámica,
+    pleno ×1.5, derribo/desplazamiento y pleno a cabeza con corte nativo.
+    PROBADA: reposo M3 aceptado, pero disparo desde cadera sin levantar arma,
+    apuntado G19/M3 descolocado y retícula poco pulida. Coop reciente sin probar.
+    Paquete ModAPI 0.8.4.0 / protocolo 5 / catálogo 0x08040001.
+  - 0.8.5: corrección de apuntado G19/M3, agarres anatómicos, cámara limitada
+    sin giro grande de cabeza y subida M3 de 0.12 s antes de disparar de cadera.
+    Retícula dinámica de arcos finos. Tabla de HP por dificultad en el host.
+    «Azul» = pálido más resistente, confirmado por el usuario.
+    PROBADA CON ERRORES VISUALES: posturas/apuntado G19 y M3 incorrectos,
+    brazos/manos deformados. Cierre del 10/10/2026; reparación aplazada
+    por petición del usuario. HP y coop reciente continúan sin confirmar.
+    Paquete ModAPI 0.8.5.0 / protocolo 6 / catálogo 0x08050001.
+  - 0.8.6: revisión visual de G19/M3 tras las capturas de 0.8.5. Sockets y
+    soportes en coordenadas absolutas, agarres fuente adaptados a brazos del
+    personaje, reposo abajo/derecha, codos abajo/fuera y torsión sin acumular.
+    G19 también sube 0.12 s antes de disparar desde cadera; estado coop compacto.
+    PROBADA: el usuario confirma que lo demás se ve bien; reporta sólo M3
+    con mano fuera del guardamanos y reposo demasiado bajo. Coop sin confirmar.
+    Paquete ModAPI 0.8.6.0 / protocolo 6 / catálogo 0x08060001.
+  - 0.8.6.1: parche centrado en M3. Contactos de palmas en empuñadura y
+    guardamanos; reposo más visible. G19 y demás ajustes aceptados se conservan.
+    PROBADA: agarre mejorado; el usuario pide mover M3 un poco a la izquierda.
+    Cooperativo reciente pendiente.
+    Paquete ModAPI 0.8.6.1 / protocolo 6 / catálogo 0x08060101.
+  - 0.8.6.2: M3 ligeramente a la izquierda en reposo y disparo desde cadera;
+    apuntado centrado y G19 conservados. Teclas 5/6/7/8 equipan slots RE 1–4,
+    incluidas continuaciones de armas de dos espacios. Equipado con validación
+    de posesión y sincronización existentes del host. Protocolo 6, 0x08060201.
+    PROBADA CON ERRORES: mano izquierda separada en reposo/apuntado/disparo.
+    Cooperativo reciente sigue pendiente.
+  - 0.8.6.3: anclaje M3 en pose final: palma, orientación de muñeca y bombeo
+    compartido con guardamanos, con liberación/reincorporación en recarga.
+    G19 y accesos 5/6/7/8 conservados. Protocolo 6, catálogo 0x08060301.
+    FALLIDA: las capturas siguen mostrando la mano fuera del guardamanos.
+    El registro mide 0.0001 m de error: objetivo geométrico mal elegido.
+  - 0.8.6.4: referencia de apoyo sustituida por centro/plano del arco real de
+    dedos, alineado al eje del guardamanos. Conserva bombeo, recarga y atajos.
+    Instalada con respaldo. Protocolo 6, catálogo 0x08060401. Resultado visual pendiente.
+  - 0.8.7: entrega actual de lanzacohetes infinito, recursos originales RE3R,
+    vuelo a velocidad 20 y explosión nativa de dinamita de 330 HP a enemigos.
+    Baúles por dificultad; protocolo 7. Instalada con respaldo; prueba en juego pendiente.
+  - 0.8.7.1: misil 25 % más grueso y 60 % más largo; velocidad 20 → 40.
+    Vuelo sin impacto 4 → 12 s, alcance 80 → 480. Protocolo 7, catálogo
+    0x08070101. Instalada con respaldo; prueba en juego pendiente.
+  - 0.8.7.1 PROBADA EN COOP CON ERRORES: armas de baúles compartidas, pérdida
+    al morir/recuperar mochila y muerte del host afecta a todos; falta
+    fuego amigo, objetos nativos ocultos y G19/M3 talan árboles.
+  - 0.8.8: correcciones de baúles por jugador, muerte/mochila, fuego amigo
+    y acciones nativas. Protocolo 8, catálogo 0x08080001. Instalada
+    con respaldo; prueba de los arreglos en juego/coop pendiente.
+  - 0.8.9: The Resident Forest 3; iniciador negro/amarillo, logo TR3,
+    opciones separadas y herramientas de prueba opcionales sólo para host.
+    Arrastrar/intercambiar/apilar inventario; icono del lanzamisiles corregido.
+    Instalada con respaldo; preparación para publicación y prueba en juego/coop pendiente.
+  - NUEVO PLAN (09/10/2026): 0.x y 1.x mashup + cooperativo; 2.x publicación
+    y corrección de bugs graves de usuarios; 3.x contenido extra/tercera persona.
+
+GRANDES HITOS DEL PROYECTO
+  - 07/10/2026 — 0.5.2: centralización de la distribución en un archivo ZIP
+    con EXE y dependencias; lanzador propio para preparar y abrir el mashup.
+  - 08/10/2026 — 0.7.6.2: Jill completamente jugable, aceptada por el usuario.
+    0.7.7.1 completa a Carlos y cierra la fase de ambos personajes jugables.
+  - 09/10/2026 — 0.8.0: COOPERATIVO FUNCIONAL Y ACEPTADO. El usuario confirma
+    que funciona al 100% actualmente tras su prueba. Se reconoce como un gran
+    hito equivalente a Jill jugable y a la centralización de archivos.
+    Esta aceptación describe la prueba reportada, no certifica configuraciones
+    adicionales que no se hayan probado, como servidores dedicados u otros mods.
+
+BITÁCORA DIARIA — ORDEN CRONOLÓGICO
+
+05/10/2026 — Primer día
+  - Preparación de la extracción/conversión local de recursos y del entorno
+    de Unity/ModAPI para The Forest.
+  - 0.1.0 del cargador: se comprobó la ejecución del código al entrar a partida.
+  - 0.1.0 del AssetBundle: el juego cargó el bundle y encontró el prefab.
+  - 0.2.0: primera figura visible y temporal mediante F8.
+  - La prueba del usuario reveló que el recurso inicial era Carlos sin cabeza,
+    no Jill; se identificó la selección incorrecta de pl0000.
+  - Quedó pendiente trabajar con las piezas correctas de Jill y ensamblarlas.
+
+06/10/2026 — Segundo día; cierre de sesión conservado
+  - Se resolvió la carga del plugin de Noesis y se completaron las exportaciones
+    correctas: cuerpo pl2000, cabeza pl2001 y cabello pl2005.
+  - 0.3.0: Jill completa apareció dentro del juego como figura estática.
+  - 0.4.0: se unificó el esqueleto y se integraron materiales, iluminación,
+    sombras y variantes Gamma/Linear.
+  - 0.4.1–0.4.2: se diagnosticó y corrigió el brillo excesivo de los ojos;
+    el resultado de 0.4.2 fue aceptado.
+  - 0.4.3–0.4.5: se prepararon colocación en suelo y tamaños, se corrigió la
+    confusión entre metros/unidades del mundo y la búsqueda de cámara;
+    la escala de 0.4.5 fue aceptada.
+  - 0.5.0: se aumentó ligeramente el tamaño y se prepararon animaciones
+    auténticas de Jill y adaptación de poses de The Forest; falló la lectura
+    JSON al iniciar las animaciones y la figura se eliminaba.
+  - 0.5.1: se sustituyó esa lectura por el formato binario JRM1 y se conservó
+    la figura ante errores de inicialización.
+  - El usuario probó 0.5.1 y confirmó que las animaciones funcionan en general.
+    Quedan penetración leve del suelo al agacharse y un golpe de hacha mejorable.
+  - Se guarda 0.5.1 como realizada y funcional con ligeros errores.
+  - Se actualizó este historial y se acordó la numeración de las fases.
+  - Fin del trabajo de hoy: no corregir ni compilar otra versión esta noche.
+
+07/10/2026 — Tercer día; correcciones, acciones, manos y Jill jugable 0.7.0–0.7.2
+  - Se retomó 0.5.1 tras el cierre del día anterior.
+  - Se revisó el código nativo de The Forest para distinguir la carga del
+    hacha del golpe normal y de la liberación del golpe pesado.
+  - Se añadió selección de pose nativa durante carga, golpe y recuperación.
+  - Se añadió corrección vertical del esqueleto usando las plantas de los
+    pies deformadas, para evitar que Jill penetre el suelo al agacharse.
+  - Se compiló 0.5.2 y se comprobó la lectura de las animaciones empaquetadas.
+  - Se creó un lanzador EXE que contiene el mod, el núcleo ModAPI y las
+    dependencias del preparador; no necesita abrir la ventana de ModAPI.
+  - Se centralizó la entrega de pruebas en un ZIP con EXE, instrucciones,
+    historial, código fuente y licencias.
+  - Se añadió detección de Steam/bibliotecas, selección manual de carpeta,
+    respaldo de los archivos reemplazados y restauración de la instalación.
+  - El EXE generó el cargador 0.5.2 en una carpeta aislada del proyecto.
+  - Se comprobó la detección de The Forest y el reemplazo/restauración en una
+    carpeta de prueba: conserva el primer respaldo al repetir instalación,
+    elimina archivos añadidos y recupera los hashes/configuración anteriores.
+  - Se preparó e instaló desde cero sobre una copia aislada de los archivos
+    originales, en carpetas con espacios y acentos. Al restaurar, los 38 DLL
+    originales recuperaron exactamente sus hashes; el juego real no se cambió.
+  - El usuario confirmó que Melty admite un ZIP/archivo o GitHub.
+  - El usuario probó las animaciones y confirmó que funcionan en general.
+  - Reportó que los hombros parecen dislocarse al agacharse y golpear:
+    hombros y axilas se estiran y desfiguran. Aportó un video de la prueba.
+  - Se registra 0.5.2 como funcional en animaciones, con esa deformación
+    pendiente de reparación en el momento de recibir ese reporte.
+  - Se actualizó este historial con el resultado y la prioridad de corregir
+    esa zona antes de dar por terminada la adaptación de poses nativas.
+  - Falta confirmar por separado el arranque real desde el EXE y el resultado
+    específico del apoyo en suelo y de cada fase del golpe cargado.
+  - La generación pública automática desde el RE3 de cada jugador sigue
+    pendiente; este ZIP completo es el corte de pruebas locales.
+
+  - Después del reporte, se extrajeron e inspeccionaron fotogramas cambiantes
+    del video (agachado ~21 s y preparación del golpe ~31 s).
+  - Se inspeccionaron jerarquía y pesos FBX: los auxiliares de torsión y músculos
+    soportan gran parte de la piel de hombros, pero se quedaban en reposo en poses
+    Forest. También quedaban desplazamientos RE previos en articulaciones nativas.
+  - Se preparó 0.5.3: clavículas relativas al torso con límite de movimiento,
+    longitudes RE constantes, auxiliares activos y mezcla local de toda la pose.
+  - Se compiló el paquete nuevo y se releyeron los tres clips JRM1 empaquetados.
+  - Se actualizó la entrega central a 0.5.3 y se conservó el paquete 0.5.2.
+  - Queda pendiente que el usuario confirme el resultado visual en partida.
+
+  - El usuario probó 0.5.3 y aportó dos capturas: la unión del hombro sigue
+    deformada en agachado y golpes. Se registra el arreglo como insuficiente.
+  - El log confirma la ejecución del soporte de hombros y 22 huesos mapeados:
+    el problema no era que se hubiera cargado una versión antigua.
+  - Se cambió la orientación de brazos/antebrazos: utiliza hombro, codo y mano
+    para definir también el giro axial a partir del plano de flexión del codo.
+  - Se extrajeron 657/658 muestras por lado de 54 clips originales RE3 para
+    adaptar los auxiliares según la pose, en lugar del soporte aproximado anterior.
+  - Se compiló 0.5.4 y se releyeron las muestras JSC1 y los tres clips JRM1
+    desde el paquete. Se actualizan ZIP central, EXE y documento acumulativo.
+  - F7 registra la pose del brazo al pausar para continuar el diagnóstico si
+    aún persiste el defecto. Queda pendiente probar visualmente 0.5.4.
+
+  - El usuario probó 0.5.4 y precisó el defecto: los hombros avanzan demasiado
+    respecto al torso, mientras la unión del cuello se ve bien.
+  - Se leyeron las poses reales guardadas con F7 y se compararon las rotaciones
+    de clavícula con los offsets de reposo FBX. El anclaje de brazo avanza ~7 cm
+    en la escala del modelo, aun con el límite de giro de 35 grados.
+  - Se preparó 0.5.5 con un cambio puntual: conservar el anclaje de clavícula
+    respecto al torso en las poses Forest. No se retiran los movimientos de brazos.
+  - F7 añade el desplazamiento del anclaje respecto al reposo al registro.
+  - Se compiló el paquete y se actualizan EXE, ZIP central e historial.
+  - Queda pendiente observar el resultado en partida; medir el anclaje no
+    demuestra que sea la única causa de toda la deformación de piel.
+
+  - El usuario confirmó que 0.5.5 quedó completamente bien y aportó una
+    captura de agachado. Se registra el arreglo de hombros/axilas como aceptado.
+  - Se conservó esa corrección y se amplió la figura externa a otras acciones.
+  - Se leyó el código nativo y la tabla local de controladores Unity: se generó
+    un mapa explícito de 345 estados, incluyendo fases que estaban separadas.
+  - 0.6.0 sigue estados actuales/destino de todas las capas activas, incluidos
+    nado/buceo, salto/aterrizaje, cuerdas/paredes, explosión/derribo/levantarse,
+    consumo, interacciones, transporte y combate con preparación/recuperación.
+  - Los tres clips propios RE3 de reposo/caminar/correr se conservan.
+  - Se añadieron apoyo contextual pies/cuerpo/libre, inclinación del modelo,
+    desplazamiento visual de salto/impacto y mapeo opcional de dedos nativos.
+  - F7 registra fases, capas actuales/destino y offset de la figura.
+  - Se compila/empaqueta 0.6.0, manteniendo ZIP/EXE central y respaldo 0.5.5.
+  - No se declara aceptada la nueva cobertura: falta verla dentro del juego.
+
+  - Prueba 0.6.0: el usuario reportó torsión/deformación fuerte de manos con
+    objetos y palmas hacia afuera al sostener el caparazón; aportó captura.
+  - El registro confirma los 30 dedos y la fase flareLight pausada con F7.
+    Al terminar idleToShellHeld la figura volvía a reposo RE3 y perdía el agarre.
+  - Se preparó 0.6.1: orientación de muñeca con palma/nudillos, movimiento local
+    de dedos, torsión continua repartida por el antebrazo y agarre nativo
+    persistente en automático sin sustituir la locomoción RE3 del cuerpo.
+  - Se conservó el anclaje de clavículas aprobado en 0.5.5; se añadió registro
+    F7 de orientación de palmas y rotaciones de los dedos para nuevos reportes.
+  - Mod 0.6.1 compilado/reabierto; entrega central e historial actualizados.
+    La confirmación visual de las manos corregidas queda pendiente del usuario.
+
+  - El usuario aceptó el resultado visual de manos/animaciones de 0.6.1.
+  - Se preparó 0.7.0: Jill conectada automáticamente al jugador, cuerpo y brazos
+    propios en primera persona, skin local única y puntos de agarre nativos.
+  - Se conservaron la cápsula/Rigidbody, cámara y controles originales. No se
+    añaden colisiones duplicadas; cabeza/cabello/cuerpo superior se ocultan
+    ante la cámara propia mientras el cuerpo completo conserva sus sombras.
+  - Se identificaron bancos locales pl2000_v_effort de Jill y los nombres de
+    eventos de ataque/daño mediante WID/HIRC. Se convirtieron 20 voces inglesas.
+  - Voz de esfuerzo al superar la carga fuerte de 0.4s; voz de daño mediante
+    PlayHurtSound local. Un canal sin cortes/solapamientos/cola; eventos ocupados
+    se descartan. El volumen sigue el ajuste general del juego.
+  - Mod compilado/reabierto con clips, correctivos, voces y gancho de daño.
+    Se prepara EXE/ZIP central e historial; comprobación nueva en partida pendiente.
+
+
+  - El usuario probó 0.7.0: aparece «No se pudo conectar Jill» y siguen brazos
+    nativos. El registro muestra PLAYER_ATTACH_FAILED: No sole geometry for
+    ground correction. El rig de brazos no tiene pies visibles y Initialize
+    ejecutaba CacheSoles antes de marcarlo como rig del jugador.
+  - Se prepara 0.7.1: marcar ambos adaptadores antes de Initialize y reservar
+    CacheSoles a figuras externas. La cápsula nativa conserva el apoyo del jugador.
+  - Se inspeccionaron los actores y esqueletos locales de TriggerCutScene:
+    playerSeatGo, setupPlayerCrawl en PlaneReal y levantamiento en Animator local.
+  - Se añade Jill a avión/accidente y despertar en suelo, siguiendo las poses
+    nativas completas; cabeza/cabello y torso superior fuera de las mallas FP.
+  - Se conservan cámaras, libro, temporización, colisiones y voces. Se evita
+    mostrar a la vez el cuerpo normal y un actor cinematográfico de Jill.
+  - Se corrigen los textos del EXE: Jill automática; F8 solo figura diagnóstica.
+  - 0.7.1 compilada y empaquetada con EXE/ZIP e historial acumulativo.
+    Pendiente comprobar el resultado nuevo en una partida del juego.
+
+  - Prueba del usuario de 0.7.1: skin invisible, voces Jill bajas y voces del
+    protagonista todavía audibles. El registro sí confirma PLAYER_ATTACHED,
+    OPENING_JILL_ATTACHED y reproducción de esfuerzos/quejidos de Jill.
+  - Se prepara 0.7.2: mantener mallas activas en LateUpdate, antes de culling
+    y skinning; los callbacks solo cambian las vistas de cámaras secundarias.
+  - Se amplía geometría FP a torso, piernas y brazos; únicamente se excluyen
+    Head_pl2001 (cabeza/ojos) y Hair_pl2005. Se elimina el corte en altura del torso.
+    Triángulos de hombros/brazos asignados sin huecos entre los dos grupos.
+  - Se suben las voces (ganancia 3–10x, objetivo RMS 0.16, límite suave 0.98).
+    AudioSource a 1.0; el volumen general se aplica solo en AudioListener.
+  - Se bloquean voces locales nativas en PlayerSfx, FMODCommon, StudioSystem
+    y emisores vocales; se silencian bucles existentes de respiración/fuego.
+    log_drop_exert mezcla esfuerzo y sonido de tronco: se silencia ese evento.
+  - Se conservan los demás efectos de objetos, golpes, pasos, música y ambiente.
+    No se añade cola ni se permite cortar/superponer una voz de Jill.
+  - 0.7.2 compilada/empaquetada con EXE/ZIP e historial; prueba en partida pendiente.
+
+  - Cierre del 07/10/2026: el usuario prueba 0.7.2 y reporta «No se pudo
+    conectar Jill», ausencia del modelo y muchísimos sonidos continuos de colisión.
+    El log confirma MissingMethodException: FieldInfo.op_Inequality durante
+    JillVoice.Initialize, que aborta Attach. La causa de los sonidos no se confirmó.
+  - Se marca 0.7.2 como fallida, se conservan captura/log y una nota para retomar.
+    El usuario pide parar para dormir: no se corrige ni se genera otra versión.
+
+08/10/2026 — Cuarto día; conexión, renderizado, audio y salto
+  - El usuario confirma que 0.7.2 no muestra Jill ni en avión ni al aparecer;
+    hay muchos sonidos continuos de colisión y no podía saltar.
+  - El registro guardado contiene MissingMethodException FieldInfo.op_Inequality
+    en JillVoice.Initialize e InvalidProgramException en PlayerSfx.PlayEvent.
+  - Se inspecciona el inyector de ModAPI: los retornos adelantados de los filtros
+    de audio terminan en un ret inválido. Se reescriben con un único retorno final.
+  - Compilación contra mscorlib/System/System.Core originales del juego; elimina
+    la dependencia del operador moderno FieldInfo y usa ReferenceEquals.
+  - Se inspecciona FixedUpdate nativo: PlayJumpSound ocurre antes del impulso
+    y jumpBool. Un fallo del sonido puede interrumpir la ejecución del salto.
+    No se cambian condiciones, fuerzas, cápsula, cámara ni controles del salto.
+  - Fallos de voz se registran sin eliminar el cuerpo; fallos de conexión no
+    repiten crear/destruir clones cada ocho segundos sobre el mismo jugador.
+  - El render usa copias sin cabeza/ojos/pelo siempre habilitadas, tanto jugador
+    como avión/despertar; no depende de onPreCull/onPostRender para mostrarlas.
+    El modelo completo solo proyecta sombras. No se añade vista de tercera persona.
+  - Los clones visuales eliminan cualquier componente físico propio; los del
+    jugador nativo se conservan. No se confirma todavía la causa física del ruido.
+  - Se prepara 0.7.3, EXE/ZIP central e historial; prueba visual/audible pendiente.
+
+  - Resultado posterior de 0.7.3: el usuario reporta trabado extremo y
+    Preparando Jill en menú; no logró iniciar partida. No se marca como funcional.
+  - Se guarda el registro que termina en ready, sin conexión, y dos errores
+    nativos Access Violation. No contienen una pila administrada para atribuirlos.
+  - 0.7.4 mueve la carga fuera del menú, lee bloques de 4 MiB entre fotogramas
+    y usa AssetBundle/prefab asíncronos. El menú solo consulta actores cada 0.25s.
+  - Se elimina una fuente de asignaciones excesivas al construir el cuerpo:
+    original.bones se cachea por renderer, no se consulta cuatro veces por vértice.
+  - Se espera animador inicializado/cápsula lista y se bloquean reintentos del
+    mismo actor del avión cuando falla. El lanzador guarda un log Unity fechado.
+  - 0.7.4 compilada/centralizada; aún requiere confirmar fluidez y partida real.
+
+  - Resultado de 0.7.4: el usuario sí inicia partida y ve a Jill. Aporta cinco
+    capturas: hombro derecho desplazado en avión, dedos al despertar/con hacha,
+    interior del torso/pecho/espalda en cámara al mirar abajo/caminar/correr.
+  - Reporta voces masculinas aún audibles y esfuerzo de Jill durante la carga.
+    Se conservan registro y capturas en runtime-0.7/review-0.7.4.
+  - 0.7.5 usa un esqueleto visible único. Sustituye copiar posiciones nativas
+    de hombro/codo por IK anclado a Jill, con extensión limitada al 18%.
+  - Adapta dedos en primera persona/cinemáticas mediante dirección anatómica
+    de cada falange, sin transferir torsiones axiales incompatibles.
+  - Conserva piernas de locomoción RE y usa torso nativo para coherencia con
+    cámara/agarres; la figura externa aceptada mantiene su adaptación previa.
+  - Coloca el cuello visual detrás del ojo nativo. Compila un material Standard
+    iluminado Gamma/Linear con recorte próximo al ojo y caras traseras ocultas;
+    mantiene cuerpo completo para sombras y excluye cabeza/ojos/pelo propios.
+  - El inventario nativo FMOD revela rutas /player/foley/breathing omitidas:
+    ahora se filtran y se silencia su bus dedicado restaurándolo al desconectar.
+  - El esfuerzo de Jill espera la entrada/transición al golpe pesado, no la carga;
+    conserva canal único, descartes inmediatos y ausencia de cola/cortes.
+  - Compilación Unity/C#, paquete, EXE/ZIP y runtime aislado de 0.7.5 construidos.
+    No se ha ejecutado una partida 0.7.5; confirmación del usuario pendiente.
+
+  - Resultado de 0.7.5 (08/10/2026): el usuario acepta que el cuerpo ya no se
+    desplaza delante/atrás. Persisten dedos deformados, abertura del cuello,
+    brazos elevados ante cámara, voz masculina y Jill baja/sin voz en salto
+    y golpe al suelo. Registro y cinco capturas guardados en review-0.7.5.
+  - 0.7.6 alinea el eje físico de cada falange en la palma móvil. Mantiene
+    longitud/posición de articulaciones; incluye avión, despertar y objetos.
+  - Usa el codo anatómico de Jill como polo IK; al mirar abajo baja los codos
+    en poses neutras/agachadas. Conserva la colocación horizontal aceptada.
+  - Lee el borde abierto real de Skin_Mat y lo cierra con una malla skinned
+    que comparte huesos/bindposes; no añade cabeza ni físicas ni BakeMesh por frame.
+  - Intercepta EventInstance.start para voces cacheadas/directas; voces 2D
+    sin posición se consideran locales en single-player. Mantiene handles válidos.
+  - Sube ganancia de voz: RMS objetivo 0.30, ganancia 5–18, límite suave 0.98.
+  - Añade voz Jill en salto y voces de aterrizaje/golpe al suelo; contempla
+    golpe aéreo/estado de golpe al suelo y conserva esfuerzo al liberar carga.
+  - Canal único: nuevos eventos durante una voz se descartan sin cola ni corte.
+  - C# y paquete construidos; EXE/ZIP central y runtime aislado preparados.
+    Confirmación visual/audible de 0.7.6 en partida pendiente.
+
+  - Resultado de 0.7.6 (08/10/2026): el cuerpo continúa mucho más bajo que la
+    cámara y los brazos se elevan sobre el torso. El usuario pide eliminar la
+    voz del salto normal; esfuerzo únicamente al golpear hacia abajo tras saltar.
+    Captura y registro conservados en runtime-0.7/review-0.7.6.
+  - 0.7.6.1 reemplaza la estimación vertical por la altura de los ojos animados
+    de Jill: se mueve únicamente su esqueleto visual. Conserva el ajuste horizontal.
+  - Alinea piernas visuales apoyadas con el suelo de la cápsula, conservando
+    elevación relativa de pies; ajuste limitado, sin físicas ni BakeMesh nuevos.
+  - Desactiva esfuerzo de salto/aterrizaje ordinarios. Excluye preparación aérea;
+    el esfuerzo del golpe al suelo se activa en el movimiento de bajada.
+  - Acuerdo de numeración: no salir de 0.7.x hasta tener Jill y Carlos completos.
+    Se añade cuarto componente: 0.7.6.1, 0.7.6.2, etc.; Carlos sigue pendiente.
+  - Mod C# compilado, recursos reabiertos por empaquetador y paquete central
+    EXE/ZIP preparado con historial. Confirmación visual/audible aún pendiente.
+
+  - Aceptación de Jill jugable 0.7.6.1 (08/10/2026): el usuario confirma que
+    Jill funciona y es completamente jugable de forma correcta. Se guarda como
+    primera base jugable buena; anular y meñique siguen como detalle visual.
+    Pulgar, índice y medio funcionan bien. Registro preservado en review-0.7.6.1.
+  - Diagnóstico de dedos: RE3R añade metacarpiano _0 en anular/meñique y
+    falanges _1/_2/_3; el mapeo uniforme a _0/_1/_2 desplazaba la cadena
+    y dejaba _3 sin conducir. The Forest tiene Palm1 y falanges 1/2/3.
+  - 0.7.6.2 adapta esas dos cadenas en ambas manos, jugador y avión/despertar.
+    Conserva altura/cuerpo/cámara, tres dedos aceptados, muñecas, voces y físicas.
+  - EXE/ZIP 0.7.6.1 se conservan como base aceptada; 0.7.6.2 se prepara para
+    confirmar visualmente el ajuste de dedos. Carlos pendiente; continúa 0.7.x.
+
+  - Aceptación completa de Jill 0.7.6.2 (08/10/2026): el usuario confirma
+    «esta version ya tiene totalmente bien hecha a jill». Se registra como
+    versión verdaderamente buena y completa, con los dedos corregidos.
+  - Comienza 0.7.7.0 para Carlos: exportación correcta pl0000/pl0001/pl0005,
+    materiales de RE3R, esqueleto único y bundles Gamma/Linear de Unity 5.6.5p4.
+  - Preparados movimientos Carlos RE idle/walk/run y correctivos originales
+    de hombros (453 muestras izquierda y 456 derecha), sin usar datos de Jill.
+  - Identificadas voces propias Carlos por eventos Wwise del WID local:
+    diez esfuerzos y diez daños. Se mantienen veinte voces propias de Jill.
+  - Reutiliza la adaptación aceptada de cámara, cuerpo, brazos, manos/dedos,
+    suelo visual y animaciones/estados nativos completos para otros movimientos.
+  - Avión/despertar permanecen Jill. Al entrar/cargar un actor local se sortea
+    Jill o Carlos al 50%; F8 alterna personaje y banco de voces sin cambiar
+    cámara, cápsula, controles, inventario, supervivencia ni partidas guardadas.
+  - Un único canal vocal persiste al cambiar de personaje: el sonido iniciado
+    termina sin corte y nuevos eventos ocupados se descartan sin cola.
+  - Retirados F8/F9/F10/F11/F7 de figura externa; F8 ahora cambia personaje.
+  - Compilación C#, recursos ModAPI y runtime aislado preparados. EXE/ZIP único
+    0.7.7.0 con documentación. La prueba detecta un fallo al pasar a Carlos.
+  - 0.7.7.1: se lee la topología real de ambos prefabs sin reconstruir bundles.
+    Carlos tiene el borde del cuello en pl0001_Face_Mat; pl0000_Skin_Mat
+    corresponde a brazos/manos. Se conserva solo el cierre del borde real
+    de 56 vértices, ocultando el resto de cara/cabeza, ojos y pelo.
+    Jill mantiene su cierre original en Skin_Mat. EXE/ZIP y runtime revisados;
+    el usuario prueba Carlos y confirma que está excelente, salvo dos detalles
+    visuales: cañón de rifle visible al golpear el suelo (corrección pendiente)
+    y cruce leve del cuerpo al golpear/mirar a la derecha (aceptado, no prioritario).
+  - CIERRE DEL DÍA 08/10/2026: el usuario acepta 0.7.7.1 como versión funcional
+    con ambos personajes jugables y da por finalizada la fase 0.7.x.
+    No corregir, recompilar ni iniciar otra versión hoy. Artefactos conservados;
+    historial y aceptación actualizados. Retomar el cañón del rifle mañana.
+
+09/10/2026 — Quinto día; reestructuración y gran hito del cooperativo funcional
+  - El usuario cambia el orden de las fases para integrar y comprobar el coop
+    mientras se añade contenido, evitando acumular sistemas sin sincronización.
+  - 0.x y 1.x: desarrollo del mashup y cooperativo en conjunto.
+  - 2.x: publicación y solución de bugs graves que reporten otros usuarios.
+  - 3.x: contenido extra, incluida tercera persona.
+  - La fase de Jill/Carlos 0.7.x permanece cerrada y aceptada en 0.7.7.1.
+  - Se investiga el transporte, estados/animaciones remotos y canales propios
+    a partir de los ensamblados originales locales y documentación primaria.
+    Objetivo: cada PC ejecuta sus assets; la red transmite identificadores/estado.
+  - Investigación técnica: INVESTIGACION-COOP-09-10-2026.md, en esta carpeta.
+    La investigación inicial no modificó la instalación ni publicó otra versión;
+    después el usuario pidió implementar el coop inmediatamente.
+  - Confirmado en los DLL originales: la partida alojada utiliza Steam P2P
+    como transporte y Bolt con roles servidor/cliente y propiedad por entidad.
+    La ruta dedicada presenta diferencias; no se asume idéntica a Steam P2P.
+  - El estado nativo ya replica transformación, objetos, parámetros, hashes,
+    tiempos y pesos de animación. Cada PC puede adaptar su modelo local a esa pose.
+  - Confirmadas API propias CreateStreamChannel, StreamBytes y recepción de bytes.
+    Registrar durante BoltStartBegin; UdpKit asigna IDs por orden de creación.
+  - Hallazgo: el receptor nativo trata cualquier stream como voz, sin filtrar
+    el canal. Hay que protegerlo antes de transmitir el protocolo del mashup.
+  - Ruta propuesta: canales propios para identidad Jill/Carlos y eventos de voz,
+    host valida/distribuye, instantánea para entrada tardía y recursos en cada PC.
+    Se documenta separar avatar/audio local y remoto para evitar interferencias.
+  - Resultado de la investigación: ruta identificada; aún sin prueba entre PCs.
+  - A petición del usuario, se implementa 0.8.0: protocolo propio FR3C v1,
+    identidad Jill/Carlos, cambio F8, validación del host y entrada tardía.
+  - Canales registrados después del chat nativo, con filtro del receptor que
+    evita interpretar mensajes del mod como micrófono.
+  - Avatares cosméticos remotos completos, adaptados a su propio Animator y
+    estado de red. La cámara/cuerpo local aceptados y la física nativa continúan.
+  - Un canal vocal por actor. Se transmiten IDs de clips al comenzar, con
+    descarte de eventos ocupados/duplicados/viejos y voces remotas en 3D.
+  - Preparación del ZIP único con EXE para ambos equipos, guía PRUEBA-COOP.txt,
+    fuentes e historial. No se requiere Unity ni abrir ModAPI para probarlo.
+  - Tras preparar la versión, el usuario confirma que el coop funciona al 100%
+    actualmente. 0.8.0 queda ACEPTADA y marcada como GRAN HITO del proyecto,
+    a la par de Jill jugable y de la centralización de la distribución.
+  - Limpieza solicitada: retirados 127 archivos de entregas y paquetes archivados
+    anteriores a 0.8, liberando 9,161,642,053 bytes (9.16 GB / 8.53 GiB).
+    Se conserva la entrega 0.8.0 y el material necesario para continuar.
+    Las versiones anteriores siguen documentadas, aunque sus entregas eliminadas
+    ya no están disponibles en disco. Inventario de limpieza guardado en
+    work/forest-re3-mashup/research-coop/limpieza-versiones-anteriores-09-10-2026.json.
+  - Cierre de esta actualización: documentación y limpieza; sin cambios de código,
+    nuevas versiones, compilaciones ni correcciones de los pendientes visuales.
+
+  - Después del cierre anterior, se investiga la esquiva reactiva solicitada:
+    doble espacio, voltereta hacia atrás e inmunidad mínima de 1 s, solo ante
+    daño inminente y compatible con coop para Jill y Carlos.
+  - Consulta del manual oficial RE3R y lectura de recursos/rutas de entrada,
+    daño y red de The Forest. Hay candidatos locales de evasión; falta seleccionar
+    visualmente la voltereta y adaptarla para ambos personajes.
+  - Se documentan conflicto con salto, ventana corta de acierto, cancelación
+    previa a vida/armadura/reacciones y extensión del protocolo cooperativo.
+    Documento: INVESTIGACION-ESQUIVA-09-10-2026.md. Habilidad sin implementar;
+    sin nueva entrega ni pruebas en partida. 0.8.0 conserva su aceptación.
+  - El historial se devuelve a su ubicación habitual tras un traslado accidental
+    a releases confirmado por el usuario; se mantiene un único archivo maestro.
+
+  - Después se implementa 0.8.1 a petición del usuario: F sustituye al doble
+    espacio. Ventana 0.12 s, voltereta 0.90 s, inmunidad 1 s y recuperación 1.15 s.
+    Solo activa ante contacto dañino de ataque nativo con atacante identificado;
+    dirección alejándose del atacante y desplazamiento por la cápsula física.
+  - Revisados los seis candidatos de Carlos y cuatro volteretas completas de Jill.
+    Carlos usa pasos/puñetazo; ambos comparten las cuatro volteretas de Jill,
+    adaptadas a la pose base de cada rig. Quejidos mov_s: Jill 2, Carlos 4.
+  - Laboratorio: F9 figura local, F10 congelar, F11 variante, Shift+F10 un frame;
+    F6 caníbal mediante spawner nativo (solo lo crea el host), F8 personaje.
+  - Coop FR3C v2: evento compacto de voltereta, rechazo de eventos inválidos,
+    tiempo de reproducción y entrada tardía; voz por ID, sin transmitir recursos.
+    0.8.1 necesita el mismo paquete en ambas PCs. Primera prueba nueva pendiente.
+  - Actualizados el archivo maestro, el EXE/ZIP y PRUEBA-ESQUIVA-0.8.1.txt.
+
+  - Seguimiento del mismo 09/10/2026: el usuario acepta las animaciones de 0.8.1,
+    pero reporta F sin activación. Se prepara 0.8.1.1: entrada en Update,
+    contacto resuelto al final del frame, apoyo físico e indicador de diagnóstico.
+    Nueva prueba mecánica y entre dos PCs pendiente.
+
+  Continuación y cierre del 09/10/2026 (sesión nocturna; registrado el 10/10):
+  - El usuario confirmó F e inmunidad de 0.8.1.1 antes de medianoche, pero
+    reportó que el jugador no se alejaba del ataque y la cámara seguía erguida.
+  - 0.8.1.2: corrección del motor y fricción durante la esquiva; recorrido según
+    raíz del clip y escala del personaje, con cápsula/gravedad/colisiones nativas.
+  - Cámara ligada a ojos/cabeza animados durante la voltereta y restauración al
+    terminar/cancelar, sin realimentar la alineación normal del cuerpo.
+  - EXE/ZIP/guía/historial actualizados. No se inicia el juego ni se realizan
+    pruebas automáticas de gameplay por el agente.
+  - Resultado del usuario: 0.8.1.2 APROBADA en solo jugador. Queda aceptada la
+    esquiva de esta entrega, incluido su desplazamiento y cámara de voltereta,
+    dentro del alcance de su prueba. La prueba cooperativa aún NO se realiza.
+  - CIERRE DEL DÍA 09/10/2026: versión funcional en solo jugador conservada;
+    no se hacen más cambios de código ni correcciones al cerrar. Próxima sesión:
+    comprobar 0.8.1.2 en coop antes de dar por aceptada allí la nueva esquiva.
+
+10/10/2026 — Sexto día; inventario exclusivo RE3R y baúles 0.8.2
+  - Se retoma después del cierre del día 9. El usuario decide añadir inventario
+    y baúles antes de la siguiente prueba multijugador; no se prueba coop hoy.
+  - Se adopta la capacidad máxima de 20 espacios (4×5), separada del inventario
+    de The Forest. Catálogo propio RE3R, pilas y armas que ocupan dos espacios.
+  - Se identifica y convierte el baúl original sm41_011_ItemLocker01A: malla
+    MESH RT, dos materiales y texturas. Bundles Gamma/Linear embebidos en el mod.
+  - Se leen los escenarios locales para situar katana, sinkhole, yate y sala
+    del final. La costa noroeste se ajusta al suelo seco del terreno nativo.
+  - Cinco baúles independientes, de 4 espacios cada uno. E abre inventario
+    personal a la izquierda y el baúl a la derecha; transferir 1 o una pila.
+  - F5: teletransportes con carga de escena/apoyo y copias delante del jugador.
+    Las copias usan el contenido de su original y no sustituyen su ubicación.
+  - Objetos de prueba mediante catálogo F5. Esta etapa prepara almacenamiento;
+    no implementa aún disparos, equipamiento, curación ni recetas de objetos RE3R.
+  - Persistencia junto al slot nativo; el host conserva también cada inventario
+    por identidad Steam. Escritura temporal/.bak/checksum, sin mezclar partidas.
+  - Coop protocolo 3: solicitudes fiables, autoridad del host, revisión/cercanía,
+    transferencia completa o rechazo y descarte de duplicados. Ambos equipos
+    deberán instalar el mismo paquete cuando se retomen las pruebas cooperativas.
+  - Se compila el mod y se prepara la entrega central con EXE/ZIP, código,
+    guía e historial. Resultado en juego PENDIENTE; no se lanza una partida.
+
+  - Prueba del usuario de 0.8.2: en general bien; el baúl noroeste está bajo
+    una montaña. Se prepara 0.8.3 para reubicarlo sobre suelo físico despejado.
+  - 0.8.3 añade la primera arma: G19 normal original, hitscan 18/90, sin bonus
+    de cabeza en mutantes, cargadores 15, reserva infinita y recarga de 104 frames.
+  - Se convierten 14 clips originales de arma (7 de Jill y 7 de Carlos),
+    con postura base, apuntado, disparos, sacar arma, dedos y recarga parcial.
+  - Se extraen las capas originales de disparo y los dos sonidos de recarga.
+    Se excluyen la pieza de cargador extendido y sus cartuchos opcionales.
+  - UI con marcos del atlas original RE3R e icono del modelo G19; sólo títulos
+    Inventario/Baúl. Transferencias por clic. F5 conserva controles de desarrollo.
+  - G19 inicial en baúl del yate, migración sin borrar pilas, balas por jugador
+    guardadas junto a inventarios. Host resuelve disparos; protocolo 4.
+  - Entrega 0.8.3 compilada/preparada; no se lanza el juego ni se prueba coop.
+  - Prueba posterior del usuario: G19 sin modelo en el agarre y brazos mal
+    colocados. 0.8.3.1 corrige las rotaciones y el socket del arma, reduce la
+    interfaz al 72%, añade transparencia y mejora el indicador de munición.
+
+  - Nueva prueba 0.8.3.1: el auricular de Carlos invade el apuntado y el disparo
+    sin apuntar hace desaparecer las manos. Se pide interfaz y sonidos RE3R.
+  - 0.8.3.2: se identifica Hold_Shoot como retroceso aditivo; Focus_Shoot es
+    pose absoluta. Se compone el primero sobre Hold_Idle, con traslaciones
+    aditivas. Se excluye Incom_Mat de la geometría local de primera persona.
+  - Se importan fuentes originales RE3R y atlas completos de inventario/HUD;
+    se retira la tarjeta/barra personalizada de munición. Se conserva tamaño
+    compacto, transparencia, interfaz limpia y paneles de transferencia.
+  - Se conserva audio del banco original G19 y se respetan niveles de capas
+    Wwise. AltFire nativo deja de activar bloqueo de arma Forest al apuntar.
+  - Preparación 0.8.3.2 con respaldo de instalación. No se abre The Forest
+    ni se ejecutan pruebas de juego/automatizadas; aceptación pendiente.
+
+  - Prueba posterior 0.8.3.2: pistola correcta en general según el usuario;
+    solicita impacto a animales, maletas y estructuras, crítico de cabeza ×5,
+    mira RE3R y cámara que siga los ojos animados al apuntar.
+  - 0.8.4: se conectan receptores nativos de daño y geometría de cabeza,
+    se importa retícula ui2000 y se coordina el render de cámara con los ojos.
+  - Se integra M3 original: modelos/materiales, animación aditiva de disparo,
+    recarga completa en dos partes, agarre compartido Jill/Carlos y audio Wwise.
+  - Perdigones agrupados por objetivo (23+9×8), dispersión ligada a retícula,
+    pleno ×1.5 y derribo; pleno a cabeza mata y corta la cabeza del cadáver.
+  - M3 añadida al baúl de la katana y laboratorio F5. Cargador 4, reserva
+    infinita, munición independiente y migración de guardados schema 1/2 a 3.
+  - Protocolo 5: el host valida y calcula impactos; clientes reproducen recursos
+    locales. Paquete, EXE y ZIP central 0.8.4 preparados con respaldo.
+  - No se inicia el juego ni se ejecutan tests. Resultado de estas funciones
+    y de coop entre dos PCs pendiente de la prueba del usuario.
+
+  - Prueba de 0.8.4: el usuario acepta el reposo de M3, pero pide levantarla
+    para disparar. Reporta apuntado G19/M3 mal colocado y retícula poco pulida.
+  - 0.8.5: se separa la pose de cabeza de tercera persona de la cámara propia;
+    armas hacia la vista con agarres originales y brazos de longitud anatómica.
+    M3 sube 0.12 s antes del disparo desde cadera; estado replicado en coop.
+  - Retícula M3 de arcos finos con antialiasing, punto central original y grosor
+    constante. G19 conserva atlas RE3 con segmentos más finos.
+  - Se aplica la tabla absoluta de vida de caníbales/mutantes por dificultad,
+    a cargo del host. Se confirma que «azul» es el pálido más resistente.
+  - Preparación de 0.8.5 en EXE/ZIP central, fuentes e historial acumulativo.
+    Gameplay de esta revisión y coop reciente pendientes de la prueba del usuario.
+
+  - CIERRE DEL 10/10/2026, registrado el 11/10/2026 tras medianoche:
+    prueba 0.8.5 con errores visuales persistentes. M3 debe quedar más abajo
+    y a la derecha; no se acomoda al disparar y se desplaza al apuntar.
+    G19 también presenta postura/apuntado incorrectos; capturas muestran
+    deformación y estiramiento de brazos/manos y agarres desalineados.
+  - Usuario solicita detener cambios y continuar en la próxima sesión.
+    Sólo se actualiza documentación y se conservan las cinco capturas en
+    evidencia/2026-10-10-cierre-0.8.5. No se cambia código ni entrega instalada.
+    La 0.8.5 queda PROBADA CON ERRORES VISUALES; HP/coop reciente sin confirmar.
+
+11/10/2026 — Séptimo día; corrección visual G19/M3 0.8.6
+  - Se retoman los errores visuales guardados al cerrar el día 10. El usuario
+    pide corregir ambas armas y levantar también G19 al disparar sin apuntar.
+  - Diagnóstico de fuente: el socket M3 tiene una referencia mot posada distinta
+    del track absoluto; restarla desplaza el modelo respecto al agarre.
+    Los helpers también requieren posiciones absolutas, no referencias posadas.
+  - Revisión de la caché de capas: ahora la máscara de dedos forma parte de la
+    clave; recarga/disparo conservan sus dedos originales sin reaplicar el torso.
+  - Armas y manos comparten un marco de primera persona en todos los estados;
+    reposo abajo/derecha, transición al frente antes del disparo, apuntado central.
+  - Se evalúan agarres con proporciones fuente antes de resolver brazos con
+    longitudes del personaje destino. Importante para clips M3 de Jill en Carlos.
+  - IK con ejes reales y codos abajo/fuera; soportes originales y twist local
+    por arco corto, sin heredar estiramiento/torsión del arma nativa.
+  - G19/M3 usan la misma subida replicada de 0.12 s antes de consumir munición.
+    Catálogo 0x08060001; ambos equipos necesitan 0.8.6. Protocolo 6 conservado.
+  - Preparación de EXE/ZIP central, código e historial. No se abre The Forest
+    ni se ejecutan tests. Aspecto visual y contenido reciente coop sin confirmar.
+
+  - Prueba de 0.8.6: «todo lo demás se ve bien», según el usuario. Las dos
+    capturas nuevas muestran M3 con la mano fuera del guardamanos y reposo
+    casi fuera de pantalla. Se conserva esa aceptación visual del resto.
+  - 0.8.6.1: corrección exclusiva de contactos M3 a partir de superficies del
+    modelo. El nudillo medio de apoyo se desplaza desde (0.184, .0009, .3259)
+    hacia (-.028, -.020, .390) en reposo fuente; el trasero se ancla a la
+    empuñadura. Se conserva el movimiento de bombeo/recoil/recarga original.
+  - M3 en reposo: altura -.15 en vez de -.23, inclinación 5° en vez de 12°;
+    transición al frente conservada. G19 mantiene posiciones y agarres.
+  - Nuevo paquete, fuentes y respaldo de la instalación; no se inicia el juego
+    ni se ejecutan tests. Resultado visual del parche y coop sin confirmar.
+
+Cómo leer este historial:
+  - "Compilada" significa que el código y el paquete se generaron correctamente.
+  - "Comprobada en juego" significa que existe registro o prueba del usuario.
+  - "Pendiente" significa que todavía no se ha confirmado ese resultado.
+  - ModAPI muestra cuatro componentes: por ejemplo, 0.5.1.0 = versión 0.5.1.
+  - Al principio hubo dos paquetes distintos con número 0.1.0. Se registran
+    por separado para no confundir sus funciones.
+
+==========================================================================
+0.1.0 — Diagnóstico del cargador (ForestRE3LoaderProbe)
+Fecha: 05/10/2026
+==========================================================================
+Cambios introducidos:
+  - Primer paquete ModAPI de diagnóstico.
+  - Añadió mensajes al registro desde los eventos de inicio de aplicación
+    y de entrada a la partida.
+  - Sirvió para comprobar que el juego podía cargar y ejecutar nuestro código.
+
+Resultado comprobado:
+  - El evento de inicio de partida escribió dos marcas en el log.
+  - El evento de inicio de aplicación no se observó en ese arranque.
+
+Alcance:
+  - No contenía un personaje visible ni acciones jugables.
+
+Evidencia: diagnostics/README.md, design/loader-probe-sheet.json y
+work/forest-re3-mashup/probe/package-static-verification.json.
+
+==========================================================================
+0.1.0 — Diagnóstico del AssetBundle (ForestRE3JillBundleProbe)
+Fecha: 05/10/2026
+==========================================================================
+Diferencia respecto al diagnóstico anterior:
+  - Incorporó un AssetBundle como recurso dentro del paquete.
+  - Lo cargó en memoria y buscó el prefab llamado JillAvatarPreview.
+  - Enumeró assets y prefabs para confirmar la comunicación entre ModAPI,
+    Unity y los recursos convertidos.
+
+Resultado comprobado:
+  - El registro mostró assets=1, prefabs=1 y encontró JillAvatarPreview.
+  - Esta prueba no colocaba el modelo en la escena.
+
+Problema identificado posteriormente:
+  - El nombre del prefab no garantizaba la identidad del personaje.
+  - El recurso inicial procedía de pl0000: era el cuerpo de Carlos, no Jill.
+
+Evidencia: ForestRE3JillBundleProbe.cs, registros aportados por el usuario
+y design/asset-probe-report.json.
+
+==========================================================================
+0.2.0 — Primera figura visible con F8
+Fecha: 05/10/2026
+==========================================================================
+Cambios respecto a la prueba de AssetBundle:
+  - Añadió una figura temporal delante de la cámara.
+  - F8 permitía mostrarla y ocultarla.
+  - Añadió una indicación de la prueba visual en pantalla.
+
+Resultado comprobado:
+  - El usuario pudo ver el modelo dentro del avión de The Forest.
+
+Problemas encontrados:
+  - El modelo era Carlos/pl0000 y no tenía cabeza.
+  - Por tanto, esta versión confirmó la carga y visualización, pero no
+    constituye una versión válida del modelo de Jill.
+
+Acción posterior:
+  - Se archivó el paquete y se corrigió la selección de recursos.
+
+Evidencia: captura del usuario, paquete archivado 0.2.0.0 y
+design/asset-probe-report.json.
+
+==========================================================================
+0.3.0 — Jill completa: cuerpo, cabeza y cabello
+Fecha: 06/10/2026
+==========================================================================
+Cambios respecto a 0.2.0:
+  - Sustituyó el modelo incorrecto por los recursos auténticos de Jill:
+      pl2000: cuerpo.
+      pl2001: cabeza y rostro.
+      pl2005: cabello.
+  - Incorporó las tres exportaciones FBX y sus materiales/texturas.
+  - Construyó un prefab completo y rechazó los prefabs anteriores incompletos.
+  - Generó una imagen de vista previa y un nuevo AssetBundle.
+  - Conservó F8 para mostrar y ocultar la figura.
+
+Resultado comprobado:
+  - Compilación de Unity y paquete ModAPI completados.
+  - El usuario vio a Jill con cuerpo, cabeza y cabello en el juego.
+
+Limitaciones encontradas:
+  - Era una figura estática; las piezas aún conservaban rigs independientes.
+  - La piel se veía demasiado iluminada y los materiales requerían ajustes.
+
+Evidencia: work/jill/corrected/fbx-inventory.json,
+runtime-front-0.3.png y unity-pipeline/PreviewRenders/Jill-complete.png.
+
+==========================================================================
+0.4.0 — Esqueleto común e iluminación integrada
+Fecha: 06/10/2026
+==========================================================================
+Cambios respecto a 0.3.0:
+  - Unificó cuerpo, cabeza y cabello en una jerarquía JillSkeleton.
+  - Normalizó los prefijos de nombres de huesos.
+  - Fusionó 18 huesos compartidos; el rig resultante conserva 468 huesos
+    y 29 renderers de malla con skinning.
+  - Reasignó huesos y compensó bindposes para conservar la geometría en reposo.
+  - Cambió la piel a material no metálico, redujo suavidad y quitó emisión.
+  - Configuró recepción/proyección de sombras y un anclaje común de sondas.
+  - Generó bundles Gamma y Linear; seleccionó la variante del juego al cargar.
+  - Añadió registros de iluminación, materiales y rig.
+
+Resultado comprobado:
+  - Compilación y ensamblaje en reposo confirmados.
+  - El usuario comprobó luz del sol, zonas de sombra, sombra proyectada,
+    distorsión bajo el agua e iluminación de interiores.
+
+Problema restante:
+  - Los ojos presentaban un reflejo blanco excesivo, sobre todo en interiores.
+  - La figura todavía estaba congelada; no había animaciones ni sustitución
+    del jugador.
+
+Evidencia: work/jill/corrected/unified-build-confirmation.json,
+unity-pipeline/jill-rig-report.json y capturas runtime-0.4.
+
+==========================================================================
+0.4.1 — Primer intento de corregir el brillo de los ojos
+Fecha: 06/10/2026
+==========================================================================
+Cambios respecto a 0.4.0:
+  - Añadió un ajuste en runtime para ocultar la capa exterior de córnea.
+  - Intentó reducir la suavidad/brillo del ojo interior y de la lágrima.
+  - Reutilizó los bundles existentes; no requería recompilar Unity.
+
+Resultado de la prueba:
+  - El usuario siguió viendo el brillo.
+  - El registro mostró cero materiales ajustados.
+
+Causa comprobada del intento fallido:
+  - La comparación exacta no reconocía los nombres con prefijos serializados,
+    por ejemplo pl2001_pl2001_Eyes_In_Mat.
+  - El anuncio de córnea oculta no tenía un contador que probara su aplicación.
+
+Evidencia: work/jill/corrected/eye-patch-0.4.1.json y su log.
+
+==========================================================================
+0.4.2 — Ajuste ocular aplicado y aceptado
+Fecha: 06/10/2026
+==========================================================================
+Cambios respecto a 0.4.1:
+  - Corrigió el reconocimiento de nombres prefijados de materiales.
+  - Añadió reconocimiento por sufijo exacto del renderer.
+  - Añadió contadores separados de córnea, ojo interior y lágrima.
+  - Avisó si alguno de los elementos esperados no se encontraba.
+
+Resultado comprobado:
+  - El log confirmó una córnea oculta, un material de ojo interior ajustado
+    y un material de lágrima ajustado.
+  - El usuario aceptó el resultado visual dentro del avión.
+
+Limitación:
+  - Es una solución provisional mediante ocultación de la capa exterior.
+    Un shader específico de córnea sigue pendiente.
+
+Evidencia: work/jill/corrected/eye-patch-0.4.2.json y
+runtime-0.4/eye-patch-0.4.2-accepted.png.
+
+==========================================================================
+0.4.3 — Figura sobre el suelo y dos tamaños
+Fecha: 06/10/2026
+==========================================================================
+Cambios respecto a 0.4.2:
+  - Colocó la figura vertical usando solamente el giro horizontal de la cámara.
+  - Buscó un suelo transitable mediante raycast y apoyó los pies en él.
+  - Midió la geometría para aplicar una escala uniforme.
+  - F9 recolocaba la figura delante del jugador.
+  - F10 alternaba un tamaño principal y una miniatura de inspección.
+  - Conservó una figura atravesable, congelada y sin IA.
+
+Resultado de la prueba:
+  - La figura aparecía, pero seguía siendo demasiado pequeña.
+
+Error encontrado:
+  - Los valores 1.70 y 0.80 eran unidades del mundo de The Forest.
+  - Se etiquetaron incorrectamente como metros; faltaba usar una referencia
+    de tamaño del propio juego.
+
+Evidencia: work/jill/corrected/scale-figure-0.4.3.json y capturas del usuario.
+
+==========================================================================
+0.4.4 — Calibración respecto a la altura nativa del jugador
+Fecha: 06/10/2026
+==========================================================================
+Cambios respecto a 0.4.3:
+  - Usó la altura original de pie de la cápsula del controlador nativo.
+  - Incluyó su escala mundial para obtener la referencia del juego.
+  - Definió el tamaño de Jill como 1.70/1.80 de esa referencia (~94.4%).
+  - Midió vértices mediante matrices de skinning para evitar ambigüedades
+    de escala con BakeMesh.
+  - Añadió registros de cápsula, cámara, jerarquía, geometría y apoyo en suelo.
+
+Resultado de la prueba:
+  - F10 cambiaba el texto, pero la figura no aparecía.
+  - El log no llegaba a registrar el inicio de creación.
+
+Diagnóstico y límite de la evidencia:
+  - El fallo se localizó antes de instanciar, en la ruta de búsqueda de cámara.
+  - Esa versión usaba búsqueda por reflexión entre assemblies y no capturaba
+    todo el comando. No se recuperó la excepción exacta de aquella ejecución.
+
+Evidencia: work/jill/corrected/scale-figure-0.4.4.json y
+runtime-0.4/scale-figure-0.4.4-no-spawn.log.
+
+==========================================================================
+0.4.5 — Cámara y comandos corregidos; escala aceptada
+Fecha: 06/10/2026
+==========================================================================
+Cambios respecto a 0.4.4:
+  - Sustituyó la búsqueda por reflexión por referencias directas del juego:
+    LocalPlayer.MainCam, LocalPlayer.FpCharacter, capsule y originalHeight.
+  - Capturó los errores de todo el comando y mostró el tipo de error en HUD.
+  - Registró la tecla, la cámara y el inicio de creación.
+  - Permitió que F9 y F10 crearan la figura si aún no existía.
+  - Añadió limpieza/restauración ante errores de creación o calibración.
+
+Resultado comprobado:
+  - La figura apareció y se pudo recolocar en suelo y dentro del avión.
+  - Cápsula nativa de pie: 4.70 unidades del mundo.
+  - Geometría de Jill: 4.438889 unidades del mundo (~94.4% de esa altura).
+  - El usuario aceptó la diferencia de altura, pero solicitó un aumento leve.
+
+Alcance:
+  - Aún era una figura estática, sin conexión al jugador.
+
+Evidencia: work/jill/corrected/scale-figure-0.4.5.json,
+runtime-0.4/scale-0.4.5-accepted.log y tres capturas aceptadas.
+
+==========================================================================
+0.5.0 — Primera prueba externa de animaciones
+Fecha: 06/10/2026
+==========================================================================
+Cambios respecto a 0.4.5:
+  - Aumentó el tamaño aproximadamente 2.3%: relación 1.72/1.78 sobre la altura
+    nativa; objetivo de 4.541573 unidades del mundo (~96.6%).
+  - Extrajo pistas auténticas de Jill/pl2000 para reposo, caminar y trotar:
+      pl2000_0160_KFF_Gazing_Idle_F_Loop: 3039 frames.
+      pl2000_0190_KFF_GazingWalk_F_Loop: 344 frames.
+      pl2000_0231_KFF_Jog_Straight_Loop: 80 frames.
+  - Preparó 364 pistas por animación y las incorporó al paquete como JSON.
+  - Añadió reproducción directa sobre el esqueleto unificado.
+  - Preparó adaptación de hasta 22 articulaciones del jugador de The Forest
+    para agacharse y golpear con el hacha.
+  - Añadió modo automático según acciones del jugador.
+  - F11 recorre automático, reposo, caminar, correr y poses Forest.
+  - F7 pausa/reanuda la pose; la figura permanece en el sitio.
+
+Comprobaciones completadas antes de la prueba:
+  - Compilación y reapertura del paquete; bundles y JSON embebidos presentes.
+  - Valores decodificados finitos y gráficos de articulaciones coherentes.
+
+Resultado real de la prueba en The Forest:
+  - Las teclas sí se reciben y la cámara se resuelve correctamente.
+  - La geometría se coloca y calibra correctamente a ~4.541565 unidades.
+  - Initialize falla con "Invalid Jill motion manifest" tras la lectura JSON.
+  - La captura general del comando elimina la figura recién creada.
+  - Por eso no se ve Jill; no se comprobaron las animaciones en el juego.
+
+Diagnóstico confirmado:
+  - El JSON de la DLL instalada coincide byte por byte con el archivo fuente
+    (3,367,696 bytes; SHA256 coincidente).
+  - Las clases/campos instalados conservan sus nombres y Serializable.
+  - La validación del resultado de JsonUtility falla. No se atribuye una
+    causa interna concreta al motor sin una prueba adicional.
+
+Limitaciones de esta fase:
+  - Cadencia provisional de 60 ticks/segundo; falta comprobarla visualmente.
+  - Aún no hay un hacha en la mano de la figura ni adaptación de dedos nativos.
+  - No es un NPC con IA ni un reemplazo jugable del personaje.
+
+Evidencia: work/jill/corrected/motion-preview-0.5.0.json y
+runtime-0.5/motion-0.5.0-manifest-failed.log.
+
+==========================================================================
+0.5.1 — Corrección de lectura de animaciones y figura persistente
+Fecha: 06/10/2026
+Estado: realizada y funcional, probada por el usuario; ligeros errores pendientes.
+==========================================================================
+Cambios respecto a 0.5.0:
+  - Sustituye la lectura JsonUtility por un lector binario explícito JRM1.
+  - Empaqueta las mismas pistas como jill-motion-preview.bin (936,201 bytes).
+  - Valida cabecera, clips, nombres, cantidades, tipos de pista, valores finitos,
+    orden de claves y final del archivo.
+  - Añade el registro MOTION_BINARY_READ_OK para confirmar la lectura real.
+  - Separa el fallo de inicialización de animaciones de la creación de la figura.
+  - Si falla una animación al iniciar, conserva a Jill en reposo y muestra
+    el error; ya no elimina el modelo por ese fallo.
+  - Mantiene el tamaño, iluminación, ojos y controles de 0.5.0.
+
+Comprobaciones completadas:
+  - El mismo lector C# lee las tres animaciones completas del binario fuente.
+  - El paquete compila, vuelve a abrirse y conserva ambos bundles y el binario.
+  - El lector también lee el recurso de la DLL extraída del paquete final.
+
+Resultado de la prueba en el juego al cierre del 06/10/2026:
+  - El usuario confirmó que Jill aparece y las animaciones funcionan en general.
+  - La versión se acepta como base funcional de esta fase de figura externa.
+  - La aceptación se basa en el reporte del usuario y el video adjunto.
+
+Ligeros errores conocidos:
+  - Al agacharse, el modelo atraviesa un poco el suelo.
+  - El movimiento de golpe con hacha se ve algo raro, pero el usuario lo
+    considera aceptable por ahora para los estándares del juego.
+
+Decisión de cierre:
+  - Conservar 0.5.1 como realizada y funcional con esos detalles anotados.
+  - No corregirlos ahora ni generar una versión nueva durante este cierre.
+  - Retomar el trabajo al día siguiente. El personaje jugable sigue pendiente.
+
+Evidencia: work/jill/corrected/motion-preview-0.5.1.json.
+Este recibo conserva las comprobaciones previas al juego; la aceptación posterior
+del usuario queda registrada en esta entrada del historial.
+Video aportado por el usuario:
+C:\Users\angel\Downloads\WhatsApp Video 2026-10-06 at 9.33.18 PM.mp4
+Paquete funcional conservado:
+work/forest-re3-mashup/modapi-workspace/package-backups/before-animation-preview-0.5.2/ForestRE3JillVisualProbe-0.5.1.0-4fb814dd8fa2dea66e796dc8f35ee85c.mod
+
+==========================================================================
+0.5.2 — Carga de hacha, apoyo en suelo y lanzador central
+Fecha: 07/10/2026
+Estado: animaciones funcionales según prueba del usuario; deformación de hombros/axilas pendiente.
+==========================================================================
+Cambios respecto a 0.5.1:
+  - Detecta chargingBool, doAttackHeavyBool y heavyAttackBool cuando existen.
+  - Lee las etiquetas de ataque del estado actual y del siguiente en todas
+    las capas del Animator, además del detector de ataque nativo anterior.
+  - Conserva la adaptación de poses nativas durante 0.4 segundos de recuperación
+    para no volver prematuramente al reposo RE3 tras soltar el golpe.
+  - Registra las fases charge, heavy_release, normal_or_combo y recovery.
+  - Selecciona vértices de las plantas de los pies en la malla de reposo.
+  - Recalcula su posición deformada y eleva COG si quedan bajo el suelo.
+  - Actualiza la referencia de suelo al colocar/redimensionar la figura.
+  - Añade el EXE con extracción automática de dependencias y preparación del
+    cargador a partir de los archivos originales instalados por el jugador.
+  - Detecta Steam y bibliotecas adicionales; permite elegir carpeta y respaldo.
+  - Guarda respaldo antes de reemplazar archivos y ofrece restauración.
+  - Reunir EXE, documentación, historial, fuentes y licencias requiere ahora
+    un único ZIP; el EXE incorpora el paquete y los recursos de esta prueba.
+
+Comprobaciones completadas:
+  - Compilación del paquete 0.5.2.0 y relectura del recurso binario JRM1.
+  - Compilación del lanzador y su preparador con las dependencias incluidas.
+  - Preparación aislada desde ensamblados originales de The Forest 1.11b.
+  - Configuración generada con un único mod 0.5.2.0 y gancho de inicio de partida.
+  - Detección de la carpeta Steam de The Forest en este equipo.
+  - Instalación/restauración aisladas: respaldo persistente en segundo arranque,
+    retirada de DLL nueva y recuperación exacta de archivos/configuración previos.
+  - Preparación desde cero en rutas con espacios y acentos; 38 DLL originales
+    recuperados con hashes idénticos tras restaurar la copia de prueba.
+
+Resultado de la prueba en el juego:
+  - 07/10/2026: el usuario confirmó que las animaciones están bien en general.
+  - Reportó deformación excesiva en hombros y axilas durante el agachado y
+    los golpes: los hombros parecen dislocarse y la malla se estira/desfigura.
+  - La reproducción de animaciones queda comprobada según su reporte; la
+    adaptación visual en esa zona todavía no se considera terminada.
+  - El reporte no confirma por separado el arranque desde el EXE, el apoyo
+    exacto en suelo ni cada fase del golpe cargado; esos puntos siguen abiertos.
+
+Corrección pendiente tras esta prueba:
+  - Revisar la adaptación de clavículas y brazos entre el esqueleto de The
+    Forest y el de Jill en las poses de agachado y golpes.
+  - Comprobar alineación de reposo, rotaciones y deformación de la malla en
+    hombros/axilas, comparando esas poses con el reposo de Jill.
+  - Corregir el estiramiento excesivo y comprobar visualmente el resultado
+    en ambas acciones. La causa exacta aún no está diagnosticada.
+  - Esta actualización documenta el problema; no modifica las animaciones
+    ni genera otra versión o un paquete nuevo.
+
+Problemas y limitaciones:
+  - Continúa la figura externa; personaje jugable, cooperativo y extras pendientes.
+  - La corrección usa el plano de apoyo de la figura; no es locomoción con IK.
+  - El ZIP local incluye recursos RE3 generados en nuestro entorno. El paquete
+    público acordado deberá generarlos desde la instalación de cada usuario,
+    sin Unity Editor; esa ruta automática todavía no está implementada.
+
+Evidencia:
+  - Reporte directo del usuario y video aportado el 07/10/2026:
+    C:\Users\angel\Downloads\WhatsApp Video 2026-10-07 at 5.01.29 PM.mp4
+  - El resultado visual anterior se registra a partir del reporte del usuario;
+    este registro no atribuye una causa técnica definitiva al problema.
+  - releases/launcher-0.5.2-receipt.json.
+  - work/forest-re3-mashup/launcher/prepare-0.5.2/prepare.log.
+  - work/forest-re3-mashup/probe/JillMotionPreview.cs.
+
+==========================================================================
+0.5.3 — Hombros y axilas: corrección de adaptación de poses
+Fecha: 07/10/2026
+Estado: probada; corrección insuficiente, deformación de hombros persistente.
+==========================================================================
+Cambios respecto a 0.5.2:
+  - La clavícula conserva su anclaje de Jill. Se adapta su movimiento relativo
+    al torso en vez de apuntarla a la dirección de reposo del personaje masculino.
+  - Se limita a 35 grados el cambio de clavícula respecto a ese reposo para
+    contener desplazamientos excesivos del hombro en las poses de primera persona.
+    El brazo conserva su movimiento completo.
+  - Las articulaciones nativas recuperan las posiciones locales de Jill antes
+    de adaptar la pose; no retienen desplazamientos de los clips RE3 anteriores.
+  - Se calcula la pose nativa completa y se mezcla una vez en rotaciones locales,
+    evitando que el movimiento del padre altere de nuevo la interpolación del hijo.
+  - Se reparten torsión y contratorsión entre los 16 auxiliares de ambos brazos
+    y antebrazos. Antes estaban fijos al reposo durante agachado y golpes Forest.
+  - Se activan ocho auxiliares de deltoides/pectorales, con un marco compartido
+    por clavícula y brazo alrededor del pivote del hombro. Conservan la jerarquía
+    exportada y sus pesos originales; el seguimiento parcial reduce el arrastre
+    de piel entre torso y brazo.
+  - Se mantiene la corrección de suelo por las plantas, la carga/liberación del
+    hacha, reposo/caminata/carrera RE3, escala y materiales aceptados.
+  - Se actualizan EXE, preparador, paquete y ZIP central a 0.5.3. No necesita
+    recompilar Unity ni exportar nuevos modelos para aplicar este parche.
+
+Revisión realizada:
+  - Video del usuario de 07/10/2026, de aproximadamente 66.7 segundos.
+  - Se inspeccionaron el abultamiento del hombro al agacharse (~21 s) y la
+    tensión de hombro/axila al preparar el golpe (~31 s), además de secuencias.
+  - Se leyeron las jerarquías y pesos de los FBX locales para identificar los
+    auxiliares que deforman esa zona. La revisión identifica fallos del adaptador;
+    no demuestra por sí sola que desaparezcan todos los defectos tras corregirlos.
+  - El paquete compiló y conservó los bundles Gamma/Linear y los tres clips JRM1.
+
+Resultado de la prueba en el juego:
+  - 07/10/2026: el usuario probó 0.5.3 y confirmó que sigue dislocada/deformada
+    al golpear y agacharse. Dos capturas muestran el defecto y el HUD 0.5.3.
+  - El log confirma SHOULDER_SUPPORT_READY y NATIVE_MOTION_MAP_READY mapped=22;
+    los ajustes sí estaban ejecutándose. No era una versión anterior activa.
+  - Esta corrección no se acepta como solución del hombro. Continúa en 0.5.4.
+
+Problemas y limitaciones:
+  - Los porcentajes del soporte muscular y el límite de clavícula son ajustes
+    del adaptador; pueden requerir afinación tras la prueba visual.
+  - Sigue siendo figura externa; aún no sostiene un hacha propia ni es el jugador.
+  - Se conservan las limitaciones de apoyo en plano y del instalador público.
+
+Respaldo:
+  - El paquete 0.5.2 se conserva en:
+    work/forest-re3-mashup/modapi-workspace/package-backups/before-animation-preview-0.5.3/
+  - Su ZIP/EXE y archivo de código 0.5.2 siguen en releases/.
+
+Evidencia:
+  - work/jill/corrected/motion-preview-0.5.3.json.
+  - work/jill/corrected/runtime-0.5/review-0.5.3/ (capturas y log).
+  - work/jill/corrected/runtime-0.5/review-decoded-0.5.2/.
+  - work/forest-re3-mashup/probe/JillMotionPreview.cs.
+  - releases/launcher-0.5.3-receipt.json.
+
+==========================================================================
+0.5.4 — Orientación por el codo y correctivos originales de Jill
+Fecha: 07/10/2026
+Estado: probada; hombros adelantados persistentes, corrección insuficiente.
+==========================================================================
+Motivo:
+  - 0.5.3 no resolvió la deformación. Las capturas y el log confirman el defecto
+    con el adaptador nuevo activo. Se conserva ese intento en el historial.
+
+Cambios respecto a 0.5.3:
+  - Define la orientación de brazo y antebrazo usando las posiciones de hombro,
+    codo y muñeca de The Forest. El plano de flexión aporta el giro axial que
+    una alineación de una sola dirección no fija de forma anatómica.
+  - Conserva el último plano válido si el codo queda casi recto, evitando
+    depender de una normal indefinida durante esa postura.
+  - Retira la contratorsión y el seguimiento muscular aproximados de 0.5.3.
+  - Añade el banco JSC1 de correctivos originales RE: 657 muestras para el
+    izquierdo y 658 para el derecho, obtenidas de 54 clips de movimiento,
+    agarre, arma de mano y daño. Los clips incompletos/no compatibles se omiten
+    y quedan registrados; no se generan muestras inventadas para ellos.
+  - Busca cuatro poses cercanas por rotaciones de clavícula, brazo, antebrazo
+    y muñeca, y mezcla sus correctivos en posiciones y rotaciones locales.
+  - Aplica esos correctivos a los 24 auxiliares de torsión, deltoides y
+    pectorales que participan en la deformación de ambos brazos.
+  - F7 registra, al pausar, rotaciones de las articulaciones y distancia a la
+    pose correctiva seleccionada. Permite obtener datos si queda algún defecto.
+  - Mantiene anclaje de clavículas, longitudes de Jill, mezcla local, apoyo
+    en suelo, carga/golpe del hacha, clips RE3, escala y materiales aceptados.
+  - Actualiza mod, preparador, EXE y ZIP central; el banco queda incluido,
+    sin pedir archivos adicionales ni reconstruir Unity en el equipo del usuario.
+
+Comprobaciones de construcción:
+  - Compiló el paquete 0.5.4.0 y se volvió a abrir mediante ModAPI.
+  - El lector del paquete conservó los tres clips JRM1 y releyó JSC1 con
+    657/658 muestras; validó cabecera, tamaños, valores y cuaterniones.
+  - Conserva los bundles Gamma/Linear sin modificar la malla ni sus pesos.
+
+Resultado en partida:
+  - 07/10/2026: el usuario confirmó que sigue igual y aportó dos capturas 0.5.4.
+  - Identificó el desplazamiento excesivo hacia delante del hombro respecto
+    al torso; el cuello se ve bien. La corrección no se considera aceptada.
+  - F7 guardó datos de las articulaciones en las poses observadas. Se calculó
+    avance de anclaje de ~7 cm por el giro de clavícula; se continúa en 0.5.5.
+
+Limitaciones:
+  - El banco interpola correctivos de poses disponibles; aún hay que confirmar
+    su cobertura y el resultado visual en las acciones concretas de The Forest.
+  - Sigue siendo figura externa sin hacha propia, personaje jugable ni IA.
+  - Se conserva el plan de contenido principal, cooperativo y extras.
+
+Respaldo:
+  - Paquete 0.5.3 en package-backups/before-animation-preview-0.5.4/.
+  - ZIP, EXE y código 0.5.3 se conservan en releases/.
+
+Evidencia:
+  - work/jill/corrected/motion-preview-0.5.4.json.
+  - work/jill/corrected/runtime-0.5/review-0.5.4/ (capturas y log F7).
+  - work/jill/corrected/shoulder-anchor-0.5.4.json (mediciones).
+  - work/jill/corrected/jill-shoulder-correctives.json.
+  - work/jill/corrected/runtime-0.5/review-0.5.3/.
+  - work/forest-re3-mashup/probe/JillShoulderData.cs y JillMotionPreview.cs.
+  - releases/launcher-0.5.4-receipt.json.
+
+==========================================================================
+0.5.5 — Mantener el anclaje de hombros respecto al torso
+Fecha: 07/10/2026
+Estado: aceptada por el usuario el 07/10/2026.
+==========================================================================
+Diagnóstico a partir de la prueba 0.5.4:
+  - El usuario precisó que los hombros van demasiado hacia delante.
+  - Se compararon los cuaterniones reales de clavícula guardados con F7
+    con su reposo FBX y el offset local del húmero (~12.65 cm desde clavícula).
+  - En el agachado registrado, el avance calculado es ~7.23 cm en el izquierdo
+    y ~7.07 cm en el derecho, en la escala propia del modelo de Jill.
+  - El giro llega a ~35 grados respecto al reposo en el izquierdo y ~33.75
+    en el derecho. El límite anterior todavía permitía desplazar mucho el anclaje.
+  - Esto mide el movimiento del anclaje por clavícula; no atribuye toda la
+    deformación de la piel exclusivamente a esa causa.
+
+Cambios respecto a 0.5.4:
+  - Retira la transferencia de giro nativo a las clavículas en poses Forest.
+  - Conserva la orientación local de reposo RE de clavícula respecto al torso:
+    el hombro sigue al pecho, pero no recibe la proyección anterior nativa.
+  - Brazo y antebrazo mantienen sus orientaciones de agachado/golpe, su plano
+    del codo y los correctivos RE. Los movimientos propios RE de reposo,
+    caminata y carrera conservan sus clavículas animadas originales.
+  - F7 registra POSE_SOCKET_DELTA, la diferencia del anclaje actual respecto
+    a su reposo, para medir directamente si queda desplazamiento.
+  - Actualiza paquete, preparador, EXE y ZIP central sin reconstruir Unity.
+
+Construcción:
+  - Compiló el paquete 0.5.5.0; se reabrió y se releyeron JRM1/JSC1.
+  - Conserva modelos, pesos, iluminación, escala y los recursos previos.
+
+Resultado en partida:
+  - Aceptado por el usuario: "ok ya esta completamente bien" (07/10/2026).
+  - La captura de agachado confirma su aceptación de hombros y axilas.
+  - El registro F7 muestra diferencias del anclaje cercanas a cero.
+  - Esto valida la corrección de 0.5.5, no las acciones nuevas de 0.6.0.
+
+Limitaciones:
+  - En las poses Forest se mantiene la clavícula relativa al pecho; no se copia
+    su encogimiento/proyección nativos. Los brazos continúan animados.
+  - Continúa la figura externa; personaje jugable y siguientes fases pendientes.
+
+Respaldo:
+  - Paquete 0.5.4 en package-backups/before-animation-preview-0.5.5/.
+  - Se conservan sus entregas ZIP/EXE y las de versiones anteriores.
+
+Evidencia:
+  - work/jill/corrected/shoulder-anchor-0.5.4.json.
+  - work/jill/corrected/motion-preview-0.5.5.json.
+  - work/jill/corrected/runtime-0.5/review-0.5.4/.
+  - work/jill/corrected/runtime-0.5/review-0.5.5/ (aceptación).
+  - work/forest-re3-mashup/probe/JillMotionPreview.cs.
+  - releases/launcher-0.5.5-receipt.json.
+
+==========================================================================
+0.6.0 — Adaptación de acciones nativas completas
+Fecha: 07/10/2026
+Estado: ejecutada; defecto de manos/agarre reportado el 07/10/2026.
+==========================================================================
+Cambios respecto a 0.5.5:
+  - Amplía el selector antes limitado a agachado/hacha: mapa explícito de 345
+    rutas de estado de playerController/playerController_net3 de The Forest 1.11b.
+  - Observa estados actuales/destino y clips de todas las capas que aportan peso.
+    La figura recibe la pose evaluada por el juego, incluidas mezclas entre fases.
+    No reproduce un único fragmento ni reinicia un clip al cambiar de fase.
+  - Entrada/ciclo/salida de nado y buceo, entrada/salida acuática de cuevas;
+    despegue/vuelo/aterrizaje; cuerda/pared y sus entradas/salidas/deslizamientos.
+  - Caída por explosión, empuje, derribo y recuperación; recargas, preparación,
+    ataques, bloqueo/parada, interacciones, consumo, transporte y demás estados.
+  - Los clips no neutrales desconocidos usan pose nativa como respaldo. Las
+    capas neutrales/aditivas reconocidas permiten conservar locomoción RE3.
+  - No modifica los tres clips propios RE3 de reposo, caminar y correr ni el
+    anclaje de hombros/correctivos aprobado en 0.5.5; conserva escala/materiales.
+  - Apoyo de pies en acciones terrestres y muestras del cuerpo en derribos;
+    evita que la corrección de pies altere poses de nado, vuelo o escalada.
+  - Conserva inclinación nativa, muestra elevación visual de salto y desplazamiento
+    de impactos calibrados respecto a la altura de pie del jugador.
+  - Intenta mapear 30 articulaciones de dedos usando los bindposes de la piel;
+    el registro indica cuántas encuentra, sin inventar bindposes faltantes.
+  - F7 registra fase, soporte, estados/tiempos actuales y de destino por capa,
+    offset de figura y datos del hombro. Se mantienen F8/F9/F10/F11.
+  - Actualiza EXE, ZIP central, instrucciones, recibos y documento acumulativo.
+
+Construcción:
+  - Compila el mod y reabre el paquete; relee tres clips JRM1 y bancos JSC1.
+  - Conserva los dos AssetBundles Gamma/Linear; no necesita reconstruir Unity.
+  - La tabla describe estados encontrados, no 345 animaciones nuevas creadas
+    ni 345 pruebas visuales completadas.
+
+Resultado en partida:
+  - El controlador y sus 345 estados están en ejecución; el registro confirma
+    30 dedos mapeados, equipar/bloquear/golpear con caparazón y flareLight.
+  - El usuario reporta contorsión de manos con objetos y palmas invertidas.
+    Captura y registro guardados en runtime-0.6/review-0.6.0/.
+  - Esto no confirma todas las acciones nuevas; su revisión visual sigue pendiente.
+  - Revisar en AUTOMÁTICO: cada acción desde su entrada hasta salida/recuperación,
+    incluyendo transiciones de vuelta a RE3; pausar con F7 para revisar articulaciones.
+  - Revisar nado/buceo, salto/caída, entrada/salida de cuerdas/paredes e impacto
+    por explosión. También libro/mapa, agua/comida, carga/recarga, bloqueo y transporte.
+
+Limitaciones:
+  - Figura externa de inspección, sin IA/colisiones ni reemplazo del jugador.
+  - No incorpora todavía objetos empuñados; mantiene su emplazamiento al nadar
+    o escalar. Representa poses; no navega el agua ni sube físicamente una cuerda.
+  - La vista del salto tiene como límite inferior el plano de despegue; no
+    simula la caída de un NPC por terreno. Apoyo mediante plano/muestras, sin IK.
+  - Dedos opcionales según nombres/bindposes presentes. Nuevas posturas extremas
+    requieren revisión visual de articulaciones y correctivos.
+  - Las rutas del controlador de red amplían el mapa; no añaden sincronización coop.
+  - Continúa el paquete local de recursos; generación pública automática pendiente.
+
+Respaldo:
+  - 0.6.0 en package-backups/before-animation-preview-0.6.1/.
+  - 0.5.5 en package-backups/before-animation-preview-0.6.0/; EXE/ZIP anteriores conservados.
+
+Evidencia:
+  - work/jill/corrected/motion-preview-0.6.0.json.
+  - work/jill/corrected/native-action-coverage-0.6.0.json.
+  - work/forest-re3-mashup/probe/JillNativeActions.cs y JillNativeStateTable.cs.
+  - work/forest-re3-mashup/native-controller-metadata.json (lectura local).
+  - releases/launcher-0.6.0-receipt.json.
+
+==========================================================================
+0.6.1 — Orientación de palmas, dedos y agarres sostenidos
+Fecha: 07/10/2026
+Estado: probada y aceptada por el usuario el 07/10/2026.
+==========================================================================
+Problema observado en 0.6.0:
+  - Manos contorsionadas al usar objetos; palmas hacia afuera con caparazón.
+  - Los 30 dedos sí estaban presentes; el fallo no era ausencia de huesos.
+  - Las muñecas usaban otra referencia que los antebrazos adaptados. Los dedos
+    se copiaban en ejes del mundo que no correspondían a la muñeca corregida.
+  - shellHeldIdle era neutral: al terminar de equipar se perdía el agarre al
+    volver a la animación de reposo RE3, aunque el objeto seguía equipado.
+
+Cambios respecto a 0.6.0:
+  - Muñecas orientadas mediante el marco anatómico de la palma: muñeca y bases
+    de índice, medio y meñique en ambos esqueletos. Sin giro fijo arbitrario.
+  - Dedos adaptados con deltas locales respecto al bindpose y conversión de
+    ejes anatómicos del padre; siguen la muñeca en lugar de contradecirla.
+  - Pronación/supinación continua repartida por cuatro huesos auxiliares del
+    antebrazo según su ubicación, con continuidad al cruzar ±180 grados.
+  - Agarre nativo sostenido en automático para caparazón, bengala, arco y otras
+    poses de objeto reconocidas en las capas activas, después de equiparlo.
+  - La mezcla de agarre afecta brazos/manos; conserva la locomoción del cuerpo
+    y sus posiciones RE3. Los modos RE3 manuales conservan sus pistas propias.
+  - Conserva los anclajes de clavículas, geometría y banco de hombros de 0.5.5,
+    los tres clips RE3 y la adaptación de acciones por fases de 0.6.0.
+  - F7 registra alineación de palma/dedos; el registro de inicio informa el
+    número de manos y articulaciones encontradas. HUD muestra «agarre nativo».
+  - EXE/ZIP central, fuentes, instrucciones y este historial actualizados.
+
+Construcción y resultado:
+  - Mod compilado/reabierto; tres clips JRM1 y bancos JSC1 releídos del paquete.
+  - Reutiliza recursos Gamma/Linear, escala e iluminación; no requiere Unity.
+  - Aceptado por el usuario: «se ve bien las animaciones y todo». Se da por
+    aceptado el ajuste actual de manos; no valida la nueva conexión al jugador.
+  - Se guarda el registro de 0.6.1 en runtime-0.6/review-0.6.1/.
+  - Jill sigue como figura externa; no agrega objetos a sus manos ni la
+    conecta al jugador. Fases de coop y extras conservan el orden acordado.
+
+Respaldo y evidencia:
+  - 0.6.1 en package-backups/before-animation-preview-0.7.0/.
+  - 0.6.0 en package-backups/before-animation-preview-0.6.1/.
+  - work/jill/corrected/runtime-0.6/review-0.6.0/ (captura y registro).
+  - work/jill/corrected/motion-preview-0.6.1.json.
+  - releases/launcher-0.6.1-receipt.json; EXE/ZIP anteriores conservados.
+
+==========================================================================
+0.7.0 — Jill jugable local, primera persona y voces de esfuerzo/daño
+Fecha: 07/10/2026
+Estado: probada con fallo de conexión al jugador; sustituida por 0.7.1.
+==========================================================================
+Cambios respecto a 0.6.1:
+  - Jill se conecta automáticamente al jugador nativo al entrar/cargar partida.
+    Reintenta la conexión y se reconstruye si cambia el jugador/Animator.
+  - El cuerpo sigue la posición y orientación del jugador. Conserva escala
+    1.72/1.78, materiales, manos aceptadas y clips RE3 del cuerpo.
+  - Brazos y manos de Jill para primera persona con pose nativa continua,
+    alineados a hombros/codos/muñecas originales para usar sus objetos.
+    No mueve armas, colliders de ataque ni puntos nativos de agarre.
+  - Geometría propia de primera persona recortada por pesos de piel: brazos
+    y cuerpo inferior. Oculta cabeza/cabello/cuerpo superior solo a la cámara
+    propia, y conserva sombras del cuerpo completo. Cámara/FOV sin modificar.
+  - Reemplaza los renderers humanos locales (incluidas variaciones de ropa),
+    conserva sus huesos y Animator activo para que acciones/objetos no se congelen.
+    Jill es la única skin local renderizada. Ropa/armadura mantienen efectos nativos.
+  - Usa las colisiones existentes del jugador: misma cápsula, Rigidbody,
+    agachado, controles, estadísticas, supervivencia, inventario y armas.
+    No crea una segunda cápsula ni otro controlador/cámara.
+  - Diez voces de ataque/esfuerzo y diez de daño auténticas de Jill, en inglés,
+    obtenidas del banco local pl2000_v_effort. Eventos atk_m/atk_l y dmg_s/dmg_m
+    identificados con nombres WID y enlaces HIRC a sus audios internos.
+  - Sonido de esfuerzo al mantener la carga más de 0.4s, umbral del código
+    nativo. Un toque rápido no dispara la voz de golpe fuerte.
+  - Gancho local PlayerSfx.PlayHurtSound sustituye el quejido masculino por Jill.
+    Canal único para esfuerzo/daño: mientras reproduce, descarta todo evento
+    nuevo, sin superponer, interrumpir ni acumular sonidos para después.
+  - Volumen ligado al ajuste general; voces PCM integradas, sin codecs aparte.
+  - F8/F9/F10/F11/F7 quedan para la figura externa de diagnóstico; no activan,
+    cambian ni pausan a Jill jugable. El jugador se adapta automáticamente.
+  - Al salir/fallar, restaura renderers/culling y libera instancias/recursos.
+    No escribe datos de personaje en las partidas guardadas.
+
+Construcción:
+  - Compila/reabre paquete y relee tres clips JRM1, banco JSC1 y 20 voces JRV1.
+  - Comprueba que el paquete contiene la inyección PlayHurtSound.
+  - Construye los ensamblados del cargador en una carpeta aislada. La lectura
+    del ensamblado generado confirma PlayHurtSound -> JillVoice y conserva su
+    método original de respaldo. La instalación real del juego no se modificó.
+  - Conserva bundles Gamma/Linear; no requiere reconstruir Unity.
+  - EXE/ZIP central con mod/dependencias, fuentes, instrucciones e historial.
+
+Resultado en partida:
+  - El usuario reporta «No se pudo conectar Jill»; permanecen brazos nativos.
+  - Log: PLAYER_ATTACH_FAILED System.InvalidOperationException:
+    No sole geometry for ground correction, en CacheSoles -> Initialize -> Attach.
+  - El rig de brazos no contiene pies visibles; todavía no estaba marcado como
+    playerAttached al inicializar. La conexión se cancela antes de iniciar voces.
+  - Se conserva esta entrega como intento fallido, no como jugable comprobada.
+  - Próxima prueba: autoaparición, manos/objetos, cámara al mirar abajo/agacharse,
+    nado/escalada, colisiones, carga fuerte, daño y golpes repetidos sin cola.
+
+Limitaciones:
+  - Adapta a Jill al controlador de The Forest; no implementa aún esquiva,
+    combate RE3, inventario RE3, Carlos, cooperativo o tercera persona.
+  - Apariencia fija Jill; todavía no convierte ropa/armadura en variantes propias.
+  - Solo reemplaza voces de daño y esfuerzo de carga; respiración/salto y otros
+    eventos nativos siguen para fases posteriores. Recursos públicos automáticos pendientes.
+
+Respaldo y evidencia:
+  - 0.6.1 en package-backups/before-animation-preview-0.7.0/; EXE/ZIP conservados.
+  - work/jill/corrected/playable-jill-0.7.0.json.
+  - work/jill/corrected/jill-voice-bank.json; voices/effort.xml (banco local).
+  - probe/JillPlayerAvatar.cs, JillVoice.cs, JillVoiceData.cs.
+  - releases/launcher-0.7.0-receipt.json.
+  - runtime-0.7/review-0.7.0/: log y captura del fallo.
+
+==========================================================================
+0.7.1 — Conexión del jugador corregida; Jill en avión y despertar
+Fecha: 07/10/2026
+Estado: probada con conexión, pero invisibilidad y audio incorrecto; sustituida por 0.7.2.
+==========================================================================
+Cambios respecto a 0.7.0:
+  - Configura modo jugador/primera persona ANTES de Initialize. CacheSoles y
+    corrección contra suelo fijo se ejecutan solo para la figura externa.
+    El cuerpo jugable y sus brazos mantienen la cápsula y apoyo nativos.
+  - Añade inicio en aplicación junto a inicio de partida, evitando esperar a
+    una interacción con F8 para preparar los actores de la apertura.
+  - Jill sustituye visualmente al actor de playerSeatGo durante vuelo/accidente
+    y al de setupPlayerCrawl bajo PlaneReal durante el despertar en suelo.
+    Lee esqueletos nativos y poses finales; conserva fases y transiciones.
+  - Escala cinematográfica desde bind poses y escala de cada actor; cadera y
+    agarres alineados en el mundo. No supone altura de pie para una pose sentada.
+  - Mallas FP de brazos/cuerpo inferior sin cabeza, cabello ni torso superior.
+    Conserva sombra del modelo completo; oculta también cabezas nativas pequeñas.
+  - Durante esos actores oculta la representación normal para no duplicar Jill.
+    El levantamiento conserva pose nativa de introCutScene y alineación de cadera.
+  - Cámaras, FOV, scripts de secuencia, libro/objetos, colisiones y voces conservados.
+  - Textos del EXE: adaptación del jugador automática; F8 solo figura diagnóstica.
+
+Construcción y evidencia:
+  - Compila mod y reabre JRM1/JSC1/JRV1 y gancho de daño; 20 voces conservadas.
+  - Inspección local de IL/hierarquías; no se modificaron assets originales.
+  - work/forest-re3-mashup/plane-sequence-metadata.txt, crawl-sequence-metadata.txt
+    y plane-rig-hierarchy.json.
+  - work/jill/corrected/playable-jill-0.7.1.json; probe/JillPlaneAvatar.cs.
+  - EXE/ZIP central 0.7.1; 0.7.0 y 0.6.1 conservadas como respaldos.
+
+Resultado en partida:
+  - El usuario reporta skin invisible, voces Jill bajas y voz masculina audible.
+  - Registro: PLAYER_ATTACHED 0.7.1 sin error, dos actores OPENING_JILL_ATTACHED
+    y JILL_VOICE_PLAY de esfuerzo/daño. La conexión funciona; render/audio fallan.
+  - Confirmación visual de la secuencia del avión/despertar sigue pendiente.
+  - Revisar partida nueva: vuelo/libro/accidente, despertar y levantamiento,
+    sin cabeza/cabello a la cámara propia y sin cuerpo duplicado.
+  - Revisar partida guardada: conexión automática, manos/objetos, mirar abajo,
+    agacharse, voces de carga/daño sin cortes, solapamientos ni cola.
+
+Alcance: integración local; cooperativo y tercera persona continúan pendientes.
+
+==========================================================================
+0.7.2 — Cuerpo visible completo y sustitución de voces locales
+Fecha: 07/10/2026
+Estado: probada con fallo de conexión y sonidos continuos; reparación pendiente.
+==========================================================================
+Cambios respecto a 0.7.1:
+  - Mallas FP activas desde la construcción y LateUpdate, antes de skinning/culling.
+    Se elimina depender de activarlas únicamente durante OnPreCull y apagarlas
+    al terminar de renderizar. Bounds ampliados para movimientos de agarres.
+  - Usa una capa incluida en la cámara nativa, sin modificar su máscara o cámara.
+    Las vistas secundarias conservan el modelo completo; la cámara propia usa FP.
+  - Torso, piernas y brazos presentes; elimina el corte de altura en spine_1.
+    Excluye las piezas de cabeza/ojos y cabello por su rama del prefab.
+  - Partición complementaria de triángulos de brazos/cuerpo sin franjas perdidas
+    en hombros/axilas; conserva los agarres y adaptación de manos existentes.
+  - Mismo criterio de visibilidad para avión/accidente y despertar en suelo.
+  - Aumenta voces Jill entre 3x y 10x según RMS; limita picos suavemente bajo 0.98.
+    Elimina doble atenuación general: AudioSource=1, AudioListener aplica volumen.
+  - Mantiene diez esfuerzos y diez daños originales, un canal sin cortes ni cola.
+  - Añade ganchos a salto/respiración/PlayEvent local, cuatro entradas FMODCommon,
+    StudioSystem.PlayOneShot y emisores vocales. Filtra rutas player_vox y eventos
+    vocales serializados; llamadas directas se limitan a proximidad del actor local.
+  - Silencia instancias locales existentes de respiración y voz de fuego; restaura
+    volumen al liberar el adaptador. No silencia música, pasos ni efectos del mapa.
+  - Excepción de efecto mixto: log_drop_exert contiene voz y foley del tronco;
+    se silencia completo para eliminar el esfuerzo masculino en ese evento.
+  - Conserva cámara/FOV, cápsula, físicas, supervivencia e inventario originales.
+  - Añade registro por cámara de máscara, posición, partes FP y actor cinematográfico.
+
+Construcción y evidencia:
+  - C# compilado; paquete ModAPI conserva bundles y bancos JRM1/JSC1/JRV1.
+  - Empaquetador exige once ganchos vocales (incluido daño).
+  - Cargador construido en carpeta aislada del proyecto; IL confirma los nuevos
+    ganchos y llamadas de respaldo a métodos originales, sin recursión.
+    No se inició el juego ni se modificó su instalación durante esta construcción.
+  - work/jill/corrected/playable-jill-0.7.2.json.
+  - runtime-0.7/review-0.7.1/runtime-0.7.1.log conserva fallo observado anterior.
+  - EXE/ZIP central 0.7.2; historial, fuentes y licencias incluidos.
+
+Resultado en partida:
+  - Usuario: «No se pudo conectar Jill», modelo ausente y muchísimos sonidos
+    continuos de cosas colisionando. 0.7.2 no queda aceptada como funcional.
+  - Log: PLAYER_ATTACH_FAILED System.MissingMethodException, Method not found:
+    System.Reflection.FieldInfo.op_Inequality, en JillVoice.Initialize -> Attach.
+  - Pendiente revisar compatibilidad de reflexión con Mono/Unity 5.6, reintentos
+    y limpieza del adaptador. Causa de los sonidos de colisión aún no confirmada.
+  - Se guardan captura/log en runtime-0.7/review-0.7.2/ y nota de próxima sesión.
+  - El usuario cierra el día: sin reparación, compilación ni nuevas pruebas.
+  - Revisar partida nueva (avión/despertar), carga fuerte/daño, salto/respiración
+    y voces repetidas sin corte, solapamiento o reproducción posterior en cola.
+
+  - Ampliación del reporte el 08/10/2026: tampoco visible en animación del
+    avión y no podía saltar al aparecer. El log además contiene InvalidProgramException
+    en PlayerSfx.PlayEvent por ret inválido generado al inyectar retornos adelantados.
+    Se conserva como fallo; causa exacta del ruido no confirmada en partida.
+
+Alcance: integración local; cooperativo y tercera persona siguen pendientes.
+
+==========================================================================
+0.7.3 — Compatibilidad Mono, filtros vocales y cuerpo persistente
+Fecha: 08/10/2026
+Estado: fallida en prueba del usuario; no permite iniciar partida.
+==========================================================================
+Cambios respecto a 0.7.2:
+  - Compila el mod con /nostdlib y bibliotecas Mono originales del juego; el
+    lanzador sigue compilando con .NET Framework porque corre fuera del juego.
+  - Reemplaza operadores de comparación FieldInfo por ReferenceEquals compatible.
+  - Todos los ganchos vocales tienen un retorno final común. El empaquetador
+    rechaza cualquier inyección con más de un ret antes de entregar la versión.
+    Evita el IL inválido observado en PlayerSfx.PlayEvent y otras entradas vocales.
+  - Captura fallos al preparar voces/bucles sin retirar el cuerpo jugable de Jill.
+  - Bloquea reintentos automáticos tras fallo en el mismo jugador; un jugador
+    nuevo permite reconectar. Restaura correctamente culling aun en fallos parciales.
+  - Render persistente sin conmutar mallas por cámaras: torso/piernas/brazos
+    visibles y únicamente cabeza/ojos/cabello excluidos. Modelo completo: sombras.
+  - Mismo render persistente en avión/accidente/despertar, con poses nativas.
+  - Los clones visuales desactivan/eliminan sus colliders y rigidbodies si existen.
+    Se conservan cámara, física y colisiones del jugador; no modifica su salto.
+  - Conserva voces amplificadas, filtros de voz masculina local y canal único
+    que descarta eventos mientras está ocupado, sin cortes, solapamientos o cola.
+
+Construcción y evidencia:
+  - C# compila contra el runtime original; paquete conserva bancos/bundles.
+  - Empaquetador confirma once ganchos vocales y un único retorno por inyección.
+  - compiled-073-vocal-methods.txt: sin operador FieldInfo.op_Inequality.
+  - Runtime parcheado construido dentro del proyecto; las instrucciones finales
+    de los filtros vocales comparten salida fuera de los manejadores de excepciones.
+    Evidencia: runtime-073-vocal-injection.txt y runtime-073-system-injection.txt.
+    Esta inspección no equivale a una partida ejecutada.
+  - native-jump-073.txt: llamadas vocales anteriores al impulso/estado de salto.
+  - work/jill/corrected/playable-jill-0.7.3.json y EXE/ZIP central 0.7.3.
+
+Resultado en partida:
+  - Fallida: Preparando Jill en menú y trabado extremo; no inicia partida.
+  - Registro termina en ready sin PLAYER_ATTACHED; evidencia review-0.7.3.
+  - Dos errores nativos de acceso inválido encontrados; causa no confirmada.
+  - No pudo comprobar apariencia/salto/voces de esta versión.
+  - Revisar partida nueva: avión, despertar y levantamiento con cuerpo de Jill;
+    después, mirar abajo sin F8, saltar y escuchar si persiste ruido continuo.
+  - Revisar guardada, agachado/objetos y voces de carga/daño sin cortes o cola.
+  - La causa del ruido continuo sigue por confirmar en ejecución; esta entrega
+    elimina excepciones de audio y ciclos de conexión observados en la anterior.
+
+Alcance: jugador local; cooperativo y tercera persona continúan pendientes.
+
+==========================================================================
+0.7.4 — Arranque aplazado, carga asíncrona y preparación del cuerpo
+Fecha: 08/10/2026
+Estado: parcialmente funcional en prueba del usuario; integración visual/audio pendiente.
+
+Cambios respecto a 0.7.3:
+  - El gancho de aplicación crea solo un observador persistente y ligero.
+  - No carga recursos, crea cuerpos, inicializa voces ni registra cámaras en
+    menú. Consulta campos nativos de jugador/avión activo cada 0.25 segundos.
+  - Lee recursos en bloques de 4 MiB, cediendo un fotograma entre bloques;
+    carga bundle y prefab con las peticiones asíncronas de Unity 5.6.
+  - Valida renderers en fotogramas separados y mantiene el progreso solo en
+    contexto de partida. Al fallar registra la fase y no reintenta en bucle.
+  - Arreglo de huesos cacheado una vez por renderer: elimina cuatro copias
+    por vértice al separar torso/piernas y brazos para primera persona.
+  - Espera animadores inicializados y cápsula nativa lista antes de conectar.
+  - Actores de avión/despertar inactivos no se construyen; cada actor fallido
+    queda bloqueado para evitar reconstrucciones repetidas. No toca sus cámaras.
+  - Filtros de audio comprueban un indicador administrado antes de acceder a
+    transformaciones/propiedades del motor cuando Jill aún no está conectada.
+  - El lanzador añade -logFile con una ruta fechada en su caché 0.7.4.
+  - Conserva render de cuerpo sin cabeza/ojos/pelo, retarget/voces y colisiones
+    nativas de la entrega anterior. No altera movimiento ni salto originales.
+
+Construcción y evidencia:
+  - Compilación C# contra Mono original y paquete con once filtros vocales.
+  - Empaquetador conserva animaciones/correctivos/voces/bundles y retorno común.
+  - EXE/ZIP central 0.7.4, fuentes e historial incluidos.
+  - Runtime parcheado construido dentro del proyecto, sin modificar el juego.
+    compiled-074-startup.txt confirma que la entrada crea solo el observador.
+  - work/jill/corrected/playable-jill-0.7.4.json.
+  - Reporte 0.7.3 preservado en work/jill/corrected/runtime-0.7/review-0.7.3/.
+
+Resultado en partida y límites:
+  - Usuario inicia partida y Jill aparece en avión/despertar/jugador.
+  - Capturas confirman hombro derecho desplazado y dedos contorsionados.
+  - Cámara ve interior del torso, pecho al caminar y espalda al correr.
+  - Voz masculina audible; esfuerzo Jill durante carga, no golpe.
+  - Evidencia conservada en runtime-0.7/review-0.7.4; no aceptación completa.
+  - Primero: menú fluido, inicio de partida y finalización de la preparación.
+  - Después: avión/despertar/cuerpo, salto/ruidos, manos y voces.
+  - Se eliminan operaciones bloqueantes/asignaciones excesivas identificadas;
+    no se afirma una causa única de los cierres nativos sin pila administrada.
+  - La carga aplazada puede mostrar unos fotogramas del actor original antes
+    de conectar Jill; comprobar el momento exacto durante el avión.
+
+==========================================================================
+0.7.5 — Cuerpo coherente en primera persona, brazos/dedos y audio de golpe
+Fecha: 08/10/2026
+Estado: parcialmente funcional; prueba del usuario reportada el 08/10/2026.
+
+Cambios respecto a 0.7.4:
+  - Un solo esqueleto para torso, piernas, brazos y manos visibles.
+  - Hombros anclados al torso RE; IK de dos segmentos busca agarres nativos
+    sin desplazar el hombro. Extensión limitada al 18%; correctivos RE activos.
+  - Dedos por dirección de falanges en coordenadas de palma; longitudes propias
+    y sin torsiones axiales incompatibles. Incluye avión, despertar y objetos.
+  - Locomoción RE en piernas y torso nativo coherente con cámara/acciones.
+    Adaptación de figura externa aceptada en 0.6.1 conservada.
+  - Corrección horizontal del cuello visual detrás del ojo; cámara intacta.
+  - Superficie Standard Gamma/Linear iluminada, con normales/metallic/suavidad/
+    oclusión, caras traseras ocultas y recorte próximo al ojo. Radio menor para
+    brazos/manos. Solo vista propia; cuerpo completo sigue dando sombras.
+  - Filtro vocal ampliado a /player/foley/breathing y bus dedicado de respiración
+    nativa silenciado; se restaura al desconectar. Los pasos/hacha/música siguen.
+  - Esfuerzo Jill al entrar al golpe pesado o su transición, tras carga válida;
+    no durante windup. Carga cancelada expira, eventos ocupados se descartan.
+
+Construcción y evidencia:
+  - Unity 5.6.5p4 compila variantes del shader. C# contra Mono original.
+  - Paquete conserva dos superficies, bundles de Jill y bancos de animación/
+    correctivos/voces. Once ganchos de audio mantienen retorno terminal común.
+  - EXE/ZIP central 0.7.5, instrucciones e historial; fuentes incluyen shaders.
+  - Runtime parcheado construido en carpeta aislada, sin cambiar juego real.
+  - work/jill/corrected/playable-jill-0.7.5.json y recibos de releases/.
+
+Resultado y límites:
+  - Usuario confirma cuerpo sin desplazamiento hacia delante/atrás.
+  - Persisten dedos deformados, abertura del cuello y brazos elevados ante cámara.
+  - Voz masculina audible; Jill baja y sin voz en salto/golpe al suelo.
+  - Evidencia: runtime-0.7/review-0.7.5; aceptación completa pendiente.
+  - Revisar avión/despertar, dedos/hacha y mirada abajo quieta/caminando/corriendo.
+  - Confirmar ausencia de voz masculina y esfuerzo al liberar, sin cola/cortes.
+  - Un agarre fuera del alcance máximo queda limitado; no estira hombros sin fin.
+  - El bus de respiración es compartido: adaptar voces remotas en fase 2.x.
+  - Puede verse brevemente el actor original antes de completar carga asíncrona.
+
+==========================================================================
+0.7.6 — Dedos, codos, cierre del cuello y voces de acciones
+Fecha: 08/10/2026
+Estado: probada por el usuario; integración visual incompleta (08/10/2026).
+
+Cambios respecto a 0.7.5:
+  - Dedos: el eje real hacia el siguiente hueso de Jill sigue la dirección
+    nativa en el marco móvil de la palma. Corrige transferir una diferencia de
+    ejes de bind incompatibles; conserva traslaciones y longitudes originales.
+  - Codos: polo anatómico de Jill en lugar de posición absoluta del rig de
+    cámara nativo; sesgo abajo/afuera en reposo/agachada al mirar hacia abajo.
+  - Cuello: tapa skinned creada sobre el borde abierto real de Skin_Mat.
+    Su centro conserva pesos normalizados; comparte huesos y bindposes,
+    sigue iluminación y no se abre por el recorte de proximidad de cámara.
+    Cabeza/ojos/pelo propios continúan ocultos; cuerpo completo visible.
+  - Conserva la corrección horizontal del cuerpo aceptada en 0.7.5, esqueleto
+    único, hombros anclados/correctivos RE y locomoción de piernas RE.
+  - Voz nativa: nuevo gancho FMOD.Studio.EventInstance.start cubre GetEvent
+    directo y eventos cacheados. Silencia antes de iniciar; mantiene handle
+    válido para FSM/animaciones. Voces 2D/posición cero: ámbito single-player.
+  - Voz Jill más fuerte: RMS objetivo de 0.16 a 0.30, ganancia mínima de 3 a 5
+    y máxima de 10 a 18; mantiene limitador suave de picos 0.98 y volumen master.
+  - Añade esfuerzo Jill al salto y a eventos de aterrizaje/golpe al suelo.
+    También observa golpe aéreo/estados de hacha y roca al suelo desde su
+    movimiento, cubriendo acciones cuya animación cambia de segmento/estado.
+  - Esfuerzo cargado espera liberación. Un canal; eventos nuevos ocupados se
+    descartan: no cola, corte ni solape. Un salto ocupado puede quedar sin voz.
+  - Cámara/FOV/cápsula/inventario/controles nativos y carga asíncrona conservados.
+
+Construcción y evidencia:
+  - C# compilado contra Mono original; paquete con doce ganchos vocales,
+    todos con retorno terminal común. Bundles Gamma/Linear originales conservados.
+  - Lectura Unity 5.6.5p4 local del borde de cuello; sin rehacer modelo/texturas.
+  - EXE/ZIP central 0.7.6, fuentes, instrucciones e historial actualizado.
+  - Runtime parcheado aislado construido; instalación real del juego intacta.
+  - Recibo: work/jill/corrected/playable-jill-0.7.6.json.
+
+Resultado y límites:
+  - Usuario reporta cuerpo demasiado bajo respecto a cámara y brazos altos.
+    Vista propia aún defectuosa; captura y registro guardados en review-0.7.6.
+  - Se solicita eliminar voz al salto ordinario. Solo el golpe hacia abajo
+    tras saltar debe activar ese esfuerzo; se corrige en 0.7.6.1.
+  - Dedos y ausencia de voz masculina no tienen aceptación completa nueva.
+  - Revisar dedos al despertar/agarrar hacha; mirada abajo y codos en movimiento.
+  - Revisar voz Jill y ausencia masculina en salto, aterrizaje, golpe al suelo,
+    carga/liberación y daño; comprobar los descartes mientras una voz suena.
+  - Distancia máxima del agarre y política sin cola conservadas.
+  - Ámbito de voces remotas/bus de respiración se adaptará en la fase 2.x.
+
+==========================================================================
+0.7.6.1 — Altura anatómica respecto a cámara y salto silencioso
+Fecha: 08/10/2026
+Estado: base jugable de Jill aceptada por el usuario (08/10/2026); anular/meñique pendientes.
+
+Cambios respecto a 0.7.6:
+  - Corrige la referencia vertical: en cada pose usa el punto medio de los ojos
+    animados EyeCorner_L/EyeCorner_R y alinea su Y con la cámara nativa.
+    El ajuste anterior corregía horizontalmente el cuello, conservando la
+    estimación vertical de cápsula/bind que dejaba el torso demasiado abajo.
+  - Solo desplaza el COG del esqueleto de Jill; no mueve cámara, cápsula ni
+    Rigidbody. Conserva colocación horizontal aceptada y escala nominal 1.72/1.78.
+  - Apoyo visual de piernas mediante dos segmentos: usa suelo de cápsula,
+    conserva elevación relativa de pies y limita extensión de segmentos al 12%.
+    No aplica en avión/despertar, intro sentada, aire, impacto o nado/escalada.
+    Huesos de pierna se guardan al iniciar; sin búsqueda/array nuevos cada frame.
+  - Alineación vertical también en actores del avión/despertar. Brazos se
+    resuelven después del torso, desde sus hombros hacia el agarre nativo.
+    Mantiene correctivos RE, retarget de dedos y cierre skinned del cuello.
+  - Salto normal sin voz de Jill; suprime únicamente llamada vocal nativa.
+    Aterrizaje ordinario también silencioso; el controlador de salto permanece.
+  - No emite esfuerzo en flyingAxeAttack ni transición/preparación de ataque.
+    Golpe hacia abajo de hacha/roca se observa en su estado actual, a partir
+    del 15% del movimiento. Las voces nativas de ataque respetan esa fase.
+  - Mantiene esfuerzo al liberar golpe pesado, quejidos de daño, ganancia
+    de Jill y filtro de voz masculina. Canal único: descarta eventos ocupados
+    sin cola, corte, superposición ni reproducción al finalizar otro sonido.
+  - Registro FP_EYE_HEIGHT_ALIGNMENT cada diez segundos: altura de cámara,
+    altura de ojos antes, corrección y diferencia final; ningún cambio de cámara.
+  - Acuerdo: 0.7.x continúa hasta Jill y Carlos al 100%. Cuarto componente de
+    revisión para esta etapa; Carlos no se ha añadido en este parche.
+
+Construcción y evidencia:
+  - C# contra las bibliotecas Mono originales; recursos embebidos reabiertos.
+  - Doce ganchos de voz con retorno terminal común; carga asíncrona conservada.
+  - Lectura del prefab en Unity 5.6.5p4: referencias de ojos y huesos de pierna
+    medidas; no se reconstruyeron modelo, texturas ni bundles de superficie.
+  - EXE/ZIP central 0.7.6.1, código, instrucciones e historial incluidos.
+  - Runtime parcheado aislado construido; instalación real intacta por el agente.
+  - Recibo: work/jill/corrected/playable-jill-0.7.6.1.json.
+
+Resultado y límites:
+  - Usuario confirma que Jill funciona correctamente y es completamente jugable.
+    Esta es la primera base jugable buena y aceptada; su EXE/ZIP se conservan.
+  - Pulgar, índice y medio funcionan bien. Anular y meñique siguen raros:
+    detalle visual de retarget, corregido por separado en la revisión 0.7.6.2.
+  - No se atribuye esta aceptación a todos los casos de audio por separado;
+    se registra lo confirmado por el usuario sin inventar pruebas adicionales.
+  - Figuras externas/animaciones 0.6.1 previamente aceptadas se conservan.
+  - La fase sigue en 0.7.x porque Carlos todavía no está integrado.
+
+==========================================================================
+0.7.6.2 — Anular y meñique: metacarpiano y tres falanges
+Fecha: 08/10/2026
+Estado: Jill completamente jugable y aceptada por el usuario el 08/10/2026.
+Base jugable aceptada: 0.7.6.1.
+
+Cambios respecto a 0.7.6.1:
+  - Detectada diferencia estructural en las manos: pulgar/índice/medio de Jill
+    tienen tres huesos; anular/meñique tienen cuatro, con metacarpiano en _0.
+  - Mapeo anterior conducía _0/_1/_2 como tres falanges y dejaba _3 sin adaptar.
+  - Ahora Palm1 de The Forest conduce el metacarpiano _0; falanges 1/2/3
+    conducen _1/_2/_3. El marcador nativo 4 sirve solo para dirección de punta.
+  - Se aplica en ambas manos, al jugador y a actores del avión/despertar.
+  - Si Palm1 no está disponible como hueso de skin, conserva el metacarpiano
+    original en reposo. Las tres falanges mantienen el mapeo correcto.
+  - Conteo esperado de jugador: 34 articulaciones; figura externa mantiene 30.
+    Registro FINGER_CHAIN_BIND informa fuente, destino, función y siguiente hueso.
+  - Conserva los tres dedos aceptados, referencia de muñeca, altura/cuerpo,
+    cámara, piernas apoyadas, voces, salto silencioso y controles de 0.7.6.1.
+  - La figura externa previamente aceptada no cambia su retarget.
+
+Construcción y evidencia:
+  - Comparación del inventario FBX de RE3R con la jerarquía local de The Forest.
+    Informe: work/jill/corrected/finger-chain-review-0762.json.
+  - C# compilado contra Mono original; paquete reabierto con recursos completos
+    y doce ganchos de voz con retorno común. Bundles sin reconstruir.
+  - EXE/ZIP central 0.7.6.2 con instrucciones/historial/código; runtime aislado.
+    El agente no cambia instalación real ni partidas guardadas.
+  - Recibo: work/jill/corrected/playable-jill-0.7.6.2.json.
+
+Resultado y límites:
+  - Tras la prueba, el usuario confirma Jill totalmente bien hecha; acepta
+    0.7.6.2 como base completa y autoriza seguir con Carlos.
+  - 0.7.6.1 queda como primera base jugable; 0.7.6.2 como base completa actual.
+  - Seguimos en 0.7.x; falta Carlos antes de cerrar esta etapa.
+
+==========================================================================
+0.7.7.0 — Carlos jugable, selección aleatoria y cambio con F8
+Fecha: 08/10/2026
+Estado: probada por el usuario; fallo al conectar Carlos, Jill restaurada.
+Base Jill completa aceptada: 0.7.6.2.
+
+Cambios respecto a 0.7.6.2:
+  - Añade cuerpo pl0000, cabeza pl0001 y cabello pl0005 de Carlos, unidos
+    en un esqueleto CarlosSkeleton con materiales iluminados por The Forest.
+    Bundles Gamma/Linear propios; los bundles aceptados de Jill se conservan.
+  - Carlos usa sus tres movimientos RE3R y sus muestras originales de músculos,
+    torsión y hombros. Los caches se separan por personaje para no mezclar rigs.
+  - Conserva el lector de acciones completo: transiciones/capas, nado, saltos,
+    escalada, caídas, impactos, agachado, objetos, ataques normales/cargados.
+  - Ambos personajes tienen brazos con IK anatómico, apoyo visual de piernas,
+    referencia vertical en sus ojos animados y exclusión propia de cabeza,
+    ojos y pelo. Se conservan sombra completa y cámara/cápsula nativas.
+  - Carlos también tiene metacarpiano adicional en anular/meñique; se aplica
+    el mapeo Palm1 -> _0, falanges 1/2/3 -> _1/_2/_3 aceptado para Jill.
+  - El avión y el despertar SIEMPRE usan Jill. El cuerpo de gameplay queda
+    oculto mientras la secuencia usa su actor propio. F8 bloqueado en secuencia.
+  - Al entrar/cargar un actor local se elige Jill o Carlos con probabilidad 50/50.
+    La elección se mantiene durante esa partida; cambiar objetos no la sortea.
+  - F8 alterna Jill/Carlos a voluntad, con su banco de voces, conservando actor
+    nativo, inventario, salud, cámara y controles. Si el cambio falla intenta
+    restaurar el personaje anterior y deja un registro, sin reintentos masivos.
+  - Eliminadas figura externa y sus teclas de aparición/colocación/escala/modos.
+  - Carlos añade veinte voces inglesas originales: diez esfuerzos y diez daños,
+    identificadas por eventos Wwise, sin reutilizar voces del protagonista nativo.
+  - Un canal compartido sobrevive al cambio visual. Una voz iniciada termina;
+    los eventos recibidos mientras suena se descartan sin corte/superposición/cola.
+    En secuencia el banco efectivo siempre es Jill, aunque el sorteo sea Carlos.
+  - Conserva amplificación, filtrado vocal nativo, carga silenciosa y esfuerzo
+    al liberar ataque fuerte/golpear hacia abajo. Salto ordinario sin voz.
+  - Carga diferida, lectura por bloques y AssetBundles asíncronos; menú ligero.
+
+Construcción y evidencia:
+  - Unity 5.6.5p4: 456 transforms unificados, 28 renderers; desviación máxima
+    de unión de malla 0.000000596 metros. Modelo completo inspeccionado en render.
+  - Carlos: 453/456 muestras de hombro, tres clips propios y veinte voces PCM.
+  - C# contra bibliotecas Mono originales. Paquete ModAPI reabierto con ambos
+    personajes, Gamma/Linear, movimientos, correctivos y voces; doce ganchos
+    vocales conservan retorno único común para compatibilidad con ModAPI.
+  - EXE/ZIP central 0.7.7.0 y runtime construido dentro del workspace.
+    El agente no inicia partida ni altera la instalación real del juego.
+  - Informe de assets: unity-pipeline/carlos-complete-build.json.
+    Recibo de versión: work/carlos/corrected/playable-roster-0.7.7.0.json.
+
+Resultado y límites:
+  - Jill 0.7.6.2 ya aceptada. Carlos está implementado; el aspecto final de
+    manos, cámara/cuerpo, objetos y movimientos requiere confirmación en partida.
+  - Revisar F8, avión siempre Jill, sorteo y voces propias sin solaparse.
+  - 0.7.x continúa hasta aceptar también Carlos; coop sigue para 2.x.
+  - El EXE local reúne dependencias/recursos; la generación automática desde
+    instalaciones de otros usuarios para el distribuidor público sigue pendiente.
+
+0.7.7.1 — Carlos: corregir el fallo del cierre del cuello
+Fecha: 08/10/2026
+Estado: probada y aceptada por el usuario; ambos jugables, fase 0.7.x finalizada.
+Cambios respecto a 0.7.7.0:
+  - La prueba de 0.7.7.0 mostraba «Jill restaurada; cambio fallido» al intentar
+    activar Carlos, tanto después del avión como con F8. La restauración de
+    Jill funcionó; Carlos no quedó aceptado. Se conserva el intento y su log.
+  - Causa registrada: JillNeckClosure esperaba el borde del cuello en la piel
+    del cuerpo de Carlos. Esa malla solo contiene brazos/manos, por lo que
+    lanzaba «Jill neck skin boundary was not found» antes de conectar el rig.
+  - En Carlos el borde real es el inferior de pl0001_Face_Mat, en la pieza
+    separada de la cabeza. Se genera solamente el abanico que cierra ese borde;
+    el resto de la cara/cabeza, barba, ojos y pelo sigue excluido de primera persona.
+  - El cierre usa sus 56 vértices reales, UV, pesos y huesos unificados, sin
+    trasladar el cuello ni reutilizar medidas de Jill. Sin física adicional.
+  - Jill conserva su cierre de cuello y geometría aceptados; los bundles de
+    ambos personajes se mantienen. F8, sorteo 50/50, avión siempre Jill y
+    banco de voces propio siguen disponibles con el mismo canal sin cola.
+Construcción y evidencia:
+  - Lectura de prefabs importados en Unity: avatar-neck-boundaries-0771.txt.
+    Carlos: cuello (0, 1.481004, -0.045587), borde de Face_Mat de 56 vértices.
+  - Compilación C# / paquete ModAPI y EXE/ZIP 0.7.7.1; runtime construido
+    dentro del workspace. Sin iniciar partida ni cambiar el juego por el agente.
+  - Fallo anterior: work/carlos/corrected/runtime-0.7/review-0.7.7.0-neck-failed/.
+  - Recibo actual: work/carlos/corrected/playable-roster-0.7.7.1.json.
+Resultado dentro del juego:
+  - El usuario confirma: «por lo demás Carlos está excelente». Se acepta
+    0.7.7.1 como versión funcional con Jill y Carlos jugables. La fase 0.7.x
+    queda cerrada por instrucción expresa del usuario, con fecha 08/10/2026.
+  - Bug visual pendiente: al golpear hacia el suelo aparece el cañón de un
+    rifle. Debe corregirse en una próxima sesión; no se investiga ni corrige hoy.
+  - Segundo detalle: al golpear y mirar a la derecha se atraviesa ligeramente
+    el cuerpo. El usuario lo considera normal en The Forest y no le preocupa;
+    se documenta como limitación aceptada, sin prioridad de corrección.
+  - Evidencia del usuario: Captura de pantalla 2026-10-08 210252.png y
+    Captura de pantalla 2026-10-08 210308.png. Copias y registro conservados
+    en work/carlos/corrected/runtime-0.7/review-0.7.7.1-user-accepted/.
+  - Cierre del día: solo documentación/aceptación. No se cambia código,
+    geometría, audio, paquetes ni EXE/ZIP; 0.7.7.1 se conserva tal como fue probada.
+
+==========================================================================
+0.8.0 — GRAN HITO: cooperativo Jill / Carlos funcional y aceptado
+Fecha: 09/10/2026
+Paquete ModAPI: 0.8.0.0
+Estado: ACEPTADA por el usuario el 09/10/2026; coop funcional al 100% actualmente.
+==========================================================================
+Cambios respecto a 0.7.7.1:
+  - Reutiliza Steam P2P/Bolt y la replicación nativa de jugadores/objetos/acciones.
+    No sustituye el transporte ni envía assets, PCM o poses de huesos.
+  - Añade canales propios control fiable y efectos no fiables, registrados
+    después de Voice en el mismo BoltStartBegin de ambos equipos.
+  - Protege StreamDataReceived: solo los datos Voice llegan al receptor del
+    micrófono; el protocolo del mashup se procesa por separado.
+  - Saludo FR3C v1/catálogo y época de sesión. Host valida que el emisor sea
+    fuente/controlador de esa entidad antes de distribuir su selección.
+  - Sincroniza identidad Jill/Carlos y F8, con revisión y confirmación. Primera
+    persona y avión/despertar siguen las reglas de 0.7.7.1, siempre Jill en avión.
+  - Instantánea al conectar y cada 10 s; entidades tardías se resuelven al aparecer.
+    Limpieza al desconectar/cerrar sesión. No conserva datos de sesiones anteriores.
+  - Añade representación cosmética por remoto, con cabeza/cabello completos,
+    manos/hombros y acciones desde el Animator replicado de ese propio jugador.
+    Conserva cadenas completas de dedos y agarres nativos de objetos equipados.
+    La visibilidad del reemplazo guía el culling del Animator original, evitando
+    que la malla nativa oculta congele una animación que sí está en pantalla.
+    No añade cápsulas, Rigidbody, inventario ni controladores a los compañeros.
+  - Conserva sus objetos/animadores nativos; oculta solo las mallas humanas.
+    Si falla el adaptador, restaura el aspecto original y limita reintentos.
+  - Locomoción RE por perfil y estado de velocidad replicado; otras acciones
+    completas conservan estados actuales/destino, capas y transiciones nativas.
+  - Un AudioSource 3D por remoto usando los clips que ya contiene cada PC.
+    Se publica ID/revisión/secuencia/momento solo cuando la voz local inicia.
+    Rechaza eventos duplicados, viejos o de una selección anterior. Busy descarta,
+    sin cortar ni encolar. Salto normal silencioso; golpes fuertes con esfuerzo.
+  - Filtros vocales por actor; en coop deja libre el bus FMOD compartido y
+    conserva el micrófono nativo. Cada actor tiene un canal independiente.
+  - Indicador de compatibilidad y número de avatares remotos visibles.
+  - EXE/ZIP único 0.8.0 PRUEBA-COOP y guía para ambos equipos. Detección de
+    Steam/juego y dependencias del preparador incluidas; fuentes/licencias aparte
+    dentro del mismo ZIP. Conserva los archivos aceptados de 0.7.7.1.
+
+Comprobaciones de construcción:
+  - Compilación contra las API Mono/Unity/Bolt/UdpKit locales de The Forest 1.11b.
+  - Lectura de bundles/datos/voces de ambos personajes dentro del paquete.
+  - Inyecciones vocales y dos ganchos de coop presentes, con retorno único.
+  - CoopSync permanece un componente añadido con listener anidado; no se
+    inyecta su lógica en todos los listeners globales de Bolt.
+  - Preparación aislada del runtime y revisión del código inyectado documentadas
+    en research-coop/coop-0.8.0-build.json, sin iniciar una partida.
+
+Resultado en juego:
+  - El usuario confirma: «oficialmente el coop funciona al 100% actualmente».
+    Se registra 0.8.0 como versión actual funcional y aceptada por esa prueba.
+  - GRAN HITO del proyecto, a la par de Jill jugable y la centralización.
+    La aceptación procede del reporte del usuario, posterior a la preparación;
+    los recibos de construcción conservan los resultados originales de su fecha.
+
+Limitaciones y siguientes pruebas:
+  - Steam P2P alojado es el primer objetivo; servidor dedicado/otros mods pendientes.
+  - PRUEBA-COOP.txt queda como guía para futuras comprobaciones y regresiones.
+    La confirmación global del usuario no detalla resultados individuales de
+    cada caso, entrada tardía, reconexión ni configuraciones adicionales.
+  - Pendiente heredado: cañón de rifle de Carlos al golpear el suelo.
+  - Cruce leve del cuerpo al atacar/mirar derecha sigue aceptado y no prioritario.
+  - Generación automática de recursos RE3 por usuario pendiente para publicación.
+
+Evidencia:
+  - releases/launcher-0.8.0-receipt.json; research-coop/coop-0.8.0-build.json.
+  - work/forest-re3-mashup/probe/CoopSync.cs y CoopRemoteAvatar.cs.
+  - work/forest-re3-mashup/launcher/PRUEBA-COOP.txt.
+  - INVESTIGACION-COOP-09-10-2026.md; baseline-0.7.7.1 conserva código anterior.
+
+==========================================================================
+0.8.1 — Esquiva reactiva con F y laboratorio de volteretas
+Fecha: 09/10/2026
+Paquete ModAPI: 0.8.1.0
+Estado: PREPARADA para prueba en juego; no aceptada todavía.
+Base funcional: 0.8.0, cooperativo aceptado por el usuario.
+
+Cambios respecto a 0.8.0:
+  - Una pulsación de F abre 0.12 s para acertar antes del contacto dañino.
+    Si no hay golpe dentro de la ventana, no activa animación ni inmunidad.
+    Espacio conserva salto; mantener F no repite ni encadena esquivas.
+  - Al acertar se cancela daño, armadura y reacción del golpe por las entradas
+    nativas de PlayerStats; voltereta completa 0.90 s e inmunidad 1.00 s.
+    Recuperación total 1.15 s. Cifras del mashup, no medidas oficiales de RE3R.
+  - El cuerpo se orienta y desplaza alejándose del atacante. Recorrido objetivo
+    40% de la altura nativa, coordinado con el avance de la animación.
+    Rigidbody/cápsula originales y barrido de colisión limitan paredes/obstáculos.
+    Cámara sin giros añadidos; herramienta oculta temporalmente durante la acción.
+  - Se revisan y decodifican cuatro volteretas de Jill y los seis candidatos de
+    evasión de Carlos. Los seis de Carlos son pasos/carrera lateral/puñetazo,
+    por lo que ambos personajes comparten las cuatro volteretas completas de Jill
+    (L0, L180, R0, R180), alternadas y adaptadas a la pose base de cada rig.
+    Se reproducen entrada, giro y recuperación; sin duplicar traslación de raíz.
+  - Sonidos específicos de movimiento corto mov_s: dos clips de Jill y cuatro de
+    Carlos, con ganancia más suave que el ataque. Canal vocal existente, sin cola,
+    superposición ni interrupción; si está ocupado se descarta el nuevo quejido.
+  - F9: crear/recolocar una figura externa local y atravesable del personaje.
+    F10: congelar/reanudar; F11: siguiente variante; Shift+F10: avanzar 1/60 s;
+    Shift+F9: retirar. Ciclo automático de cuatro variantes con desplazamiento.
+    F8 mantiene cambio Jill/Carlos y cambia también la figura; bloqueado durante
+    la recuperación real. Avión y despertar siguen siempre con Jill.
+  - F6: caníbal de prueba con instantMutantSpawner nativo; host crea una entidad,
+    clientes lo solicitan por el canal propio. Cinco segundos entre peticiones,
+    hasta cuatro caníbales de prueba por partida. No se activa la consola.
+  - Coop FR3C v2, catálogo 0x08010001. Mensajes pequeños de inicio de esquiva,
+    variante, tiempo y dirección, además de voces por ID y solicitud de enemigo.
+    Posición/física/IA siguen por el juego; recursos y huesos no viajan por red.
+    Valida dueño, identidad/revisión, secuencia, dirección finita, antigüedad y
+    recuperación. El dueño resuelve el impacto como en el daño nativo; el host
+    valida el protocolo, no se presenta como verificación de cada golpe por host.
+    Instantáneas incluyen acciones aún activas; no se reinician eventos viejos.
+  - EXE/ZIP central 0.8.1 con dependencias, recursos, historial, guías y código.
+
+Construcción:
+  - Compilación C# para Mono/Unity de The Forest 1.11b y paquete ModAPI.
+  - El empaquetador conserva los recursos, ganchos de daño y un único retorno
+    terminal en cada inyección. Referencia de compilación separada para acceder
+    al contacto privado de enemigo; no se instala esa DLL de referencia.
+  - Runtime parcheado preparado en carpeta aislada, a partir del respaldo original.
+    No se inicia el juego ni se ejecutan pruebas automáticas de gameplay.
+
+Resultado en juego:
+  - El usuario acepta las animaciones, pero F no activa la esquiva ni pulsándola
+    repetidamente frente a ataques. Se prepara la corrección 0.8.1.1.
+    La aceptación de 0.8.0 no certifica esta nueva esquiva.
+
+Límites y pendientes:
+  - Activación actual: suelo firme, ataque cuerpo a cuerpo nativo con atacante
+    identificado. No activar por hambre/frío/veneno/fuego/caídas o daño sin origen.
+    Ampliar otras fuentes de ataque y comprobar VR/servidores dedicados después.
+  - Los puntos a revisar son contacto visual con suelo, Carlos retargeteado,
+    oportunidad de F, colisiones y latencia en ambos sentidos de la sesión.
+  - La figura es local; únicamente el jugador y el enemigo real participan en coop.
+    Caníbal exterior recomendado; enemigos desactivados/modo pacífico pueden
+    impedir que el spawner nativo lo genere.
+  - Pendiente heredado: cañón de rifle de Carlos al golpear el suelo, y cruce leve
+    del cuerpo aceptado previamente. No se declaran corregidos en esta entrega.
+
+Evidencia:
+  - releases/launcher-0.8.1-receipt.json; research-dodge/dodge-0.8.1-build.json.
+  - probe/DodgeRuntime.cs, DodgeDiagnostics.cs, JillMotionPreview.cs, CoopSync.cs.
+  - research-dodge/dodge-motions.json, dodge-candidate-poses.png y bancos de voz.
+  - PRUEBA-ESQUIVA-0.8.1.txt; INVESTIGACION-ESQUIVA-09-10-2026.md.
+
+==========================================================================
+0.8.1.1 — Corrección de activación de F y diagnóstico del contacto
+Fecha: 09/10/2026
+Paquete ModAPI: 0.8.1.1
+Estado: PROBADA por el usuario; F e inmunidad aceptadas. Movimiento/vista fallan.
+Resultado posterior (09/10/2026):
+  - El usuario confirma que ahora se activa y evita daño.
+  - No hay desplazamiento contrario al atacante. La vista sigue como de pie.
+  - Se solicita seguir los ojos/cabeza durante el giro y mover al jugador a lo
+    largo de toda la animación. Se prepara 0.8.1.2 para esos dos pendientes.
+Base: animaciones de 0.8.1 aceptadas; cooperativo base 0.8.0 aceptado.
+
+Reporte del usuario y evidencia:
+  - Las animaciones se ven bien. F no activa la esquiva al atacar el caníbal,
+    incluso pulsándola repetidamente. 0.8.1 no se marca como mecánica funcional.
+  - El registro muestra DODGE_READY, caníbales generados y voces de daño,
+    pero ningún DODGE_START. El runtime instalado contiene los ganchos de
+    hitFromEnemy, setCurrentAttacker y OnTriggerEnter; no faltaba su instalación.
+  - La versión anterior no registraba pulsaciones ni causas de bloqueo:
+    no permite demostrar retrospectivamente cuál fue el primer bloqueo exacto.
+
+Cambios:
+  - F se muestrea solamente en Update. Se elimina la lectura de GetKeyDown
+    dentro del callback de daño físico y su bloqueo prematuro por frame.
+    Tecla/contacto usan un reloj monotónico común para que Time.time de física
+    y Time.time de render no cambien la ventana según el punto de llamada.
+  - El contacto cuerpo a cuerpo con origen conocido se conserva hasta LateUpdate
+    para resolverlo después de leer F, con instante y frame originales.
+    Tecla/contacto del mismo frame se evalúan juntos. No se permite usar F de
+    un frame posterior para rescatar un impacto anterior. Sin esquiva se ejecuta
+    una sola vez el camino nativo completo, con armadura, salud, voz y reacción.
+    Buffer acotado a 16 contactos del frame; sin acumulación prolongada.
+  - Apoyo en suelo: si Grounded aún no se actualizó en el orden de callbacks,
+    se confirma suelo con barrido corto de esfera, normal y capas nativas;
+    se excluye al propio jugador, triggers y salto ascendente.
+  - Se retira Cursor.visible como bloqueo: la disponibilidad usa vista World,
+    pausa, foco y restricciones nativas de movimiento/cinemáticas/agua/escalada.
+  - Indicador visible: F lista, detectada/armada, fuera de ventana, motivo de
+    bloqueo o ESQUIVA. Registro DODGE_INPUT con estado y frames, limitado para
+    evitar escritura por frame o inundar el log al pulsar repetidamente.
+  - Se conservan ventana .12 s, animación .90 s, inmunidad 1 s, recuperación
+    1.15 s, dirección, física, animaciones, voces, controles y FR3C v2.
+    Para esta prueba, ambos equipos deben usar la entrega 0.8.1.1.
+  - EXE, ZIP, código y guía actualizados junto con este archivo maestro.
+
+Construcción y límites:
+  - Compilación y preparación del runtime aislado para The Forest 1.11b.
+    No se inicia el juego ni se ejecutan pruebas automáticas de gameplay.
+  - La activación y su resultado entre dos PCs necesitan la nueva prueba del
+    usuario. No se presenta esta corrección como confirmada dentro del juego.
+  - Se conservan los pendientes anteriores y la aceptación histórica de 0.8.0.
+
+Evidencia:
+  - research-dodge/base-0.8.1/user-activation-failure.log.
+  - research-dodge/installed-activation-hooks.txt y activation-ground.txt.
+  - probe/DodgeRuntime.cs; releases/launcher-0.8.1.1-receipt.json.
+  - PRUEBA-ESQUIVA-0.8.1.1.txt.
+  - Referencia Unity 5.6 sobre GetKeyDown (lectura en Update):
+    https://docs.unity3d.com/560/Documentation/ScriptReference/Input.GetKeyDown.html
+
+==========================================================================
+0.8.1.2 — Desplazamiento de raíz y voltereta en primera persona
+Fecha de sesión: 09/10/2026 (cierre nocturno, por petición del usuario)
+Registro de construcción y aprobación: 10/10/2026
+Paquete ModAPI: 0.8.1.2
+Estado: APROBADA por el usuario en SOLO JUGADOR; cooperativo TODAVÍA SIN PROBAR.
+Base: F e inmunidad aceptadas en 0.8.1.1; animaciones aceptadas en 0.8.1;
+      cooperativo base 0.8.0 aceptado. Sus hitos históricos se conservan.
+
+Cambios respecto a 0.8.1.1:
+  - Se reemplaza la aceleración de caminar en DetermineVelocityChange durante
+    la esquiva. Se aplica fuerza horizontal al Rigidbody real, sin teleportar,
+    manteniendo gravedad y resolución de contactos de la cápsula nativa.
+  - Se suspende ClampVelocity durante la acción para que la proximidad/impacto
+    del enemigo no recorte su velocidad. HandleFrictionParams ya no aplica la
+    fricción de estar parado cuando los ejes se bloquean durante la voltereta.
+    Se guarda/restaura la fricción al terminar, cancelar o descargar el sistema.
+  - Cada paso físico consume el recorrido XZ acumulado de la raíz original del
+    clip, escalado según el rig de Jill/Carlos. Reemplaza el antiguo avance fijo
+    del 40% de altura. Las cuatro variantes conservan su duración de .90 s.
+    Dirección siempre contraria al atacante, independientemente de la cámara.
+  - El barrido frontal excluye jugador, triggers y suelo de apoyo. Permite salir
+    de contactos iniciales hacia afuera; paredes siguen acortando el recorrido
+    y la cápsula conserva las colisiones. El modelo no duplica la raíz horizontal.
+  - Cámara de voltereta: posición entre ambos EyeCorner y orientación del hueso
+    head respecto a su pose base. Sigue el descenso y giro completo; transiciones
+    de .06 s de entrada/.12 s de salida, iguales al blend de la pose corporal.
+    Barrido de esfera y límite inferior evitan atravesar suelo/paredes con vista.
+  - Override solo al renderizar cámaras propias; restaura transformación nativa
+    después del render. Evita realimentar AlignFirstPersonBody y scripts de
+    cámara/control en el frame siguiente. Se restaura también al cancelar.
+    No mueve cámaras de inventario, remotas ni del avión. FOV permanece nativo.
+  - Se bloquean ejes de mirada durante la acción; al terminar vuelven controles,
+    cámara y herramienta. Se conservan F reactiva .12 s, inmunidad 1 s,
+    recuperación 1.15 s, voces sin cola, controles de laboratorio y cambio F8.
+  - Figura F9 usa el mismo recorrido de raíz y escala que el personaje jugable.
+  - Registros DODGE_START (objetivo), DODGE_MOTOR_END (pasos/bloqueos/distancia
+    real) y DODGE_CAMERA (ojos/giro). No hay escritura de registro por frame.
+
+Cooperativo y entrega:
+  - FR3C protocolo 2/catálogo 0x08010001; no cambia el formato de mensajes.
+    El desplazamiento real se replica por el transform nativo; cada observador
+    reproduce clip/tiempo/dirección desde sus archivos. Cámara solo del dueño.
+  - Ambos equipos deben usar 0.8.1.2 para compartir recorrido y comportamiento.
+  - EXE central, ZIP, archivo de código, guía de prueba e historial actualizados.
+
+Construcción y límites:
+  - Compilación/empaquetado y runtime aislado para The Forest 1.11b.
+  - El agente no abre el juego ni ejecuta pruebas automáticas de gameplay.
+  - Prueba posterior del usuario: versión aprobada en solo jugador. Quedan
+    aceptados en ese modo el desplazamiento y la cámara de la voltereta.
+  - Cooperativo de 0.8.1.2 aún sin probar; no se extiende la aprobación de solo
+    jugador a dos PCs. La aceptación histórica del coop 0.8.0 se conserva.
+  - Se conservan los demás pendientes anteriores, incluido rifle de Carlos.
+
+Cierre de sesión:
+  - Incluida en el día 09/10/2026 por petición expresa del usuario.
+  - Se conserva 0.8.1.2 como entrega funcional aprobada en solo jugador.
+  - No se modifica el código, el mod instalado ni el lanzador durante el cierre.
+  - Pendiente prioritario para retomar: probar la nueva esquiva en cooperativo.
+
+Evidencia:
+  - research-dodge/base-0.8.1.1/user-activation-accepted-motion-camera-missing.log.
+  - research-dodge/native-roll-movement.txt, native-friction.txt y activation-fp.txt.
+  - probe/DodgeRuntime.cs, DodgeFirstPersonCamera.cs, PrepareDodgeReference.cs.
+  - releases/launcher-0.8.1.2-receipt.json; research-dodge/dodge-0.8.1.2-build.json.
+  - PRUEBA-ESQUIVA-0.8.1.2.txt.
+
+==========================================================================
+0.8.2 — Inventario exclusivo RE3R y cinco baúles independientes
+Fecha: 10/10/2026
+Paquete ModAPI: 0.8.2.0
+Estado: PROBADA por el usuario; funciona en general, baúl noroeste inaccesible.
+
+Cambios respecto a 0.8.1.2:
+  - TAB abre un inventario adicional exclusivamente para IDs propios de RE3R.
+    Capacidad 20 espacios, cuadrícula 4×5; conserva el inventario nativo.
+  - Se añaden pilas limitadas y armas grandes de dos espacios contiguos.
+    Los datos del inventario no se pasan a la base de objetos de The Forest.
+  - Se incorpora la malla original del baúl sm41_011_ItemLocker01A con sus
+    dos materiales y texturas; colisión estática, sin Rigidbody duplicado.
+  - Cinco ubicaciones: cueva de katana, fondo del agujero central, costa frente
+    al yate, computadora del final y costa del extremo noroeste.
+    Cada caja tiene EXACTAMENTE 4 espacios y contenido independiente.
+  - E abre inventario personal a la izquierda y baúl a la derecha. Selección
+    por clic y botones guardar/retirar 1 o pila. No hay transferencias parciales
+    silenciosas: si no cabe todo lo solicitado, ambos inventarios quedan iguales.
+  - F5 abre laboratorio: teletransportarse a cada zona o colocar una copia
+    delante. El original permanece en su sitio; la copia usa su mismo almacén.
+    Máximo una copia por ID; no persiste entre sesiones.
+  - El menú bloquea movimiento, cámara, ataques, esquiva y cambio de personaje;
+    restaura estado de entrada/ratón al cerrar, perder foco o cambiar de sesión.
+  - Teletransporte con cápsula temporalmente congelada, carga nativa de áreas/
+    escena del final y comprobación de suelo. Regreso al origen si falla.
+  - Guardado adicional ForestRE3-Inventarios-v1.dat en el slot nativo del mundo.
+    Archivo binario validado, SHA-256, reemplazo temporal y copia .bak.
+    Partidas nuevas vacías; cambia de personaje sin perder el inventario.
+  - En coop el host conserva baúles e inventarios por Steam. Autoriza cercanía,
+    identidad, revisiones, cantidades y capacidad. No acepta IDs ajenos a RE3R.
+    Descarta solicitudes antiguas; ante conflicto, envía el estado actualizado.
+  - Protocolo 3 / catálogo 0x08020001 sobre canales fiables existentes; no se
+    transmiten modelos, animaciones, texturas ni mallas de los baúles.
+    Ambos equipos deberán actualizar. Mantiene el micrófono y controles nativos.
+  - EXE/ZIP central, código, guía INVENTARIO-Y-BAULES-0.8.2.txt e historial.
+    Se conserva la esquiva 0.8.1.2 aprobada en solo y sus controles de diagnóstico.
+
+Alcance y limitaciones:
+  - Los cinco baúles y el inventario comienzan vacíos. F5 ofrece entradas de
+    prueba RE3R para comprobar espacios y transferencias. Esta entrega NO añade
+    todavía distribución de pickups, equipamiento/disparos, curación ni recetas.
+  - Las armas del catálogo son objetos de almacenamiento, no armas disparables.
+  - Modelo del baúl original; la interacción de esta etapa abre la interfaz.
+    No se incorpora todavía animación de tapa ni sonido de apertura de RE3R.
+  - El teletransporte del final es de diagnóstico y evita el recorrido narrativo;
+    no elige ni pulsa los finales. El juego debe cargar su escena antes de llegar.
+  - Guardar con el host para persistir el estado coop; salir sin guardar vuelve
+    al último guardado del mundo. Las copias de prueba son temporales.
+  - Pendiente prueba de ubicaciones/apoyo, TAB/E, transferencias, guardado/carga
+    y resultados en dos PCs. No se extiende la aceptación del coop 0.8.0 a esto.
+  - Se conserva el pendiente del cañón de rifle de Carlos al golpear al suelo.
+
+Preparación realizada:
+  - Lectura del MESH/MDF/TEX local y creación de bundles con Unity 5.6.5p4.
+  - Compilación para el Mono original y empaquetado con ModAPI.
+  - Preparación aislada del runtime y actualización local mediante el lanzador,
+    con respaldo de la instalación previa. El juego no se ejecuta para esta tarea.
+  - No se añaden ni ejecutan tests o pruebas automáticas de gameplay.
+
+Resultado de la prueba en juego:
+  - 10/10/2026: el usuario indica que en general todo está bien. El baúl
+    noroeste queda bajo una montaña; pide moverlo, limpiar la UI y añadir G19.
+    Prueba cooperativa de estas funciones todavía pendiente.
+
+Evidencia:
+  - research-inventory/world-anchors.json, input-save-api.txt, teleport-api.txt.
+  - research-inventory/build_inventory_assets.py y unity-inventory.log.
+  - probe/Re3InventoryData.cs, Re3InventoryRuntime.cs, Re3InventoryUI.cs,
+    Re3InventoryNetwork.cs y ampliación de CoopSync.cs.
+  - releases/launcher-0.8.2-receipt.json; research-inventory/inventory-0.8.2-build.json.
+  - INVENTARIO-Y-BAULES-0.8.2.txt.
+
+==========================================================================
+0.8.3 — G19 funcional, interfaz original limpia y corrección de costa noroeste
+Fecha: 10/10/2026
+Paquete ModAPI: 0.8.3.0
+Estado: PROBADA por el usuario; agarre/modelo G19 fallido, interfaz por ajustar.
+
+Cambios respecto a 0.8.2:
+  - Baúl noroeste: búsqueda de costa seca por rayos desde Y=900. Descarta
+    capas de terreno bajo montañas, pendientes, obstáculos y cuatro accesos
+    desnivelados. El teletransporte espera streaming y conserva retorno seguro.
+    El host comparte las ubicaciones resueltas con los clientes.
+  - Inventario: sólo encabezados Inventario y Baúl, sin capacidades, nombres,
+    cantidades, instrucciones ni mensajes internos. Marcos del atlas original
+    ui3000 de RE3R e icono renderizado del modelo G19. Clic transfiere pila;
+    Ctrl+clic transfiere una unidad. F5 mantiene el laboratorio separado.
+  - G19 original (wp0000_g19), materiales/texturas propios, cargador normal.
+    Se excluyen cargador extendido, silenciador y mira opcionales.
+  - La G19 inicial está en el baúl del yate. Migración de partidas 0.8.2:
+    no borra contenido; si estaba lleno, intenta mover una pila al inventario
+    del host; si también está lleno, espera espacio. Se registra la entrega
+    inicial para impedir que cargar partidas genere armas repetidas.
+  - TAB + clic en G19 equipa/guarda; derecho apunta, izquierdo dispara,
+    R recarga. Las teclas 1–4 restauran equipo Forest. Sin cambiar la cámara.
+  - Hitscan desde cámara, alcance 250 unidades Forest; primer sólido bloquea
+    el rayo. Daño base 18; cabeza de caníbal ×5 (90). Armsy, Virginia, Cowman,
+    bebés y bosses no reciben multiplicador de cabeza. Sin PvP.
+  - Caníbales vivos: aturdimiento adicional de 0.18 s, conservando el sistema
+    nativo de daño/muerte. Semiautomática, intervalo mínimo de 0.28 s.
+  - 15 cartuchos por cargador; reserva infinita. Sin disparar vacía. Recarga
+    de 104 frames a 60 fps (1.73 s). Guardar/quitar arma cancela recarga, sin
+    rellenar cartuchos. Esquiva, agua, escalada o cinemática guardan el arma.
+  - 14 clips RE originales: sujetar, apuntar, disparo normal/apuntado, recarga,
+    sacar y dedos para Jill/Carlos. Capas parciales conservan postura base,
+    piernas nativas y agarre de dedos. Pistola sigue muñeca, pitch de cámara,
+    movimiento del cargador y luz breve en la boca al disparar.
+  - Sonido del disparo original compuesto por sus capas Wwise, excluyendo
+    silenciador; extracción e inserción del cargador sincronizadas. Fuentes
+    locales 2D y remotas 3D. No cambia las voces aceptadas de los personajes.
+  - Coop protocolo 4/catálogo 0x08030001. Host valida propiedad del arma,
+    secuencia, cargador, cadencia y origen del disparo; resuelve daño una vez.
+    Cliente predice presentación y reconcilia balas. Estado de arma, apuntado,
+    disparo y recarga se replica; entrada tardía recibe snapshot. Sin mallas,
+    texturas, clips ni matrices de huesos por red. Conserva micrófono nativo.
+  - Guardado schema 2, lectura schema 1 y cartuchos por inventario Steam/host.
+    Mantiene nombre ForestRE3-Inventarios-v1.dat y copia .bak. Guardar con el
+    host conserva el mundo. Versiones anteriores no leen el schema nuevo.
+  - EXE/ZIP central, código, guía G19-E-INVENTARIO-0.8.3.txt e historial.
+
+Preparación y límites:
+  - Compilación Unity 5.6.5p4 (Gamma/Linear), Mono original y paquete ModAPI.
+    Recursos embebidos; preparación aislada del runtime y actualización con
+    respaldo del lanzador. No se ejecuta el juego ni tests automáticos.
+  - Sólo G19 es funcional; otros IDs del catálogo siguen siendo almacenamiento
+    con un glifo de categoría. Todavía sin curación/recetas ni otras armas.
+  - Pendiente confirmar en juego el encuadre/agarre de la G19 con ambas skins,
+    recarga, hitscan, daño/stun, baúl noroeste y dos PCs. La aceptación histórica
+    del coop 0.8.0 y la esquiva solo 0.8.1.2 permanece limitada a esas pruebas.
+  - Sigue pendiente el cañón de rifle de Carlos al golpear hacia el suelo.
+
+Evidencia:
+  - research-g19/g19-motion-manifest.json y g19-sounds-manifest.json.
+  - research-g19/build-assets.log, unity-g19.log y build-mod-final.log.
+  - probe/G19Runtime.cs, G19Network.cs, G19Presentation.cs y G19Audio.cs.
+  - releases/launcher-0.8.3-receipt.json y runtime-0.8.3-construction.json.
+
+==========================================================================
+0.8.3.1 — Agarre G19 original, inventario compacto translúcido y contador legible
+Fecha: 10/10/2026
+Paquete ModAPI: 0.8.3.1
+Estado: PROBADA por el usuario; persisten errores de primera persona.
+Resultado posterior (10/10/2026):
+  - Carlos muestra su auricular al apuntar. Sin apuntar desaparecen las manos
+    al disparar. Se pide usar interfaz y audio de RE3R. Corregir en 0.8.3.2.
+
+Resultado comunicado de 0.8.3:
+  - Capturas: mano izquierda estirada y sin pistola visible junto a ella.
+    El contador baja; registro G19_HIT confirma impacto de 18 en caníbal.
+  - Se pide reducir el inventario, hacerlo translúcido y destacar la munición
+    sin cubrir el círculo de supervivencia de The Forest.
+
+Corrección:
+  - Causa de pose identificada en las pistas locales originales: contienen
+    rotaciones absolutas. La referencia de la lista mot ya viene posada y
+    no es el bind pose del FBX; restarla a cada rotación desplazaba el agarre.
+  - G19 usa rotaciones absolutas, la misma convención de los clips RE de
+    locomoción. Mantiene la composición de recarga parcial y sus dedos.
+  - Sustituye calibración aproximada de muñeca por socket original r_weapon,
+    con su traslación/rotación animada y conversión explícita de ejes del
+    socket (+X cañón/+Z arriba) a la malla (+Z cañón/+Y arriba).
+    El renderizador usa una capa visible para la cámara y se habilita al crear.
+  - Inventario al 72% del tamaño anterior; panel ceñido a la cuadrícula, sin
+    espacios negros sobrantes. Fondo con opacidad 42%; marcos originales.
+    Se mantienen sólo los títulos Inventario/Baúl y controles existentes.
+  - Indicador G19: números grandes de munición, reserva infinita, fondo
+    discreto, quince marcas, pocas balas en naranja y progreso de recarga.
+    Posicionado a la izquierda del círculo nativo, con margen según resolución.
+  - Sin cambios de balance, daño, reservas, baúles, guardado ni protocolo 4.
+
+Preparación:
+  - Compilación Mono/ModAPI, EXE y ZIP central, preparación del runtime y
+    actualización con respaldo. No se lanza The Forest ni tests automáticos.
+  - Pendiente confirmar agarre/encuadre, apuntado y recarga con ambos personajes,
+    tamaño/transparencia del inventario y posición del contador en pantalla.
+  - Coop de los añadidos recientes sigue pendiente de prueba entre dos PCs.
+
+Evidencia:
+  - research-g19/revision-0.8.3.1/g19-attachment-assets.json.
+  - research-g19/revision-0.8.3.1/attachment-notes.json y build-mod.log.
+  - releases/launcher-0.8.3.1-receipt.json, runtime-0.8.3.1-construction.json
+    e installation-0.8.3.1-receipt.json.
+
+==========================================================================
+0.8.3.2 — Retroceso aditivo, auricular Carlos y recursos de interfaz RE3R
+Fecha: 10/10/2026
+Paquete ModAPI: 0.8.3.2
+Estado: PREPARADA E INSTALADA; pendiente aceptación del usuario en juego.
+
+Cambios respecto a 0.8.3.1:
+  - Hold_Shoot contiene rotaciones delta casi identidad: se aplica como capa
+    aditiva sobre Hold_Idle. Se conservan poses absolutas de Focus_Shoot,
+    recarga, sacar arma y dedos; las posiciones delta también se suman.
+  - Auricular pl0000_Incom_Mat de Carlos excluido de geometría en primera
+    persona. Modelo completo, sombras y visualización remota lo conservan.
+  - Nueva alineación de ojos tras la columna de G19: las pistas del arma no
+    deben dejar el torso en una altura distinta a la cámara nativa.
+  - Se identifica en el código nativo que el botón secundario es AltFire.
+    Bloqueado junto a Fire1/Fire2/Reload al equipar G19; evita bloqueo Forest.
+  - Interfaz: fuentes originales Helvetica/OCR extraídas localmente de OFT;
+    atlas ui3000 (inventario), ui3003 (gradientes) y ui2012 (munición).
+    Los originales GUI de RE se adaptan a Unity mediante sus recursos;
+    no se ejecuta el motor GUI de RE dentro de The Forest.
+  - Cuadrícula compacta translúcida, reglas y selección originales, sin texto
+    adicional. Inventario propio a la derecha; baúl: propio izquierda y baúl
+    derecha. Mismos 20 slots propios y 4 por cada baúl independiente.
+  - Munición con números verdes, reserva, iconos originales de bala/recarga;
+    reemplaza tarjeta G19, quince barras y progreso personalizado. Mantiene
+    margen respecto al HUD de The Forest y colores de poca/sin munición.
+  - Audio: mismo banco original wp0000 y eventos de disparo/pull_reload/
+    set_reload; conserva ganancia relativa de capas y ancestros Wwise.
+    Reproducción local directa y espacial remota, prioridad y sin Doppler.
+  - Sin cambios de daño/cadencia/cargador/reservas/guardados/protocolo 4.
+
+Preparación:
+  - Bundle de interfaz original compilado en Unity 5.6.5p4; mod, EXE y ZIP
+    central preparados. Instalación con respaldo automático.
+  - No se inicia The Forest ni se ejecutan tests automáticos.
+  - Pendiente: comprobar agarre, disparo con/sin apuntar, recarga y audio en
+    Jill/Carlos; nueva interfaz y HUD; contenido reciente en dos PCs.
+
+Evidencia:
+  - research-g19/revision-0.8.3.2/user-0.8.3.1.log.
+  - Assets/LocalAssets/Re3Interface/interface-manifest.json.
+  - research-g19/revision-0.8.3.2/unity-interface.log y build-mod.log.
+  - research-g19/g19-sounds-manifest.json (niveles originales por capa).
+  - releases/launcher-0.8.3.2-receipt.json, runtime-0.8.3.2-construction.json
+    e installation-0.8.3.2-receipt.json.
+
+==========================================================================
+0.8.4 — Impactos G19, ojos al apuntar y escopeta M3
+Fecha: 10/10/2026
+Paquete ModAPI: 0.8.4.0
+Estado: PREPARADA para prueba del usuario. Gameplay y coop nuevos pendientes.
+
+Resultado de 0.8.3.2 informado por el usuario:
+  - La pistola hace lo esperado en general. Se solicita completar daño a
+    animales, estructuras destruibles y maletas; crítico ×5, retícula RE3R
+    y que los ojos/cámara sigan la animación de apuntado.
+
+Cambios respecto a 0.8.3.2:
+  - G19: suma una sola aplicación de daño por disparo, 18 al cuerpo y 90 a
+    cabeza de caníbal. Mutantes sin crítico. Detección mediante receptor de
+    cabeza y geometría anatómica; evita depender del alto de la cápsula raíz.
+  - Receptores Hit(int/float), Hit() y LocalizedHit del juego para animales,
+    maletas, estructuras y objetos/vegetación destruibles. Los animales se
+    agrupan por su componente de salud; los perdigones no se pierden por el
+    cooldown de golpes. Sin atravesar obstáculos sólidos ni dañar al jugador.
+  - Maletas mediante SuitCase.Hit y evento nativo OpenSuitcase para el coop.
+    Destrucción de construcciones conserva la opción nativa de The Forest.
+  - Retículas extraídas del atlas ui2000 original. Pistola con cuatro
+    segmentos/punto y escopeta con cuadrantes. Se retiran los dos puntos.
+  - Al apuntar se renderiza desde los ojos animados y el movimiento relativo
+    de cabeza. Se restaura la cámara antes de la siguiente actualización
+    nativa, sin mover la cápsula. Disparo dirigido desde esa vista.
+  - M3: modelo/texturas originales wp1000; animaciones M3 de Jill compartidas
+    por nombre de hueso con Carlos. Hold_Shoot es aditiva sobre Hold_Idle.
+    Recarga conserva sus dos clips de 190 y 71 cuadros; 4.35 s en total.
+    Guardamanos sigue el ciclo de la mano izquierda; icono del modelo completo.
+  - Audio del banco original wp1000: disparo, cuerpo/insertar cartucho y bombeo,
+    con niveles de capas Wwise. Sonido local directo y remoto espacial.
+  - 4 cartuchos, reserva infinita y recarga obligatoria. Cadencia 1.45 s.
+    M3 inicial en baúl de katana (dos espacios); también disponible desde F5.
+    Si está lleno se espera espacio libre, sin sustituir objetos existentes.
+  - 10 perdigones: central recto de 23; otros 9 aleatorios de 8 dentro de la
+    retícula. Base 95. Diez al mismo objetivo ×1.5 = 142.5 (143 HP enteros).
+    Caníbal normal: derribo nativo hacia atrás y desplazamiento con colisiones.
+    Diez en cabeza del mismo caníbal normal: muerte inmediata y corte de cabeza
+    del cadáver exacto. En coop se utiliza BodyPartsDamage nativo del dueño.
+  - Radio de mira y cono balístico comparten dispersión: apuntado quieto 1.1°,
+    apuntado en movimiento 2.4°, cadera quieto 3.2°, caminando 5.5°, corriendo 12°.
+  - Protocolo 5 / catálogo 0x08040001. Host decide daño, plenos, corte y derribo;
+    valida identidad, propiedad, cargador y cadencia. Clientes reciben acciones,
+    tipo de arma/estado y reproducen sus recursos locales. Incluye entrada tardía.
+  - Munición independiente por arma y jugador, conservada al alternar/desconectar.
+    Guardado schema 3, lectura de 1/2. Cargadores G19 previos conservados.
+  - Sin cambiar el plan: 0.x/1.x mashup y coop; 2.x publicación; 3.x extras.
+
+Resultado posterior del usuario (10/10/2026):
+  - Reposo bajo M3 correcto. Al disparar sin apuntar no se levanta hacia delante.
+  - Apuntado G19 y M3 descoloca arma/vista; capturas con giro/desenfoque intenso.
+  - Mira M3 poco pulida. Solicita tabla nueva de vida por dificultad.
+  - La siguiente revisión no implica aceptación de coop ni del resto del daño.
+
+Preparación y límites:
+  - Bundles Gamma/Linear Unity 5.6, mod y EXE central compilados, ZIP y código
+    fuente preparados. Runtime construido e instalado con respaldo.
+  - No se abre The Forest ni se ejecutan tests automáticos.
+  - Pendiente comprobar ambos personajes, daño G19 a cada tipo de objetivo,
+    crítico, mira/cámara, todos los estados de M3, derribo/corte y dos PCs.
+    Las aceptaciones históricas de Jill/Carlos y del coop base se conservan.
+
+Evidencia:
+  - research-m3/m3-motion-manifest.json y m3-sounds-manifest.json.
+  - research-m3/final-native-review.txt y head-cut-il.txt.
+  - research-m3/unity-m3-final.log, unity-interface.log y build-mod-final.log.
+  - Assets/LocalAssets/Re3M3 y Re3Interface/reticle-atlas.png.
+  - releases/launcher-0.8.4-receipt.json, runtime-0.8.4-construction.json
+    e installation-0.8.4-receipt.json. Guía G19-Y-M3-0.8.4.txt.
+
+==========================================================================
+0.8.5 — Apuntado, subida M3, retículas y vida por dificultad
+Fecha: 10/10/2026
+Paquete ModAPI: 0.8.5.0
+Estado: PROBADA CON ERRORES VISUALES; cierre del 10/10/2026.
+Reporte registrado el 11/10/2026 después de medianoche.
+Resultado posterior y cierre solicitado por el usuario:
+  - M3 mal colocada: debe estar más abajo y a la derecha. Al disparar no
+    se acomoda hacia delante; al apuntar también se desplaza incorrectamente.
+  - G19 mal colocada y apuntado incorrecto. Brazos/manos deformados o
+    estirados y agarres desalineados visibles en las capturas adjuntas.
+  - La corrección visual de esta entrega NO queda aceptada. Tabla HP y
+    cooperativo reciente no confirmados por este reporte.
+  - Se guarda el estado y se cierra el día 10/10/2026. Reparación pendiente
+    para la próxima sesión por instrucción expresa de no corregir todavía.
+  - Evidencia persistente: evidencia/2026-10-10-cierre-0.8.5/captura-1.png
+    a captura-5.png y CIERRE-Y-PENDIENTES.txt.
+
+Cambios implementados respecto a 0.8.4 (su intención, no aceptación visual):
+  - Primera persona conserva torso/cuello y altura aceptados. Las pistas de
+    arma controlan los brazos; el giro global de cabeza de la pose de tercera
+    persona deja de girar la cámara. Retroceso/ojos limitados y vista nativa.
+  - Cañón orientado a la vista al apuntar. Ambos agarres se trasladan juntos,
+    con resolución anatómica de codos y muñecas, sin alargar los huesos.
+  - M3 mantiene reposo bajo. Clic desde cadera inicia subida de 0.12 s y luego
+    dispara/consume cartucho. Conserva el ciclo de bombeo y recarga original.
+  - Cámara de armas se conserva durante render y se restaura al empezar el
+    frame siguiente; evita discrepancia con la captura de desenfoque temporal.
+  - Mira M3 reconstruida en estilo RE3R: cuatro arcos, antialiasing, contorno
+    tenue y grosor constante. Punto central del atlas original; segmentos G19
+    más finos. Dispersión mantiene 1.1°/2.4°/3.2°/5.5°/12°.
+  - Subida M3 replicada como estado pequeño; protocolo 6/catálogo 0x08050001.
+    Ambos equipos deben utilizar esta versión. Recursos ejecutados localmente.
+  - Tabla absoluta de HP, aplicada por el host a salud nativa (no sólo armas
+    RE3). Normal / Difícil / Supervivencia difícil:
+      Delgado/hambriento:        60 /   90 /  120
+      Líder/antorcha:           120 /  180 /  240
+      Pálido de cueva:          160 /  240 /  320
+      Pálido azul resistente:   220 /  330 /  440
+      Armsy:                   850 / 1300 / 1800
+      Virginia:                750 / 1150 / 1600
+      Cowman:                 1000 / 1500 / 2000
+      Megan Cross:            4500 / 6500 / 9000
+  - Confirmación del usuario: azul = pálido más resistente, no enmascarado.
+    Mapeo nativo pale+skinny para cueva y pale sin skinny para azul grande.
+    Tipos no indicados en la tabla conservan máximos nativos. Inicialización
+    asíncrona/pooling reconciliados, conservando proporción de salud y sin
+    curación continua ni resurrección. Clientes no escriben HP duplicados.
+Preparación y límites:
+  - Código y paquete ModAPI compilados; EXE/ZIP central y fuentes preparados.
+    Instalación con respaldo registrada por separado en el recibo de entrega.
+  - No se inicia The Forest ni se ejecutan tests automáticos. Pendiente el
+    resultado visual de G19/M3 para Jill/Carlos, recargas, HP de todos los tipos
+    en las tres dificultades y sesión entre dos PCs. Se conservan los hitos
+    aceptados de Jill/Carlos y del coop base 0.8.0 con su alcance histórico.
+Evidencia:
+  - research-0.8.5/base-0.8.4-probe, max-health-writes.txt, enemy-health-init.txt,
+    health-update.txt, difficulty-network-api.txt y build-mod.log.
+  - Re3WeaponPose.cs, Re3EnemyBalance.cs y guía ARMAS-Y-ENEMIGOS-0.8.5.txt.
+  - releases/launcher-0.8.5-receipt.json, runtime-0.8.5-construction.json
+    e installation-0.8.5-receipt.json.
+
+==========================================================================
+0.8.6 — Colocación de armas, agarres fuente y subida de G19
+Fecha: 11/10/2026
+Paquete ModAPI: 0.8.6.0
+Estado: PROBADA; resto visual aceptado, M3 requiere corrección.
+Reporte del usuario (11/10/2026):
+  - Sólo M3 muestra mano separada del guardamanos y reposo fuera de pantalla.
+  - «Todo lo demás se ve bien». Esta aceptación visual no confirma el coop.
+  - Capturas en evidencia/2026-10-11-m3-0.8.6.
+==========================================================================
+Cambios respecto a 0.8.5:
+  - G19/M3 reposan abajo a la derecha y apuntan hacia la vista; todas las poses
+    reciben adaptación de primera persona, incluido reposo y recarga.
+  - G19 también se levanta al frente antes del disparo sin apuntar. Ambas esperan
+    0.12 s antes de consumir munición/aplicar hitscan. Mantienen cadencia y daño.
+  - Sockets/helpers usan posiciones locales absolutas y escala uniforme.
+    Eliminada resta de referencia mot posada que alteraba especialmente M3.
+  - Se limpia la pose nativa de brazos/dedos/helpers antes de clips parciales.
+    Caché distinta para máscara dedos/cuerpo. Recarga sin reaplicación redundante.
+  - Ambos agarres se capturan con proporciones fuente antes de resolver el modelo
+    destino: Carlos conserva contacto M3 aunque use las animaciones de Jill.
+  - IK sobre ejes reales, longitudes originales y codos abajo/fuera. Se conservan
+    soportes originales RE con twist adicional por arco corto; no acumula vueltas
+    procedentes de otras poses. Un único marco rígido para arma y ambas manos.
+  - Subida/dirección usan mensajes existentes validados por host. Protocolo 6,
+    catálogo 0x08060001 para impedir mezclar esta entrega con otra anterior.
+Preparación y límites:
+  - Compilación y empaquetado registrados en research-0.8.6/build-mod.log y
+    build-launcher.log. Runtime e instalación se registran en recibos separados.
+  - No se inicia el juego ni se ejecutan tests automáticos. Pendiente confirmar
+    en partida reposo, apuntado, disparo de cadera, bombeo y recarga con ambos
+    personajes; cooperativo reciente y tabla de vida también siguen pendientes.
+  - Los resultados fallidos de 0.8.5 y sus capturas se conservan. La aceptación
+    histórica de Jill/Carlos, coop base y esquiva no se extiende a esta revisión.
+Evidencia:
+  - research-0.8.6/base-0.8.5-probe, HISTORIAL-0.8.5.txt y DIAGNOSTICO.txt.
+  - Re3WeaponPose.cs, G19Presentation.cs, G19Runtime.cs y G19Network.cs.
+  - ARMAS-Y-ENEMIGOS-0.8.6.txt; releases/launcher-0.8.6-receipt.json,
+    runtime-0.8.6-construction.json e installation-0.8.6-receipt.json.
+
+==========================================================================
+0.8.6.1 — Contactos de manos y reposo de M3
+Fecha: 11/10/2026
+Paquete ModAPI: 0.8.6.1
+Estado: PROBADA; agarres mejorados, posición lateral M3 por ajustar en 0.8.6.2.
+==========================================================================
+Cambios respecto a 0.8.6:
+  - Sólo presentación M3: palmas ancladas a la geometría de empuñadura y
+    guardamanos mediante nudillo medio, con las proporciones del personaje.
+  - Se mide la corrección sobre la pose base antes de disparo/recarga: mantiene
+    los desplazamientos originales posteriores y el movimiento del guardamanos.
+  - Reposo más alto y con menor inclinación; disparo/apuntado hacia la vista.
+  - Se conserva la G19, que el usuario acepta visualmente junto al resto.
+  - Protocolo 6 sin cambios de formato; catálogo 0x08060101 exige mismo paquete.
+Preparación y límites:
+  - Compilación y empaquetado registrados en research-0.8.6.1/build-mod.log
+    y build-launcher.log. Runtime e instalación en recibos separados.
+  - Instalación terminada: los 14 archivos instalados coinciden por SHA-256
+    con el runtime generado. Respaldo: runtime-0.8.6.1/backups/
+    20261011-202726-9cad75d4db3b4d6a9461021e5c4d27ae.
+  - No se inicia el juego ni se ejecutan tests. Pendiente confirmar manos M3,
+    reposo, disparo/apuntado y recarga con Jill/Carlos. Coop reciente sin probar.
+Evidencia:
+  - research-0.8.6.1/base-0.8.6-probe, HISTORIAL-0.8.6.txt y DIAGNOSTICO.txt.
+  - evidencia/2026-10-11-m3-0.8.6/captura-1.png y captura-2.png.
+  - ARMAS-Y-ENEMIGOS-0.8.6.1.txt y recibos launcher/runtime/installation 0.8.6.1.
+
+==========================================================================
+0.8.6.2 — Posición lateral M3 y accesos rápidos RE3R
+Fecha: 11/10/2026
+Paquete ModAPI: 0.8.6.2
+Estado: PROBADA CON ERRORES; mano izquierda M3 separada, pendiente 0.8.6.3.
+==========================================================================
+Resultado anterior: 0.8.6.1 probada; arma algo a la derecha. Capturas del
+usuario 143309 y 143325, conservadas en evidencia/2026-10-11-m3-0.8.6.1.
+Cambios:
+  - M3: reposo x=.12 (antes .16), cadera x=.065 (antes .10). Apuntado
+    centrado, contactos de palmas, G19 y resto de mecánicas conservados.
+  - 5/6/7/8 equipan los slots físicos 1/2/3/4 del inventario RE3R, con
+    resolución de continuación M3 de dos espacios. También teclado numérico.
+  - Repetir tecla no guarda el arma. Vacíos y objetos sin acción se ignoran.
+  - Bloqueo en inventarios/pausa/cinemáticas/esquiva/teletransporte, falta de
+    sincronización y transferencias pendientes. Se usa la autoridad existente
+    del host para comprobar posesión y sincronizar; protocolo 6 sin cambio.
+  - Ambos equipos necesitan 0.8.6.2, catálogo 0x08060201.
+Entrega y límites:
+  - Logs build-mod/build-launcher/build-runtime en research-0.8.6.2.
+  - Instalación completada: 14 archivos coinciden por SHA-256 con el runtime.
+    Respaldo: 20261011-205244-122964c4822f47af9b4c7d0a86011016.
+  - Guía ARMAS-Y-ENEMIGOS-0.8.6.2.txt; recibos de compilación e instalación.
+  - No se inicia el juego ni se ejecutan tests; prueba visual y coop pendientes.
+
+==========================================================================
+0.8.6.3 — Contacto final de manos y guardamanos M3
+Fecha: 11/10/2026
+Paquete ModAPI: 0.8.6.3
+Estado: FALLIDA; la mano sigue fuera del guardamanos en las capturas del usuario.
+==========================================================================
+Resultado anterior: el usuario muestra la mano izquierda fuera de la M3 en
+reposo, disparo y apuntado. No se considera corregido en 0.8.6.2.
+CAMBIOS 0.8.6.3 — AGARRE M3 SOBRE LA POSE FINAL
+La 0.8.6.2 sigue mostrando separación de la mano en reposo, apuntado y
+disparo. Se sustituye el desplazamiento fijo de la pose base por un contacto
+calculado después de todas las capas de animación. La posición de la muñeca
+se obtiene del nudillo real del personaje, con su orientación de agarre
+relativa al arma. Se mantienen longitudes anatómicas y codos mediante IK.
+Mano izquierda y pieza del guardamanos usan exactamente el mismo bombeo
+limitado. La pose original cerrada de dedos se aplica al final al sujetar
+el arma. Durante recarga la mano izquierda se libera y vuelve gradualmente
+al guardamanos; la derecha conserva su gesto y contacto en la empuñadura.
+Registro M3_FINAL_CONTACT anota desviación máxima de palmas en metros:
+primera muestra y, si supera 1 cm, como máximo cada 5 segundos.
+Se conservan G19, atajos 5/6/7/8, cámara, daño, HP, UI y voces.
+Ambos equipos requieren 0.8.6.3 / protocolo 6 / catálogo 0x08060301.
+Confirmación visual y coop reciente pendientes; no se lanza el juego.
+
+Entrega:
+  - Evidencia: evidencia/2026-10-11-m3-0.8.6.2 (tres capturas del usuario).
+  - Base anterior recuperada del ZIP de código 0.8.6.2 en research-0.8.6.3.
+  - Logs build-mod/build-launcher/build-runtime; recibos separados de entrega.
+  - Instalación terminada: 14 archivos coinciden por SHA-256 con el runtime.
+    Respaldo: 20261011-211234-7657b7cb245c45c38a2ff6f51c783021.
+  - No se ejecutan tests ni se inicia The Forest. Prueba visual pendiente.
+
+==========================================================================
+0.8.6.4 — Centro y orientación del agarre M3
+Fecha: 11/10/2026
+Paquete ModAPI: 0.8.6.4
+Estado: PREPARADA E INSTALADA con respaldo; confirmación en partida pendiente.
+==========================================================================
+CAMBIOS 0.8.6.4 — EJE DEL AGARRE M3
+La 0.8.6.3 queda FALLIDA: las nuevas capturas mantienen la mano fuera del
+guardamanos. El registro real M3_FINAL_CONTACT muestra un error de 0.0001 m
+con Carlos. El solver alcanza su objetivo: la referencia elegida era errónea.
+En la pose fuente, el centro del arco de dedos quedaba 0.0263 m a la izquierda
+del eje del guardamanos al fijar el nudillo al borde. No se considera reparado
+ese defecto en ninguna entrega anterior.
+Ahora se calcula el círculo de las tres articulaciones del dedo medio usando
+los huesos reales de Jill/Carlos. Su centro se alinea a (0,.003,.390) en el
+modelo M3 y su normal al eje del cañón. La muñeca se coloca a partir de ese
+centro: la mano rodea el guardamanos, en lugar de quedar ahuecada junto a él.
+El bombeo continúa compartido con la pieza M3_2, y la mano izquierda se
+libera/reincorpora gradualmente durante la recarga. La derecha se conserva.
+Registro: M3_FINAL_CONTACT reference=palm_arc_axis. Medición de referencia
+geométrica distinta de la del nudillo utilizada por 0.8.6.3.
+G19, posiciones de la M3, cámara, balística, UI, voces y atajos 5–8 conservados.
+Protocolo 6 sin cambios de formato; ambos equipos necesitan 0.8.6.4,
+catálogo 0x08060401. Prueba visual y cooperativo reciente pendientes.
+
+Evidencia y entrega:
+  - Capturas 151634/151640 en evidencia/2026-10-11-m3-0.8.6.3.
+  - Registro del usuario preservado en research-0.8.6.4/user-session-0.8.6.3.log.
+  - Base 0.8.6.3, diagnóstico y logs de compilación/preparación preservados.
+  - Instalación completada: 14 archivos coinciden por SHA-256 con el runtime.
+    Respaldo: 20261011-212558-3022fcbdf48f4a828927e4cd8d22a3af.
+  - No se inicia el juego ni se ejecutan tests. Confirmación visual pendiente.
+
+==========================================================================
+PRÓXIMAS FASES — PLAN, TODAVÍA NO VERSIONES PUBLICADAS
+==========================================================================
+Reestructuración acordada por el usuario el 09/10/2026:
+  - Sustituye el plan del 06/10/2026, que reservaba 2.x para el cooperativo.
+    Las entradas anteriores conservan el plan y los resultados de su fecha.
+
+0.x.x Y 1.x.x — MASHUP + COOPERATIVO
+  - Todas las versiones desde 0.1.0 hasta la aceptada 0.8.0 pertenecen a esta fase.
+  - 0.7.x FINALIZADA en 0.7.7.1 el 08/10/2026: objetivo de Jill y Carlos
+    jugables cumplido y aceptado por el usuario, con detalles visuales anotados.
+    Cuatro componentes también en paquete/lanzador. Su aceptación queda registrada;
+    las entregas anteriores a 0.8 se retiraron el 09/10/2026 para liberar espacio.
+  - Integrar cooperativo desde esta etapa, junto con el contenido principal.
+    Cada sistema nuevo debe contemplar host, clientes y entrada tardía.
+  - Jill completa aceptada en 0.7.6.2. Carlos aceptado en 0.7.7.1; ambos
+    jugables y fase cerrada. Retomar el cañón del rifle en la próxima sesión
+    y continuar contenido principal y cooperativo en primera persona.
+  - Completar voces/esquiva, inventario RE3, armas e infinitas,
+    curativos, baúles, Nemesis raro y generación/instalación local de recursos.
+  - Los detalles conocidos de animación quedan pendientes para próximas sesiones.
+
+2.0.0 → 2.x.x — PUBLICACIÓN Y BUGS GRAVES DE USUARIOS
+  - Publicar el mashup y resolver problemas graves reportados en otros equipos,
+    instalaciones, configuraciones y sesiones cooperativas.
+
+3.0.0 → 3.x.x — EXTRAS
+  - Tercera persona, cambio de vista y otros extras acordados posteriormente.
+
+Los números menores y parches se asignarán al implementar cada entrega.
+Estas fases describen el plan acordado, no funciones ya terminadas.
+
+==========================================================================
+0.8.7 — Lanzacohetes infinito RE3R y dinamita de 330 HP
+Fecha: 11/10/2026
+Paquete ModAPI: 0.8.7.0
+Estado: Compilada e instalada con respaldo; prueba en juego y coop pendientes.
+
+Cambios respecto a 0.8.6.4:
+  - Nuevo lanzacohetes infinito original wp4600; modelos originales del arma
+    y misil, animaciones propias de Jill/Carlos, audio con switch wp4600 y
+    mira usando gráficos originales de RE3R. Sin recarga ni consumo de munición.
+  - Normal/difícil: computadora y noroeste. Supervivencia difícil: katana,
+    junto a M3. Dos espacios por arma, sin sobreescribir objetos guardados.
+  - ID estable 28. Guardado v4 con migración desde v1/v2/v3 y banderas de
+    colocación por baúl: retirar el arma no genera duplicados al volver.
+  - Proyectil con velocidad original 20, gravedad 0, alcance 80, radio .15.
+    Lectura del archivo original con esquema RE_RSZ documentada en
+    research-rocket/projectile-source.json. No es un disparo hitscan.
+  - Barrido de colisión y comprobación de solapamiento; atraviesa vegetación
+    pequeña. Al impactar una superficie sólida desaparece e invoca la
+    explosión nativa de dinamita. Sin daño directo adicional.
+  - Dinamita y misil hacen 330 HP por enemigo en el radio nativo. Intercepta
+    el daño fijo antiguo de EnemyHealth.Explosion, deduplica colliders y
+    respeta la protección de Megan antes de completar su transformación.
+    Efectos y entorno siguen la explosión nativa; otras bombas se conservan.
+  - Host autoriza disparos/impactos/daño; clientes reproducen recursos locales.
+    Mensajes fiables de lanzamiento/impacto y estado para incorporación tardía.
+    Protocolo 7, catálogo 0x08070001; ambos equipos necesitan esta entrega.
+Comprobaciones de entrega:
+  - Recursos y DLL compilados; ganchos nativos y banco de 12 clips incluidos.
+  - Instalación con respaldo; 14 archivos instalados coinciden con los generados.
+  - Sin lanzamiento del juego ni pruebas automáticas. Resultado visual y
+    cooperativo de esta entrega pendientes; base coop 0.8.0 sigue aceptada.
+Evidencia:
+  - work/forest-re3-mashup/research-rocket: análisis original, manifiestos y logs.
+  - releases/launcher-0.8.7-receipt.json y installation-0.8.7-receipt.json.
+Bitácora 11/10/2026: el usuario continúa con el lanzacohetes tras el parche
+de agarre M3. Se conserva el resultado histórico de los intentos anteriores.
+
+==========================================================================
+0.8.7.1 — Misil más visible, más rápido y con mayor duración
+Fecha: 11/10/2026
+Paquete ModAPI: 0.8.7.1
+Estado: Compilada e instalada con respaldo; prueba en juego y coop pendientes.
+Cambios respecto a 0.8.7:
+  - Escala visual relativa del misil: X/Y ×1.25, Z ×1.60.
+  - Velocidad ×2: 20 → 40 unidades/s.
+  - Tiempo efectivo sin colisión ×3: 4 → 12 segundos. El alcance se
+    amplía de 80 a 480 para mantener esa duración con la nueva velocidad.
+    Caducidad de seguridad del cliente ×3: 9 → 27 s; el host sigue
+    retirando el misil al impacto o al completar los 12 s de vuelo.
+  - Colisión barrida y explosión inmediata existentes, daño 330 HP.
+  - Recursos originales conservados; ajustes aplicados en host y clientes.
+    Protocolo 7, catálogo 0x08070101; ambos equipos necesitan 0.8.7.1.
+Comprobaciones de entrega:
+  - Compilación y empaquetado; 14 archivos instalados coinciden con
+    los generados. Respaldo registrado en el recibo de entrega.
+  - Prueba en juego y cooperativo pendientes.
+  - No se ejecutaron pruebas automáticas ni se lanzó el juego.
+Evidencia: releases/installation-0.8.7.1-receipt.json.
+Bitácora 11/10/2026: ajuste de tamaño, velocidad y duración solicitado
+por el usuario tras recibir el lanzacohetes 0.8.7.
+
+==========================================================================
+0.8.8 — Baúles por jugador, mochila y compatibilidad cooperativa
+Fecha: 11/10/2026
+Paquete ModAPI: 0.8.8.0
+Estado: Compilada e instalada con respaldo; prueba en juego y coop pendientes.
+Resultado previo reportado por el usuario (0.8.7.1): coop funciona
+parcialmente; se registran los cinco problemas y no se declara aprobado.
+Cambios respecto a 0.8.7.1:
+  - Cinco inventarios de baúl por identidad de jugador, transferencias
+    autoritativas y persistencia; tomar armas no vacía los baúles ajenos.
+  - Inventario RE3R asociado a muerte y recuperación de mochila nativa.
+    Respawn del host ya no reinicia inventarios/cargadores de los demás.
+  - Fuego amigo G19/M3 mediante HitPlayer al owner; nivel de daño sigue
+    PvP nativo. Interruptor host en pausa/F5, sincronizado a clientes.
+    El misil respeta el interruptor para terceros y conserva auto-daño.
+  - Las armas ceden las manos a despellejado, troncos y otras acciones
+    nativas; se restablecen al finalizar si procede, también en remoto.
+  - Árboles bloquean balas G19/M3 sin recibir daño de tala; el misil
+    mantiene su explosión nativa, daño y parámetros de 0.8.7.1.
+  - Guardado schema 5. Los depósitos compartidos anteriores se conservan
+    con el host; inventarios personales conservados y armas propias para cada
+    jugador. No se reconstruyen objetos ya perdidos en versiones anteriores.
+  - Protocolo 8/catálogo 0x08080001. Ambos equipos necesitan 0.8.8.
+Comprobaciones de entrega:
+  - Compilación y empaquetado completados; hooks de mochila y fuego amigo
+    presentes. 14 archivos instalados coinciden con los generados.
+  - Respaldo previo registrado en el recibo de entrega. No se ejecutaron
+    pruebas automáticas ni se abrió The Forest; juego/coop pendientes.
+Evidencia: releases/installation-0.8.8-receipt.json.
+Bitácora 11/10/2026: reporte de la primera prueba cooperativa de armas
+recientes y trabajo de corrección de inventario, daño y acciones nativas.
+
+==========================================================================
+0.8.9 — The Resident Forest 3: presentación e inventario organizable
+Fecha: 11/10/2026
+Paquete ModAPI: 0.8.9.0
+Estado: Compilada e instalada con respaldo; confirmación en juego/coop pendiente.
+Solicitud: preparar publicación, renombrar EXE/ZIP y renovar el iniciador.
+No se declara publicada ni aprobada esta versión sin comprobarla en juego.
+Cambios respecto a 0.8.8:
+  - The Resident Forest 3.exe y The Resident Forest 3.zip. Logo TR3 del usuario,
+    icono Windows en varios tamaños, fondo negro, letras amarillas y Montserrat
+    Regular/Bold de los recursos del menú de The Forest; licencia OFL incluida.
+  - Ruta, Examinar, Abrir carpeta y respaldo/restauración en ventana Opciones.
+  - Herramientas de prueba apagadas por defecto, ajustables en el iniciador;
+    sólo solitario/host. F5/F6/F8/F9/F10/F11 bloqueadas para clientes y sin
+    autorización local. El host rechaza invocaciones/objetos de los clientes.
+    También se rechaza el cambio de personaje del cliente sobre su actor actual.
+  - Inventario: arrastrar/soltar con movimiento, intercambio y apilado atómicos,
+    incluyendo armas de dos espacios y transferencias a una celda del baúl.
+    Validación de revisiones, posiciones y distancia en el host. Orden persistido.
+  - Icono del lanzamisiles regenerado desde su modelo, transparente/panorámico;
+    cámara aislada y niebla desactivada para evitar el cuadro gris anterior.
+  - Protocolo 9/catálogo 0x08090001. Ambos equipos necesitan 0.8.9.
+    Guardado schema 5 conservado. Armas, daño y mochila de 0.8.8 preservados.
+Comprobaciones de entrega:
+  - Mod e iniciador compilados. Pantallas principal/Opciones renderizadas
+    e inspeccionadas. Icono panorámico del lanzamisiles inspeccionado.
+  - 15 archivos instalados coinciden con los generados; respaldo
+    previo registrado. Herramientas instaladas apagadas por defecto.
+  - Confirmación del inventario y permisos en juego/coop pendiente.
+  - No se ejecutaron pruebas automáticas ni se abrió The Forest.
+Evidencia: releases/installation-0.8.9-receipt.json.
+
+==========================================================================
+REGLA DE ACTUALIZACIÓN Y PLANTILLA PARA NUEVAS VERSIONES
+==========================================================================
+En cada versión nueva:
+  - Añadir una entrada con el número exacto del paquete.
+  - Enumerar cambios respecto a la anterior, incluyendo correcciones.
+  - Separar compilación/comprobaciones del resultado dentro del juego.
+  - Registrar errores observados y limitaciones; no borrar intentos fallidos.
+  - Tras la prueba, actualizar resultado y evidencia de esa entrada.
+  - Actualizar el estado actual al principio del archivo.
+  - Añadir lo realizado en cada fecha a la bitácora diaria, en orden cronológico.
+  - Usar fechas DD/MM/AAAA en entradas y bitácora.
+  - Respetar el plan del 09/10/2026: 0.x/1.x mashup + cooperativo,
+    2.x publicación/bugs graves de usuarios, 3.x extras.
+
+Plantilla:
+
+[VERSIÓN] — [Resumen]
+Fecha: [DD/MM/AAAA]
+Estado: [Preparada / Probada / Aceptada / Fallida / Reemplazada]
+Cambios respecto a [anterior]:
+  - [...]
+Comprobaciones completadas:
+  - [...]
+Resultado de la prueba en el juego:
+  - [Pendiente o resultado real]
+Problemas y limitaciones:
+  - [...]
+Evidencia:
+  - [Registro, recibo, captura o archivo]
+
+Ubicación del proyecto:
+C:\Users\angel\Documents\Codex\2026-10-05\en
+
+Ubicación de este historial:
+C:\Users\angel\Documents\Codex\2026-10-05\en\outputs\forest-re3-mashup\HISTORIAL-DE-VERSIONES.txt
+
+
+
+0.8.9.1 — Reparación de carga de personajes y permisos
+Fecha: 12/10/2026
+Estado: Compilada e instalada con respaldo; confirmación en juego pendiente.
+
+Problema reportado:
+  - Tras instalar 0.8.9 desaparecen Jill/Carlos y las herramientas de
+    administrador, incluso al activarlas; sigue visible Opciones RE3R.
+
+Diagnóstico y corrección:
+  - Inspección del ensamblado instalado: Re3DeveloperTools.Read contiene
+    un leave.s con destino inválido. El compilado original sí es válido.
+  - ModAPI añade el ID del mod a Log.Write, aumenta el tamaño del método
+    y desborda el desplazamiento de saltos cortos sin ampliarlos.
+  - Se convierten TODOS los saltos cortos a largos, incluidos tipos anidados
+    y corutinas, antes de que ModAPI transforme y empaquete el ensamblado.
+  - Se conserva la lectura XML existente y se registra TOOLS_CONFIG para
+    distinguir la preferencia guardada del bloqueo por autoridad del host.
+    La hipótesis inicial de DLL XML ausente quedó descartada al inspeccionarla.
+  - Se conservan iconos, arrastre del inventario, logo, interfaz del iniciador
+    y Opciones. Herramientas apagadas por defecto en una instalación nueva;
+    se respeta la opción activada por el usuario. Sólo host/solo jugador.
+  - Protocolo 9, catálogo 0x08090001 y formato de guardado 5 sin cambios.
+
+Entrega:
+  - Se mantienen los nombres The Resident Forest 3.exe y The Resident Forest 3.zip.
+  - Confirmación dentro del juego y cooperativo pendiente.
+
+Instalación: 15 archivos coinciden con los generados.
+Metadatos del ensamblado generado: cero destinos de salto inválidos.
+Herramientas de este usuario: ACTIVADAS; autoridad sólo host.
