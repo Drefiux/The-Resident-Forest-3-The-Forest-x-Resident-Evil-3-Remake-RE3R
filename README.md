@@ -1,6 +1,30 @@
 # The-Resident-Forest-3-The-Forest-x-Resident-Evil-3-Remake-RE3R
 A mashup of The Forest and Resident Evil 3 Remake
 
+<img width="1152" height="799" alt="Captura de pantalla 2026-10-12 001724 - copia - copia" src="https://github.com/user-attachments/assets/2e49024d-fba3-457e-8258-c45985eb6cd3" />
+
+<img width="966" height="647" alt="Captura de pantalla 2026-10-12 001757" src="https://github.com/user-attachments/assets/a905b33a-7e98-4844-b7e9-b8a29aea541f" />
+
+<img width="1631" height="786" alt="Captura de pantalla 2026-10-12 001838" src="https://github.com/user-attachments/assets/18b6f65d-de18-406f-a382-cfdd1e013155" />
+
+<img width="1526" height="889" alt="Captura de pantalla 2026-10-12 001918" src="https://github.com/user-attachments/assets/d207c24d-c4e2-4364-9c87-99f914062e54" />
+
+<img width="1349" height="865" alt="Captura de pantalla 2026-10-12 002011" src="https://github.com/user-attachments/assets/eb2d0421-7d00-491f-aeef-b4f2e79fabcd" />
+
+<img width="1592" height="843" alt="Captura de pantalla 2026-10-12 002115" src="https://github.com/user-attachments/assets/3541be52-14cf-4821-9995-6be1982188a4" />
+
+<img width="1601" height="835" alt="Captura de pantalla 2026-10-12 002041" src="https://github.com/user-attachments/assets/9d2f1ee8-dbaa-4ee1-a40b-18b0cb9432e7" />
+
+<img width="479" height="695" alt="Captura de pantalla 2026-10-12 002133" src="https://github.com/user-attachments/assets/3509168b-74d0-46a6-a0f2-968a5f6a60d2" />
+
+<img width="495" height="642" alt="Captura de pantalla 2026-10-12 002146" src="https://github.com/user-attachments/assets/c7dea37d-6ee1-43e1-8c56-cdb98a7d7b62" />
+
+
+
+
+
+
+
 # The Resident Forest 3 — 0.8.9.1
 
 **Resident Evil 3 Remake inside The Forest.** A mashup that brings Jill Valentine and Carlos Oliveira, their voices, animations, weapons and inventory into The Forest's survival world, with single-player and cooperative multiplayer support.
